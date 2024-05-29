@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.cardPlano{
+    width: 400px;
+    height: 572px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+
+}
+
+.cardPlano:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    background:#F9C402;
+}
+
+.cardPlano:hover .listaBeneficio li {
+    color: white; /* Cor da fonte desejada */
+}
+
+.cardPlano:hover button {
+    background-color: #704214; 
+    color: white;/* Cor da fonte desejada */
+}
+
+.cardPlano:hover .precoPlano, .cardPlano:hover .mensalidadePlano, .cardPlano:hover h3, .cardPlano:hover h4{
+    color: white;
+}
+
+.cardCabecalho{
+    width: 349px;
+    color: #0B0914;
+    font-family: Urbanist;
+    font-size: 32px;
+    font-style: normal;
+    margin-left: 24px;
+}
+
+h3{
+    margin: 24px 0 0 0 ;
+    font-weight: 700;
+    line-height: 40px; /* 125% */ 
+}
+
+.subtituloContainer{
+    width: 218px;
+    height: 32px;
+    color: #A9A9AA;
+    font-family: Urbanist;
+    font-size: 22px;
+}
+
+h4{
+    margin: 32px 0 0 0 ;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.listaBeneficio{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: var(--grey-600, #3E3D3B);
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 46px;
+    margin-top: 24px;
+
+}
+
+.listaBeneficio li{
+    width: 80%;
+}
+
+hr{
+    width: 90%;
+    border: none;
+    border-top: 1px dashed #A9A9AA;
+    margin-top: 17px;
+    align-self: center;
+}
+
+.planoRodape{
+    width: 352px;   
+    height: 160px; 
+    font-family: Inter;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 86px;
+
+}
+
+.compraPlano{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.mensalidadePlano{
+    color: #0e0d0d;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+}
+
+.precoPlano{
+    color: #0e0d0d;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.barraPreco{
+    margin: 0;
+    height: 100%;
+    font-size: 1.2rem;
+    align-items:end;
+}
+
+.saibaMais{
+    border: none;
+    height: 64px;
+    padding: 1rem;
+    padding: 14px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0;
+    background-color: #F9C402;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;   
+    
+}
+
+
+.saibaMais:active {
+    letter-spacing: 3px;
+    background-color: hsl(16, 34%, 33%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(30, 70%, 26%) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}

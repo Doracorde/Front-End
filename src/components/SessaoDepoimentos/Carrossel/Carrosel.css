@@ -1,0 +1,45 @@
+/* Carrossel.css */
+.container-slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.slide-item{
+    width: 100%;
+    height: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentario-slide{
+    width:50%;
+    height: 100%;
+    font-family: Urbanist;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--grey-600, #3E3D3B);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content{
+    font-size: 40px; 
+    font-weight: 500;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+   color: #704214;
+}
+
+span.swiper-pagination-bullet{
+    background-color: #704214;
+}
+
