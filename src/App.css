@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.fundo {
+  background-image: url(./img/bg.png);
+  scroll-margin-inline-start: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

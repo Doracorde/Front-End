@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.sessaoSocias{
+    width: 100%;
+    height: 486px;
+    background: #FCFBD0;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRedesSociais{
+    width: 100%;
+    max-width: 1232px;
+    height: 400px;
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 9.147rem;
+}
+
+.redeSociais{
+    width: 668px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.descricaoRede{
+    width: 100%;
+    height: 120px;
+    font-family: Urbanist;
+    text-align: center;
+    color: var(--grey-700, #1F1F1E);
+    font-family: Urbanist;
+    font-size: 1.763rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 84px;
+}
+
+.amarelo{
+    color: #FFC727;
+    margin-left: 0.5rem;
+    text-align: none;
+}
+
+
+.iconeRede{
+    width: 29.129rem;
+    height: 4.313rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.929rem;
+}
+
+.botaoRedes{
+    width: 68.714px;
+    height: 69px;
+    border-radius: 100px;
+    background: #704214;
+    border-style: none;
+    align-items: center;
+}
