@@ -1,0 +1,18 @@
+.logos-section {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .logos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-shrink: 0;
+  }
+  
+  .logos-container img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+  }

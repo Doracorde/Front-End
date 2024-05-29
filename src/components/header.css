@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-family: Urbanist;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4e342e;
+}
+
+.navigation a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: bold; 
+}
+
+.buttons button {
+  background-color: transparent;
+  color: #4e342e;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.buttons .start-now {
+  border-radius: 5px;
+  border: none;
+  background-color: #4e342e;
+  color: #fff;
+}
+
+.login {
+  border-radius: 5px;
+  border: none;
+}

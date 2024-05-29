@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.music-learning-section {
+    background-color: #fcfbd0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 691px;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    margin-top: 150px;
+    color: var(--grey-700, #1f1f1e);
+    display: flex;
+    width: 541px;
+    height: 144px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 41px;
+  }
+  
+  /*Puxando daqui a tag <p> da seção "Harmonia"*/
+  .text-content p {
+    color: var(--grey-600, #1f1f1e);
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .discover-more-btn {
+    background-color: #704214;
+    color: #fff;
+    padding: 15px 25px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 15px;
+    border: none;
+    margin-top: 56px;
+  }
+  
+  .image-content2 img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 160px;
+  }
