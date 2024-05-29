@@ -1,0 +1,171 @@
+
+
+.conteudodireita{
+ 
+ margin-left: 40%;
+ background-color: #fafafb;
+ width: 117vh;
+ height: 130vh;
+margin-top: -110vh;
+align-content: center;
+ justify-items: center;
+ align-items: center;
+ justify-content: center
+ 
+}
+
+.imagemlogin img{
+   margin-left: 280px;
+}
+
+@media(max-width: 1438px){
+
+   .imagemlogin img{
+      margin-left: 160px;
+   }
+   
+   }
+
+  
+
+   @media(max-width: 1283px){
+
+      .imagemlogin img{
+         margin-left: 120px;
+      }
+      
+      }
+      
+
+      @media(max-width: 1621px){
+
+         .imagemlogin img{
+            margin-left: 220px;
+         }
+         
+         }
+
+         @media(max-width: 1370px){
+
+            .imagemlogin img{
+               margin-left: 140px;
+            }
+            
+            }
+
+            @media(max-width: 1264px){
+
+               .imagemlogin img{
+                  margin-left: 100px;
+               }
+               
+               }
+               @media(max-width: 1155px){
+
+                  .imagemlogin img{
+                     margin-left: 70px;
+                  }
+                  
+                  }
+                  @media(max-width: 1185px){
+
+                     .imagemlogin img{
+                        margin-left: 80px;
+                     }
+                     
+                     }
+
+                     @media(max-width: 1081px){
+
+                        .conteudodireita{
+                           width: 60vh;
+                           margin-left: 46%;
+                        }
+                        
+                        } 
+
+                        @media(max-width: 1081px){
+
+                           .imagemlogin img{
+                              margin-left: 20px;
+                           }
+                           
+                           }
+
+                           
+                        @media(max-width: 1000px){
+
+                           .imagemlogin img{
+                              display: none;
+                           }
+                           
+                           }
+
+                           @media(max-width: 945px){
+
+                              .conteudodireita{
+                                 width: 45vh;
+                                 margin-left: 54%;
+                              }
+                              
+                              } 
+                              @media(max-width: 1414px){
+
+                                 .imagemlogin img{
+                                    margin-left: 150px;
+                                 }
+                                 
+                                 }
+                                 @media(max-width: 1288px){
+
+                                    .imagemlogin img{
+                                       margin-left: 110px;
+                                    }
+                                    
+                                    }
+
+                                    @media(max-width: 1180px){
+
+                                       .conteudodireita{
+                                          width: 60vh;
+                                          margin-left: 54%;
+                                       }
+                                    }
+                                    @media(max-width: 1180px){
+
+                                       .imagemlogin img{
+                                          margin-left: 5px;
+                                       }
+                                       
+                                       }
+
+                                       @media(max-width: 1055px){
+
+                                          .imagemlogin img{
+                                            display: none;
+                                          }
+                                          .conteudodireita{
+                                             background-color: #F9C402;
+                                          }
+                                          
+                                          }
+ @media(max-width: 800px){
+
+   .conteudodireita{
+      width: 30vh;
+      margin-left: 64%;
+   } 
+}
+
+@media(max-width: 640px){
+
+   .conteudodireita{
+      display: none;
+   } 
+}
+                           
+
+                                 
+      
+   
+   

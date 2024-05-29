@@ -1,0 +1,336 @@
+/* @font-face {
+    font-family: urbanist;
+    src: url(../../../public/Fontes/Urbanist-Regular.ttf);
+} */
+*{
+    font-family: urbanist;
+}
+.logo{
+    margin-top: 50px;
+    margin-left: 80px;
+    
+}
+
+.informations{
+    
+    margin-left: 190px;
+    margin-top: 130px;
+
+}
+
+.informations h3{
+    
+   
+    margin: 0px;
+
+}
+
+.forgotpassword{
+    margin-left: 230px;
+    margin-top: -52px;
+}
+
+.forgotpassword h5{
+    font-size: 14px;
+}
+
+.inputsenha input{
+    width: 345px;
+    height: 56px;
+    
+}
+
+.inputemail input{
+    width: 345px;
+    height: 56px;
+    
+}
+
+input{
+    margin-top: 25px;
+    font-size: 16px;
+}   
+
+button{
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botaologin button{
+    border: none;
+    background-color: #ffc727;
+    color: white;
+    width: 121px;
+    height: 43px;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff
+    
+}
+.botaologin img{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 30px;
+    
+}
+
+.createnewaccount{
+    margin-left: 0px;
+   
+}
+
+.createnewaccount button{
+    width: 352px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffc727;
+        color: white;
+    box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+
+.direitos{
+    margin-top: 250px;
+}
+
+
+
+@media(max-width: 1543px){
+
+.informations{
+    margin-left: 130px;
+}
+
+}
+
+
+@media(max-width: 1378px){
+
+    .informations{
+        margin-left: 100px;
+    }
+    
+    }
+
+    @media(max-width: 1269px){
+
+        .informations{
+            margin-left: 80px;
+        }
+        
+        }   
+        @media(max-width: 1621px){
+
+            .informations{
+                margin-left: 140px;
+            }
+            
+            }  
+
+        @media(max-width: 1180px){
+
+            .informations{
+                margin-left: 58px;
+            }
+            
+            }   
+            @media(max-width: 1113px){
+
+                .informations{
+                    margin-left: 46px;
+                }
+                
+                }   
+
+                @media(max-width: 1081px){
+
+                    .informations{
+                        margin-left: 70px;
+                    }
+                    
+                    }  
+
+                    @media(max-width: 1000px){
+
+                        .informations{
+                            margin-left: 55px;
+                        }
+                        
+                        }  
+
+                    
+                        @media(max-width: 945px){
+
+                            .informations{
+                                margin-left: 80px;
+                            }
+                            
+                            }
+                            @media(max-width: 1414px){
+
+                                .informations{
+                                    margin-left: 105px;
+                                }
+                                
+                                }
+                                @media(max-width: 1288px){
+
+                                    .informations{
+                                        margin-left: 80px;
+                                    }
+                                    
+                                    }
+
+                                    @media(max-width: 1180px){
+
+                                        .informations{
+                                            margin-left: 135px;
+                                        }
+                                        
+                                        }
+                                        @media(max-width: 1055px){
+
+                                            .informations{
+                                                margin-left: 100px;
+                                            }
+                                           
+ }
+@media(max-width: 950px){
+
+ .informations{
+ margin-left: 75px;
+}
+                                            
+}
+@media(max-width: 875px){
+
+    .informations{
+    margin-left: 55px;
+   }
+                                               
+   }
+@media(max-width: 826px){
+
+    .informations{
+    margin-left: 40px;
+   }
+                                               
+   }
+@media(max-width: 800px){
+
+    .informations{
+    margin-left: 80px;
+   }
+                                               
+   }
+@media(max-width: 750px){
+
+    .informations{
+    margin-left: 60px;
+   }
+                                               
+   }
+@media(max-width: 700px){
+
+    .informations{
+    margin-left: 45px;
+   }
+                                               
+   }
+@media(max-width: 660px){
+
+    .informations{
+    margin-left: 30px;
+   }
+                                               
+   }
+@media(max-width: 660px){
+
+    .logo{
+    margin-left: 30px;
+   }
+                                               
+   }
+@media(max-width: 640px){
+
+    .informations{
+    margin-left: 140px;
+   }
+                                               
+   }
+@media(max-width: 570px){
+
+    .informations{
+    margin-left: 110px;
+   }
+                                               
+   }
+@media(max-width: 500px){
+
+    .informations{
+    margin-left: 80px;
+   }
+                                               
+   }
+@media(max-width: 460px){
+
+    .informations{
+    margin-left: 60px;
+   }
+                                               
+   }
+@media(max-width: 430px){
+
+    .informations{
+    margin-left: 40px;
+   }
+                                               
+   }
+@media(max-width: 410px){
+
+    .informations{
+    margin-left: 30px;
+   }
+                                               
+   }
+
+@media(max-width: 390px){
+
+    .informations{
+    margin-left: 20px;
+   }
+  
+                                               
+   }
+
+@media(max-width: 375px){
+
+    .informations{
+    margin-left: 29px;
+   }
+
+  .inputemail input{
+    width: 300px;
+  }
+
+  .inputsenha input{
+    width: 300px;
+  }
+  .createnewaccount button{
+    width: 300px;
+   }
+                                               
+   }
+   
+
+
+
+   
