@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+section {
+  margin: auto;
+  
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  align-items: center;
+}
+
+.valores-doracorde{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.risco{
+  width: 283.633px;
+height: 39.998px;
+}
+
+.valores-doracorde h2 {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.descricaoValores {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.missao {
+  width: 334px;
+  height: 207px;
+}
+
+.titleDescricao {
+  
+  text-align: center;
+  color: #000;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.missao-descricao {
+  color: #000;
+
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.devs {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.titleDescricao1{
+  color: #000;
+  margin-top: 100px;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+
+
+
+

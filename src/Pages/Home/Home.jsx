@@ -7,6 +7,7 @@ import Plano from '../../components/SessaoPlano/SessaoPlano'
 import Depoimento from '../../components/SessaoDepoimentos/Depoimento'
 import Redes from '../../components/SessaoSociais/Redes'
 import Footer from '../../components/Footer/footer'
+import Valores from '../../components/ValoresDoracorde/ValoresDoracorde'
 
 
 
@@ -26,6 +27,7 @@ export default function Home(){
         < Instrumentos/>
         <Plano/>
         <Depoimento/>
+        <Valores />
         <Redes/>
         <Footer/>
     </> 
