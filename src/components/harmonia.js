@@ -7,9 +7,9 @@ export default function Harmonia  () {
     return (
         <section className="harmonia">
           <div className="harmonia-section">
-            <div className="text-content">
+            <div className="text-header">
               <h1>Harmonia para todos os <span style={{color:"#F9C402"}}>sentidos</span></h1>
-              <br/>
+             
               <p>Aqui se inicia uma nova era na educação musical, marcando o amanhecer de métodos inovadores e experiências transformadoras.</p>
               <button className="comece-agora-btn">Comece Agora</button>
             </div>
