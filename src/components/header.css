@@ -57,10 +57,24 @@
   flex-shrink: 0;
 }
 
+.start-now{
+  background-color: #704214;
+  color: #fff;
+  cursor: pointer;
+  gap: 15px;
+
+}
+
 .buttons .start-now {
   border-radius: 5px;
   border: none;
-  background-color: #4e342e;
+  background-color: #704214;
+  color: #fff;
+  height: 100%;
+}
+
+.start-now a{
+  margin: 0;
   color: #fff;
 }
 
@@ -68,3 +82,5 @@
   border-radius: 5px;
   border: none;
 }
+
+

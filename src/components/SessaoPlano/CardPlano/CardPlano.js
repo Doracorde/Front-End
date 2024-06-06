@@ -24,6 +24,7 @@ export default function CardPlano(props){
                 </aside>
                 <button className='saibaMais' type="button">Saiba mais</button>
             </footer>  
+          
        </article> 
     )
 }
