@@ -8,6 +8,7 @@ import Aprenda from './components/aprenda';
 import Instrumentos from './components/instrumentos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
+import FaleConosco from './Pages/FaleConosco/Faq';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Home} />
+        <Route path="/faq" Component={FaleConosco} />
       </Routes>
     </BrowserRouter>
     // <>
