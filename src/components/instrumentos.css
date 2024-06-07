@@ -4,6 +4,7 @@
   background-image: url("../img/instrumento-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   font-family: Urbanist;
   width: 100%;
   height: 703px;

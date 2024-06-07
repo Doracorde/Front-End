@@ -1,38 +1,39 @@
 import { Link } from "react-router-dom"
-import './header.css';
-import Logo from "../img/Logo.png"
-import Harmonia from "./harmonia";
+import './headerFaq.css';
+import Logo from "../../../img/Logo.png"
 
 
 export default function Cabecalho(){
     return(
-        <header className="header">
+        <header className="header-faq">
          
-          <nav className="navigation">
-          <div className="logo">
+          <nav className="navigation-faq">
+          <div className="logo-faq">
             <img src={Logo} alt="Logo Doracorde"/> 
           </div>
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/instrumentos">Instrumentos</a>
             <a href="/planos">Planos</a>
             <a href="/depoimentos">Depoimentos</a>
             <a href="/sobre">Sobre</a>
             <a href="/blog">Blog</a>
             {/* <Link to='/blog'> <a >Blog</a> </Link> */}
-            <div className="buttons">
-              <button className="login">
+            <div className="buttons-faq">
+              <button className="login-faq">
                 <a href="/login" className="login">
                   Entrar
                 </a>
               </button>
+
+           
                 <a href="/cadastro" className="cadastro">
-                  <button className="start-now">
+                  <button className="start-now-faq">
                     Comece agora
                   </button>
                 </a>   
+             
             </div>
           </nav>
-          <Harmonia/>
         </header>
     )
 }
