@@ -1,54 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+.aprenda{
+  width: 100%;
+  height: 691px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfbd0;
+}
+
 .music-learning-section {
-    background-color: #fcfbd0;
+    width: 1500px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: 691px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
   }
   
-  .text-content {
-    max-width: 50%;
+  .cabecalho-aprenda{
+    width: 541px;
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
   }
-  
-  .text-content h1 {
-    margin-top: 150px;
-    color: var(--grey-700, #1f1f1e);
+
+  .cabecalho-aprenda > p{
+    color: var(--grey-600, #3E3D3B);
+    font-family: Urbanist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .titulo-aprenda{
     display: flex;
     width: 541px;
     height: 144px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
-    font-size: 41px;
+   
+    color: var(--grey-700, #1F1F1E);
+    
   }
   
-  /*Puxando daqui a tag <p> da seção "Harmonia"*/
-  .text-content p {
-    color: var(--grey-600, #1f1f1e);
+  .titulo-aprenda > h2{
+    margin: 0;
+    width: 100%;
     font-family: Urbanist;
-    font-size: 30px;
+    font-size: 46px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
+    text-align: left;
   }
   
   .discover-more-btn {
-    background-color: #704214;
-    color: #fff;
-    padding: 15px 25px;
-    align-items: center;
+    width: 168px;
+    height: 52px;
+    border-style: none;
     border-radius: 5px;
-    cursor: pointer;
-    gap: 15px;
-    border: none;
-    margin-top: 56px;
+    background: #704214;
+    color: #fff;
+    text-align: center;
+    margin-top: 51px;
+    font-family: Urbanist;
   }
   
-  .image-content2 img {
-    max-width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    margin-top: 160px;
-  }
+ 

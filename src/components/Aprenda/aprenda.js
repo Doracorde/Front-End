@@ -4,17 +4,25 @@ import './aprenda.css';
 export default function Aprenda () {
     return (
         <section className="aprenda">
-        <div className="music-learning-section">
-          <div className="text-content">
-            <h1>Aprenda e Melhore Suas Habilidades</h1>
-            <p>Prepare-se para uma experiência única e enriquecedora no mundo da música.</p>
-            <br />
-            <button className="discover-more-btn">Descubra Mais</button>
-          </div>
-          <div className="image-content2">
+        <section className="music-learning-section">
+       
+            <aside className='cabecalho-aprenda'>
+
+              <aside className='titulo-aprenda'>
+                <h2>Aprenda e Melhore Suas Habilidades</h2>
+              </aside>
+             
+
+              <p>Prepare-se para uma experiência única e enriquecedora no mundo da música.</p>
+
+              <button className="discover-more-btn">Descubra Mais</button>
+            </aside>
+          
+          <aside className="image-content2">
             <img src={aprendalogo} alt="Músicos tocando instrumentos" />
-          </div>
-        </div>
+          </aside>
+
+        </section>
       </section>
     );
 }

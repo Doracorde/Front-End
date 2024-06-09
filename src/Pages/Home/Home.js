@@ -9,18 +9,15 @@ import Redes from '../../components/SessaoSociais/Redes'
 import Footer from '../../components/Footer/footer'
 
 
+
+
+
 export default function Home(){
     return(
     <>
-        <div className="fundo">
-            < Header />
-            < Harmonia/>
-        </div>
-            < Logos/>
-            < Aprenda/>
-        <br/>
-        <h1 style={{fontSize: "41px", marginLeft: "600px", fontFamily: "Urbanist"}}>Instrumentos Musicais</h1>
-            <p style={{fontSize: "15px", marginLeft: "632px", fontFamily: "Urbanist"}}>Confira alguns dos instrumentos que ensinamos!</p>
+        < Header />      
+        < Logos/>
+        < Aprenda/>
         < Instrumentos/>
         <Plano/>
         <Depoimento/>

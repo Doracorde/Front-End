@@ -3,6 +3,8 @@ import './Carrosel.css';
 // import Logo from '../../images/Logo.png'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { register } from 'swiper/element/bundle';
+import Nota from '../../../img/Star 1.svg'
+import FotoComentario from '../../../img/foto-comentario.svg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,7 +12,7 @@ import 'swiper/css/scrollbar';
 
 register();
 
-export default function Carrossel() {
+export default function Carrossel(props) {
   return (
     <>
       <section className='container-slide'>
@@ -22,21 +24,84 @@ export default function Carrossel() {
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas "</h2>
+                  <article className='card-comentario'>
+
+                    <span className='foto-comentario'>
+                      <img src={FotoComentario}></img>
+                    </span>
+
+                    <aside className='nome-comentario'>
+                      <h3>{props.nomeComentario} </h3>
+                    </aside>
+
+                    <aside className='nota-comentario'>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                    </aside>
+
+                    <aside className='comentario-texto'>
+                      <h4>{props.textoDepoimento}</h4>
+                    </aside>
+                  </article>
                 </aside>
               </aside>
           </SwiperSlide>
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas 2"</h2>
+                  <article className='card-comentario'>
+
+                      <span className='foto-comentario'>
+                        <img src={FotoComentario}></img>
+                      </span>
+
+                      <aside className='nome-comentario'>
+                        <h3>{props.nomeComentario} </h3>
+                      </aside>
+
+                      <aside className='nota-comentario'>
+                        <img src={Nota}></img>
+                        <img src={Nota}></img>
+                        <img src={Nota}></img>
+                        <img src={Nota}></img>
+                       
+                      </aside>
+
+                      <aside className='comentario-texto'>
+                        <h4>{props.textoDepoimento}</h4>
+                      </aside>
+
+                  </article>
                 </aside>
               </aside>
           </SwiperSlide>
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas 3"</h2>
+                  <article className='card-comentario'>
+
+                    <span className='foto-comentario'>
+                      <img src={FotoComentario}></img>
+                    </span>
+
+                    <aside className='nome-comentario'>
+                      <h3>{props.nomeComentario} </h3>
+                    </aside>
+
+                    <aside className='nota-comentario'>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                      <img src={Nota}></img>
+                    </aside>
+
+                    <aside className='comentario-texto'>
+                      <h4>{props.textoDepoimento}</h4>
+                    </aside>
+
+                  </article>
                 </aside>
               </aside>
           </SwiperSlide>

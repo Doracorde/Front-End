@@ -28,6 +28,17 @@
     flex-direction: column;
 }
 
+/* FooterNav.css */
+.lista-info a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto do pai */
+}
+
+.lista-info a:hover {
+    text-decoration: underline; /* Ou qualquer outro estilo para hover */
+}
+
+
 .lista-info{
     display: flex;
     flex-direction: column;
@@ -39,4 +50,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0;
 }

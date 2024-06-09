@@ -15,7 +15,8 @@ export default function Depoimento(){
 
                 <section className="carrosel-depoimento">
                     <Carrossel
-                       
+                       nomeComentario ="James Pattinson"
+                       textoDepoimento ="“Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.”"
                     />
                    
                 </section>

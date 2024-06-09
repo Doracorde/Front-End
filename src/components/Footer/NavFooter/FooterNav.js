@@ -11,8 +11,12 @@ export default function FooterNav(props){
 
                 <aside className="info-footer">
                     <ul className="lista-info">
-                        {props.nomeInfo.map((info,index) =>{
-                            return <li key={index}>{info}</li> 
+                        {props.nomeInfo.map((info, index) => {
+                            return (
+                                <li key={index}>
+                                    <a href={props.urls[index]}>{info}</a>
+                                </li>
+                            )
                         })}
                     </ul>
                 </aside>
