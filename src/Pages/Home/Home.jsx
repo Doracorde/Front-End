@@ -9,9 +9,6 @@ import Redes from '../../components/SessaoSociais/Redes'
 import Footer from '../../components/Footer/footer'
 
 
-
-
-
 export default function Home(){
     return(
     <>
