@@ -1,6 +1,7 @@
-import stripeLogo from '../img/stripe.png';
-import awsLogo from '../img/aws.png';
-import redditLogo from '../img/reddit.png';
+import stripeLogo from '../../assets/img/stripe.png';
+import awsLogo from '../../assets/img/aws.png';
+import redditLogo from '../../assets/img/reddit.png';
+
 import './logo.css';
 
 export default function Logos () {

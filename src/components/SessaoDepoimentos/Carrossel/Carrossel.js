@@ -1,6 +1,6 @@
 import React from 'react';
 import './Carrosel.css';
-import Logo from '../../images/Logo.png'
+// import Logo from '../../images/Logo.png'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { register } from 'swiper/element/bundle';
 import 'swiper/css';
@@ -22,21 +22,21 @@ export default function Carrossel() {
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas fsafafsafasfsfasfsaasfasfa"</h2>
+                  <h2 className='slide-content'>"Melhor Plataforma de Todas "</h2>
                 </aside>
               </aside>
           </SwiperSlide>
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas 2 fsafafsafasfsfasfsaasfasfa"</h2>
+                  <h2 className='slide-content'>"Melhor Plataforma de Todas 2"</h2>
                 </aside>
               </aside>
           </SwiperSlide>
           <SwiperSlide>
               <aside className="slide-item">
                 <aside className='comentario-slide'>
-                  <h2 className='slide-content'>"Melhor Plataforma de Todas 3 fsafafsafasfsfasfsaasfasfa"</h2>
+                  <h2 className='slide-content'>"Melhor Plataforma de Todas 3"</h2>
                 </aside>
               </aside>
           </SwiperSlide>

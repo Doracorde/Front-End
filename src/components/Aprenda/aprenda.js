@@ -1,4 +1,4 @@
-import aprendalogo from '../img/aprenda.png';
+import aprendalogo from '../../assets/img/imgmulher.png';
 import './aprenda.css';
 
 export default function Aprenda () {

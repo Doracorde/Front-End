@@ -1,36 +1,32 @@
-// import { Outlet } from 'react-router-dom'
-import './App.css'
-import Header from './components/header'
-import Footer from './components/footer'
-import Harmonia from './components/harmonia';
-import Logos from './components/logos';
-import Aprenda from './components/aprenda';
-import Instrumentos from './components/instrumentos';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Header from './components/Header/header';
+import Footer from './components/footer';
+// import Harmonia from './components/harmonia';
+// import Logos from './components/logos';
+// import Aprenda from './components/aprenda';
 import Home from './Pages/Home/Home';
+import Instrumentos from './Pages/Instrumentos/Instrumentos';
+import Planos from './Pages/Planos/Planos';
+import Depoimentos from './Pages/Depoimentos/Depoimentos';
+import Sobre from './Pages/Sobre/Sobre';
+import Blog from './Pages/blog/Blog';
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" Component={Home} />
-      </Routes>
-    </BrowserRouter>
-    // <>
-    // <div className="fundo">
-    //  < Header />
-    //  < Harmonia/>
-    //  </div>
-    //  < Logos/>
-    //  < Aprenda/>
-    //  <br/>
-    //   <h1 style={{fontSize: "41px", marginLeft: "600px", fontFamily: "Urbanist"}}>Instrumentos Musicais</h1>
-    //     <p style={{fontSize: "15px", marginLeft: "632px", fontFamily: "Urbanist"}}>Confira alguns dos instrumentos que ensinamos!</p>
-    //  < Instrumentos/>
-    // </>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/instrumentos" element={<Instrumentos />} />
+          <Route path="/planos" element={<Planos />} />
+          <Route path="/depoimentos" element={<Depoimentos />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-export default App
-
+export default App;

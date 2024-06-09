@@ -1,6 +1,6 @@
 import React from "react"
 import "./Redes.css"
-import Crianca from '../images/Rectangle 150877.png'
+import Crianca from '../../assets/images/Rectangle 150877.png';
 
 export default function RedesSociais(){
     return(

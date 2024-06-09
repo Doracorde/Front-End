@@ -1,6 +1,7 @@
-import imgflores from '../img/imgflores.png';
-import imgmulher from '../img/imgmulher.png';
-import imghomem from '../img/imghomem.png';
+import imgmulher from '../../assets/img/imgmulher.png';
+import imgflores from '../../assets/img/imgflores.png';
+import imghomem from '../../assets/img/imghomem.png';
+
 import './harmonia.css';
 
 export default function Harmonia  () {

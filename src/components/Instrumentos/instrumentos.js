@@ -1,9 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import somlogo from '../img/som.png';
-import tecladologo from '../img/teclado.png';
-import violaologo from '../img/violao.png';
+import somlogo from '../../assets/img/som.png';
+import tecladologo from '../../assets/img/teclado.png';
+import violaologo from '../../assets/img/violao.png';
 import './instrumentos.css';
 
 export default function Instrumentos () {

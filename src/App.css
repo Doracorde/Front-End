@@ -3,7 +3,7 @@
 }
 
 .fundo {
-  background-image: url(./img/bg.png);
+  background-image: url(./assets/img/bg.png);
   scroll-margin-inline-start: 10px;
   background-repeat: no-repeat;
   background-size: cover;
