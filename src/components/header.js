@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './header.css';
-import Logo from '../../assets/images/Logo.png';
+import Logo from '../assets/images/Logo.png';
 
 export default function Cabecalho() {
   return (

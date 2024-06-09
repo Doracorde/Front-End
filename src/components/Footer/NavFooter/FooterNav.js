@@ -5,9 +5,9 @@ export default function FooterNav(props){
     return(
         <>
             <aside className="lista-navegacao">
-                <header className="navegacao-cabecalho">
+                <div className="navegacao-cabecalho">
                     <h4>{props.titulo}</h4>
-                </header>
+                </div>
 
                 <aside className="info-footer">
                     <ul className="lista-info">
