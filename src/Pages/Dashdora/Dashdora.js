@@ -66,7 +66,8 @@ function MainContent() {
             <p>Form basic sentences, greet people</p>
           </div>
           <Button
-          //a ideia é o usuario ir para outra página ou aparecer um video de anuncio, o usuario precisa enteneder (não visualmente), como funciona
+          //a ideia é o usuario ir para outra página ou aparecer um video de anuncio, 
+          //o usuario precisa enteneder (não visualmente), como funciona
             text="Guia"
             onClick={handleGuiaClick}
             className="button-guia"
