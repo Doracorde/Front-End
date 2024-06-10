@@ -7,7 +7,7 @@
   flex-direction: column;
   padding: 1rem;
   font-family: Urbanist;
-  background-image: url('../img/bg.png');
+  background-image: url('../../assets/img/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -83,5 +83,4 @@
   border-radius: 5px;
   border: none;
 }
-
 

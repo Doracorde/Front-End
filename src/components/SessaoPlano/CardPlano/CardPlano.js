@@ -3,12 +3,12 @@ import './CardPlano.css'
 export default function CardPlano(props){
     return(
        <article className='cardPlano'>
-            <header className='cardCabecalho'>
+            <div className='cardCabecalho'>
                 <h3>{props.titulo}</h3>
                 <aside className='subtituloContainer'>
                     <h4>{props.subtitulo}</h4>
                 </aside>                            
-            </header>
+            </div>
             <aside className='beneficioContainer'>
                 <ul className='listaBeneficio'>
                     {props.descBeneficio.map((beneficio, index) => {
