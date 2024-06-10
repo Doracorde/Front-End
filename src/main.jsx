@@ -6,7 +6,6 @@ import './index.css'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
 import Error from './Pages/error/index.jsx'
-import Blog from './Pages/blog/blog.js'
 
 const router = createBrowserRouter([
   {

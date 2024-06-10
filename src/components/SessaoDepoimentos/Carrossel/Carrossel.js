@@ -3,8 +3,8 @@ import './Carrosel.css';
 // import Logo from '../../images/Logo.png'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { register } from 'swiper/element/bundle';
-import Nota from '../../../img/Star 1.svg'
-import FotoComentario from '../../../img/foto-comentario.svg'
+import Nota from '../../../assets/img//Star 1.svg'
+import FotoComentario from '../../../assets/img/foto-comentario.svg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

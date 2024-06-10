@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.header-dashdora {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-dashdora .logo {
+  max-width: 150px;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px;
+  background-color: #f9f9f9;
+  flex: 1;
+}
+
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.unit {
+  background-color: #F9C402;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unit-header {
+  color: #fff;
+}
+
+.unit-header h2 {
+  margin: 0;
+}
+
+.unit-header p {
+  margin: 5px 0 20px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.button-guia {
+  background-color: #fff;
+  color: #F9C402;
+  font-weight: bold;
+  border: 2px solid #F9C402;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ad {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+}
+
+.ad-free-trial {
+  background-color: #fff;
+}
+
+.ad-blocker {
+  background-color: #1e2a38;
+  color: #fff;
+  text-align: center;
+}
+
+.ad button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.ad-free-trial button {
+  background-color: #DF615C;
+  color: #fff;
+}
+
+.ad-blocker button {
+  background-color: #fff;
+  color: #1e2a38;
+}
+.ad-blocker p {
+  text-align: center;
+}
+
+.dashdora {
+  display: flex;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
