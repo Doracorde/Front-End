@@ -2,12 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Dashdora.css';
 import Logo from '../../assets/img/Logo.png';
-import HomeIcon from '../../assets/img/home-icon.png'; // adicione seus ícones aqui
+import HomeIcon from '../../assets/img/home-icon.png';
 import PracticeIcon from '../../assets/img/practice.png';
 import SoundIcon from '../../assets/img/sound.png';
 import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
-
 
 function Cabecalhodora() {
   return (
@@ -60,34 +59,41 @@ function MainContent() {
 
   return (
     <div className="main-content">
-      <div className="unit">
-        <div className="unit-header">
-          <h2>Unit 1</h2>
-          <p>Form basic sentences, greet people</p>
+      <div className="left-column">
+        <div className="unit">
+          <div className="unit-header">
+            <h2>Unit 1</h2>
+            <p>Form basic sentences, greet people</p>
+          </div>
+          <Button
+          //a ideia é o usuario ir para outra página ou aparecer um video de anuncio, o usuario precisa enteneder (não visualmente), como funciona
+            text="Guia"
+            onClick={handleGuiaClick}
+            className="button-guia"
+          />
         </div>
-        <Button
-          text="Guia"
-          onClick={handleGuiaClick}
-          className="button-guia"
-        />
-
       </div>
-      <div className="ads">
-        <div className="ad ad-free-trial">
-          <p>Experimente a Banda</p>
-          <p>Sem anúncios, prática personalizada.</p>
-          <button>EXPERIMENTE 2 SEMANAS GRÁTIS</button>
-        </div>
-        <div className="ad ad-blocker">
-          <p>Usando bloqueador de anúncios?</p>
-          <p>Apoie a educação com a Banda Dora e removeremos os anúncios para você</p>
-          <button>EXPERIMENTE A BANDA GRATUITAMENTE</button>
-          <p>DESATIVAR BLOQUEADOR DE ANÚNCIOS</p>
+      <div className="right-column">
+
+        <div className="ads">
+          <div className="ad ad-free-trial">
+            <p><strong>Experimente a Banda</strong></p>
+            <p>Sem anúncios, prática personalizada.</p>
+            <button>EXPERIMENTE 2 SEMANAS GRÁTIS</button>
+          </div>
+          <div className="ad ad-blocker">
+            <p><strong>Usando bloqueador de anúncios?</strong></p>
+            <p>Apoie a educação com a Banda Dora e removeremos os anúncios para você!</p>
+            <button>EXPERIMENTE A BANDA GRATUITAMENTE</button>
+            <p>DESATIVAR BLOQUEADOR DE ANÚNCIOS</p>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+
 
 function Dashdora() {
   return (
