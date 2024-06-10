@@ -30,19 +30,19 @@ export default function FaleConosco() {
                     <form onSubmit={handleSubmit}>
                         <label>
                             Nome
-                            <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+                            <input className="text" type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
                         </label>
                         <label>
                             Email
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input className='email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </label>
                         <label>
                             Telefone
-                            <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
+                            <input className='tel' type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
                         </label>
                         <label>
                             Mensagem
-                            <input type="msg" value={mensagem} onChange={(e) => setMensagem(e.target.value)} />
+                            <textarea className='msg' type="msg" value={mensagem} onChange={(e) => setMensagem(e.target.value)} />
                         </label>
                         <button className="btn-sobre" type="submit">Enviar</button>
                     </form>

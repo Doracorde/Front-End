@@ -13,7 +13,7 @@ export default function Footer(){
                         <span className='logo-branco'></span>
                     </aside>
                     <aside className='texto-rodape'>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+                        <h6>Harmonia em todos os sentidos. </h6>
                     </aside>
                 </aside>
                 

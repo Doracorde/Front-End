@@ -37,7 +37,7 @@
     padding: 40px 24px;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 26px;
     border-style: solid;
     border-radius: 32px;
     border-color: #F9C402;
@@ -47,6 +47,11 @@
 .foto-comentario{
     width: 96px;
     height: 96px;
+}
+
+.foto-comentario > img{
+    width: 96px;
+    border-radius: 100px;
 }
 
 .nota-comentario{
@@ -61,7 +66,7 @@
 .comentario-texto{
     width: 344px;
     height: 94px;
-
+    text-align: center;
 }
 
 .comentario-texto >h4 {

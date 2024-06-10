@@ -13,6 +13,7 @@ import FaleConosco from './Pages/FaleConosco/Faq';
 function App() {
 
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Home} />

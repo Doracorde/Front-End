@@ -1,6 +1,7 @@
 import aprendalogo from '../img/aprenda.png';
 import './aprenda.css';
 
+
 export default function Aprenda () {
     return (
         <section className="aprenda">

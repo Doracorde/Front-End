@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
 
 register();
 
@@ -17,9 +18,10 @@ export default function Carrossel(props) {
     <>
       <section className='container-slide'>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={2}
           pagination={{clickable:true}}
           navigation
+          autoplay={{delay: 3000}}
         >
           <SwiperSlide>
               <aside className="slide-item">
@@ -31,7 +33,7 @@ export default function Carrossel(props) {
                     </span>
 
                     <aside className='nome-comentario'>
-                      <h3>{props.nomeComentario} </h3>
+                      <h3>James baxter</h3>
                     </aside>
 
                     <aside className='nota-comentario'>
@@ -43,7 +45,7 @@ export default function Carrossel(props) {
                     </aside>
 
                     <aside className='comentario-texto'>
-                      <h4>{props.textoDepoimento}</h4>
+                      <h4>"Plataforma Revolucionaria, metodo de ensino bem feito"</h4>
                     </aside>
                   </article>
                 </aside>
@@ -55,11 +57,11 @@ export default function Carrossel(props) {
                   <article className='card-comentario'>
 
                       <span className='foto-comentario'>
-                        <img src={FotoComentario}></img>
+                        <img src="https://avatars.githubusercontent.com/u/33496735?v=4"></img>
                       </span>
 
                       <aside className='nome-comentario'>
-                        <h3>{props.nomeComentario} </h3>
+                        <h3>Gabriel Azevedo</h3>
                       </aside>
 
                       <aside className='nota-comentario'>
@@ -71,7 +73,7 @@ export default function Carrossel(props) {
                       </aside>
 
                       <aside className='comentario-texto'>
-                        <h4>{props.textoDepoimento}</h4>
+                        <h4>"Tecnologia aplicada do melhor jeito, plataforma facil de se usar" </h4>
                       </aside>
 
                   </article>
@@ -84,11 +86,11 @@ export default function Carrossel(props) {
                   <article className='card-comentario'>
 
                     <span className='foto-comentario'>
-                      <img src={FotoComentario}></img>
+                      <img src="https://avatars.githubusercontent.com/u/158758040?v=4"></img>
                     </span>
 
                     <aside className='nome-comentario'>
-                      <h3>{props.nomeComentario} </h3>
+                      <h3>Iago Matheus</h3>
                     </aside>
 
                     <aside className='nota-comentario'>
@@ -98,7 +100,7 @@ export default function Carrossel(props) {
                     </aside>
 
                     <aside className='comentario-texto'>
-                      <h4>{props.textoDepoimento}</h4>
+                      <h4>"Adorei a plataforma, os exercicios mas gostaria de mais musicas"</h4>
                     </aside>
 
                   </article>
