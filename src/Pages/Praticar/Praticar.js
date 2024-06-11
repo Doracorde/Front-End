@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './Sons.css';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png';
 import HomeIcon from '../../assets/img/home-icon.png';
 import PracticeIcon from '../../assets/img/practice.png';
@@ -8,6 +7,7 @@ import SoundIcon from '../../assets/img/sound.png';
 import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
 import Sair from '../../assets/img/sair.png';
+import './Praticar.css';
 
 function Cabecalhodora() {
   return (
@@ -36,7 +36,7 @@ function Sidebar() {
         <img src={ProfileIcon} alt="Perfil" className="sidebar-icon" />
         Perfil
       </Link>
-      <Link to="/mais">
+      <Link to="/">
         <img src={MoreIcon} alt="Mais" className="sidebar-icon" />
         Mais
       </Link>
@@ -48,56 +48,55 @@ function Sidebar() {
   );
 }
 
-function NoteButton({ note, onClick }) {
+function TablatureControls() {
   return (
-    <button className="note-button" onClick={() => onClick(note)}>
-      {note}
-    </button>
-  );
-}
-
-function MainContent() {
-  const navigate = useNavigate();
-
-  const handleNoteClick = (note) => {
-    alert(`Nota ${note} clicada`);
-    // Adicione a funcionalidade para tocar o som da nota aqui
-  };
-
-  return (
-    <div className="main-content">
-      <div className="left-column">
-        <div className='praticar'>
-        <h6>Vamos praticar os sons das notas</h6>
-        <p>Treine seu ouvido e aprenda as notas</p>
-        <h3>Notas</h3>
-        </div>
-        <div className="notes-container">
-          {['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ', 'SI'].map((note) => (
-            <NoteButton key={note} note={note} onClick={handleNoteClick} />
-          ))}
-        </div>
-      </div>
-      <div className="right-column">
-        <div className="ads">
-          <div className="ad ad-free-trial">
-            <p><strong>Experimente a Banda</strong></p>
-            <p>Sem anúncios, prática personalizada.</p>
-            <button>EXPERIMENTE 2 SEMANAS GRÁTIS</button>
-          </div>
-          <div className="ad ad-blocker">
-            <p><strong>Usando bloqueador de anúncios?</strong></p>
-            <p>Apoie a educação com a Banda Dora e removeremos os anúncios para você!</p>
-            <button>EXPERIMENTE A BANDA GRATUITAMENTE</button>
-            <p>DESATIVAR BLOQUEADOR DE ANÚNCIOS</p>
-          </div>
-        </div>
-      </div>
+    <div className="tablature-controls">
+      <button>Auto rolagem</button>
+      <button>Texto</button>
+      <button>Acordes</button>
+      <button>Afinação</button>
     </div>
   );
 }
 
-function Sons() {
+function MainContent() {
+  return (
+    <div className="main-content">
+      <div className="tablature-header">
+        <h1>Evidências</h1>
+        <p>Chitãozinho & Xororó</p>
+      <div className="tablature-container">
+        <div className="tablature-content">
+          <pre>
+            {`
+            B          Bbm
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ebm/C              F7
+            Nulla at justo non nunc diam elementum at quis felis.
+            Bbm/Ab       Eb
+            Praesent lobortis tortor et nulla molestie ornare.
+            B
+            Nunc sed odio quis nisi pellentesque tempor et a dolor.
+            Ebm/C       F7
+            Cras non tellus ornare, aliquet nisl id, porta velit.
+            Bbm/Ab
+            Ut suscipit metus nec felis tristique tempor.
+            Eb               B
+            Donec euismod velit ante, ut auctor nunc ornare gravida.
+            Eb
+            Donec a sapien quis nisl dignissim vulputate et in lorem.
+            `}
+          </pre>
+        </div>
+      <TablatureControls />
+      </div>
+      </div>
+
+    </div>
+  );
+}
+
+function Praticar() {
   return (
     <div className="dashdora">
       <Sidebar />
@@ -109,4 +108,4 @@ function Sons() {
   );
 }
 
-export default Sons;
+export default Praticar;

@@ -32,7 +32,7 @@ function Sidebar() {
       </Link>
       <Link to="/praticar">
         <img src={PracticeIcon} alt="Praticar" className="sidebar-icon" />
-        Praticar
+        Tocar músicas
       </Link>
       <Link to="/sons">
         <img src={SoundIcon} alt="Sons" className="sidebar-icon" />
@@ -42,7 +42,7 @@ function Sidebar() {
         <img src={ProfileIcon} alt="Perfil" className="sidebar-icon" />
         Perfil
       </Link>
-      <Link to="/mais">
+      <Link to="/">
         <img src={MoreIcon} alt="Mais" className="sidebar-icon" />
         Mais
       </Link>

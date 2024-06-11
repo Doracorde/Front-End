@@ -14,6 +14,7 @@ import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
 import Sons from './Pages/Sons/Sons';
 import Perfil from './Pages/Perfil/Perfil'
+import Praticar from './Pages/Praticar/Praticar'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/dashdora" element={<Dashdora />} />
           <Route path="/sons" element={<Sons />} />
           <Route path="/perfil" element={<Perfil />} />
+          <Route path="/praticar" element={<Praticar />} />
         </Routes>
       </div>
     </Router>

@@ -27,7 +27,7 @@ function Sidebar() {
       </Link>
       <Link to="/praticar">
         <img src={PracticeIcon} alt="Praticar" className="sidebar-icon" />
-        Praticar
+        Tocar músicas
       </Link>
       <Link to="/Sons">
         <img src={SoundIcon} alt="Sons" className="sidebar-icon" />
@@ -58,7 +58,7 @@ function MainContent() {
         </div>
         <div className="profile-info">
           <h2>Jailson</h2>
-          <p>@Peterdactyl2015</p>
+          <p>@feliciathegoat</p>
           <p>Ingressou em fevereiro de 2023</p>
           <button className="edit-profile">Editar Perfil</button>
         </div>
