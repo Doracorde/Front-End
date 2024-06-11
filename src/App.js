@@ -12,6 +12,8 @@ import Depoimentos from './Pages/Depoimentos/Depoimentos';
 import Sobre from './Pages/Sobre/Sobre';
 import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
+import Sons from './Pages/Sons/Sons';
+import Perfil from './Pages/Perfil/Perfil'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/dashdora" element={<Dashdora />} />
+          <Route path="/sons" element={<Sons />} />
+          <Route path="/perfil" element={<Perfil />} />
         </Routes>
       </div>
     </Router>
