@@ -1,0 +1,47 @@
+.tablature-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+  }
+  
+  .tablature-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tablature-controls button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tablature-container {
+    display: flex;
+  }
+  
+  .tablature-content {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .tablature-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.tablature-header{
+    text-align: center;
+}
+  
