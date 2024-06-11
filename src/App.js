@@ -12,6 +12,7 @@ import Depoimentos from './Pages/Depoimentos/Depoimentos';
 import Sobre from './Pages/Sobre/Sobre';
 import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
+import FaleConosco from './Pages/FaleConosco/Faq';
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
           <Route path="/instrumentos" element={<Instrumentos />} />
           <Route path="/planos" element={<Planos />} />
           <Route path="/depoimentos" element={<Depoimentos />} />
-          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/sobre" Component={Sobre} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/dashdora" element={<Dashdora />} />
+          <Route path="/faq" Component={FaleConosco} />
         </Routes>
       </div>
     </Router>

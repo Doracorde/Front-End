@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Chatbox } from '@talkjs/react';
-import Conosco from '../../img/conosco.png'
+import Conosco from '../../assets/img/conosco.png'
 
 export default function FaleConosco() {
     const [nome, setNome] = useState('');

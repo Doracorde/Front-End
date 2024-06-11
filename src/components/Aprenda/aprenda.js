@@ -1,4 +1,4 @@
-import aprendalogo from '../../assets/img/imgmulher.png';
+import aprendalogo from '../../assets/img/aprenda.png';
 import './aprenda.css';
 import { Link } from 'react-router-dom';
 

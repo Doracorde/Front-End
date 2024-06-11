@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
-import './header.css';
+import './headerSobre.css';
 import Logo from '../../assets/img/Logo.png';
-import Harmonia from '../../components/Harmonia/harmonia'
+import LogoMarca from "../Logomarca/logomarca";
+
 
 export default function Cabecalho() {
-  const handleNavClick = (event, targetId) => {
-    event.preventDefault();
-    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-  };
   return (
     <header className="header">
 
@@ -16,9 +13,9 @@ export default function Cabecalho() {
           <img src={Logo} alt="Logo Doracorde" />
         </div>
         <Link to="/">Home</Link>
-        <a href="#instrumentos" onClick={(e) => handleNavClick(e, 'instrumentos')}>Instrumentos</a>
-        <a href="#plano" onClick={(e) => handleNavClick(e, 'plano')}>Planos</a>
-        <a href="#depoimento" onClick={(e) => handleNavClick(e, 'depoimento')}>Depoimentos</a>
+        <Link to="/">Instrumentos</Link>
+        <Link to="/">Planos</Link>
+        <Link to="/">Depoimentos</Link>
         <Link to="/sobre">Sobre</Link>
         <Link to="/blog">Blog</Link>
         <div className="buttons">
@@ -34,7 +31,7 @@ export default function Cabecalho() {
           </a>
         </div>
       </nav>
-      <Harmonia />
+        <LogoMarca/>
     </header>
   );
 }

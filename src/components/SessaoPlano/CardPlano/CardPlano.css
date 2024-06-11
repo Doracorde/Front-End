@@ -21,7 +21,7 @@
 }
 
 .cardPlano:hover .listaBeneficio li {
-    color: white; /* Cor da fonte desejada */
+    color: #704214; /* Cor da fonte desejada */
 }
 
 .cardPlano:hover button {
@@ -30,7 +30,7 @@
 }
 
 .cardPlano:hover .precoPlano, .cardPlano:hover .mensalidadePlano, .cardPlano:hover h3, .cardPlano:hover h4{
-    color: white;
+    color: #704214;
 }
 
 .cardCabecalho{
@@ -58,7 +58,7 @@ h3{
 
 h4{
     margin: 32px 0 0 0 ;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -68,9 +68,9 @@ h4{
     gap: 24px;
     color: var(--grey-600, #3E3D3B);
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     padding-left: 46px;
     margin-top: 24px;
@@ -148,9 +148,9 @@ hr{
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.2rem;
     transition: all 0.5s ease;   
-    
+    font-weight: 500;
 }
 
 

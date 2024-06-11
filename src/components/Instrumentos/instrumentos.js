@@ -11,13 +11,14 @@ export default function Instrumentos () {
         <section className="instrumentos">
           <h1>Instrumentos Musicais</h1>
           <p >Confira alguns dos instrumentos que ensinamos!</p>
-          < CardGroup style={{width: "871px", height: "450px", display:"flex", flexDirection: "row", gap:"29px"}}>
+          < CardGroup style={{width: "1071px", height: "650px", display:"flex", flexDirection: "row", gap:"29px"}}>
 
             <Card style={{width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", display:"flex", alignItems:"center", paddingTop:"21px", margin:"0"}}>
               <Card.Img variant="top" src={somlogo} style={{}} />
               <Card.Body>
                 <Card.Title>Guitarra</Card.Title>
-                <Card.Text style={{}}>
+                <Card.Text className='card-text'>
+                
                 Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de guitarra do mercado! Aulas online e presenciais com os melhores professores do Brasil! 
                 </Card.Text>
               </Card.Body>

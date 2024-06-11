@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.titleDescricao1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.devList {
+  display: flex;
+  align-items: center;
+}
+
+.devName {
+  color: var(--grey-700, #1f1f1e);
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.devDesc {
+  color: #704214;
+  font-family: Urbanist;
+  font-size: 15px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.backgroundSvg {
+  z-index: 1;
+  width: 246px;
+  height: 222px;
+}
+
+.imgdev {
+  position: absolute;
+  z-index: 2;
+  margin-top: 110px;
+  margin-bottom: 70px;
+}
+
+.top-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.bottom-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.titledev {
+  color: #000;
+  margin-top: 300px;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+}
+
+.redesdev {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}

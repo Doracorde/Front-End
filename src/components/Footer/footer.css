@@ -56,17 +56,16 @@
 
 .texto-rodape{
     width: 100%;
-    height: 60%;
+    height: 70%;
     color: #FFF;
-    text-align: justify;
-    
+    text-align: center;  
 }
 
 .texto-rodape > h6{
     font-family: Urbanist;
     font-size: 1.188rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight:bold;
     line-height: 31px;
     margin-top: 1rem;
 }

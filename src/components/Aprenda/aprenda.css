@@ -21,7 +21,7 @@
   
   .cabecalho-aprenda{
     width: 541px;
-    height: 331px;
+    height: 351px;
     display: flex;
     flex-direction: column;
     gap: 21px;
@@ -30,7 +30,7 @@
   .cabecalho-aprenda > p{
     color: var(--grey-600, #3E3D3B);
     font-family: Urbanist;
-    font-size: 24px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -42,9 +42,7 @@
     height: 144px;
     flex-direction: column;
     justify-content: center;
-   
-    color: var(--grey-700, #1F1F1E);
-    
+    color: var(--grey-700, #1F1F1E); 
   }
   
   .titulo-aprenda > h2{
@@ -66,8 +64,11 @@
     background: #704214;
     color: #fff;
     text-align: center;
-    margin-top: 51px;
     font-family: Urbanist;
   }
   
+  .discover-more-btn > a{
+    color: #fff;
+
+  }
  

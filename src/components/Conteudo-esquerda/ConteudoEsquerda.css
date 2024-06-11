@@ -1,0 +1,316 @@
+@font-face {
+    font-family: urbanist;
+    src: url(../../../public/Fontes/Urbanist-Regular.ttf);
+}
+*{
+    font-family: urbanist;
+}
+.logo{
+    margin-top: 50px;
+    margin-left: 80px;
+    
+}
+
+.informations{
+    
+  margin-left: 190px;
+  margin-top: 80px;
+
+}
+
+.informations h3{
+  margin-left: 20px;
+}
+
+.inputsenha input{
+    width: 345px;
+    height: 56px;
+    
+}
+
+.inputemail input{
+    width: 345px;
+    height: 56px;
+    
+}
+
+input{
+    margin-top: 30px;
+    font-size: 16px;
+}   
+
+button{
+    margin-top: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.direitos{
+    margin-top: 300px;
+    margin-left: 80px;
+}
+
+.input1 input{
+    margin-left: 20px;
+    width: 217.5px;
+    height: 56px;
+}
+
+.input2 input{
+    width: 462px;
+    height: 56px;
+    margin-left: 20px;
+    
+}
+
+.botaoinscreverse button{
+    width: 469px;
+    height: 42px;
+    margin-left: 20px;
+    background-color: #f9c402;
+    color: white;
+    border: none;
+    box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+    border-radius: 4px;
+    
+}
+
+.botaovolteaologin button{
+    width: 469px;
+    height: 42px;
+    margin-left: 20px;
+    background-color: #704214;
+    color: white;
+    border: none;
+    box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+    border-radius: 4px;
+    
+}
+
+@media (max-width: 1681px){
+  .informations{
+    margin-left: 240px;
+    }
+    .logo{
+        margin-left: 150px;
+    }
+
+}
+@media (max-width: 1581px){
+    .informations{
+      margin-left: 160px;
+      }
+      .logo{
+          margin-left: 150px;
+      }
+  
+  }
+@media (max-width: 1543px){
+    .informations{
+      margin-left: 185px;
+    }
+  
+  }
+@media (max-width: 1426px){
+    .informations{
+      margin-left: 145px;
+    }
+  
+  }
+@media (max-width: 1340px){
+    .informations{
+      margin-left: 110px;
+    }
+  
+  }
+@media (max-width: 1229px){
+    .informations{
+      margin-left: 70px;
+    }
+  
+  }
+@media (max-width: 1210px){
+    .informations{
+      margin-left: 70px;
+    }
+  
+  }
+@media (max-width: 1145px){
+    .informations{
+      margin-left: 50px;
+    }
+  
+  }
+@media (max-width: 1063px){
+    .informations{
+      margin-left: 30px;
+    }
+  
+  }
+@media (max-width: 1031px){
+    .informations{
+      margin-left: 20px;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+  
+  }
+@media (max-width: 1000px){
+    .informations{
+      margin-left: 75px;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+  
+  }
+@media (max-width: 932px){
+    .informations{
+      margin-left: 55px;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+  
+  }
+@media (max-width: 876px){
+    .informations{
+      margin-left: 35px;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+  
+  }
+@media (max-width: 794px){
+    .input1 input{
+        width: 200.5px;
+        height: 45px;
+    }
+    .input2 input{
+        width: 430px;
+        height: 45px;
+    }
+    .botaovolteaologin button{
+        width: 438px;
+        height: 42px;
+    }
+    .botaoinscreverse button{
+        width: 438px;
+        height: 42px;
+    }
+
+  }
+@media (max-width: 750px){
+    .informations{
+      margin-left: 140px;
+    }
+    .logo{
+        margin-left: 230px;
+    }
+  
+  }
+@media (max-width: 700px){
+    .informations{
+      margin-left: 110px;
+    }
+    .logo{
+        margin-left: 200px;
+    }
+  
+  }
+
+@media (max-width: 640px){
+    .informations{
+      margin-left: 80px;
+    }
+    .logo{
+        margin-left: 170px;
+    }
+  
+  }
+@media (max-width: 580px){
+    .informations{
+      margin-left: 50px;
+    }
+    .logo{
+        margin-left: 140px;
+    }
+  
+  }
+@media (max-width: 535px){
+    .informations{
+      margin-left: 30px;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+  
+  }
+
+@media (max-width: 520px){
+    .input1 input{
+        width: 150.5px;
+        height: 45px;
+    }
+    .input2 input{
+        width: 330px;
+        height: 45px;
+    }
+    .botaovolteaologin button{
+        width: 338px;
+        height: 42px;
+    }
+    .botaoinscreverse button{
+        width: 338px;
+        height: 42px;
+    }
+    .informations{
+        margin-left: 75px;
+      }
+    .logo{
+        margin-left: 120px;
+    }
+    .direitos{
+        margin-top: 300px;
+        margin-left: 30px;
+    }
+  }
+@media (max-width: 480px){
+    .informations{
+      margin-left: 50px;
+    }
+    .logo{
+        margin-left: 90px;
+    }
+  
+  }
+@media (max-width: 445px){
+    .informations{
+      margin-left: 40px;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+  
+  }
+@media (max-width: 420px){
+    .informations{
+      margin-left: 25px;
+    }
+    .logo{
+        margin-left: 60px;
+    }
+  
+  }
+@media (max-width: 400px){
+    .informations{
+      margin-left: 12px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+  
+  }
+
