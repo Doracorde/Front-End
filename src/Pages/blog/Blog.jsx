@@ -10,37 +10,14 @@ import noticia4 from '../../assets/img/noticia3.png';
 import noticia5 from '../../assets/img/noticia4.png';
 import noticia6 from '../../assets/img/noticia5.png';
 import noticia7 from '../../assets/img/noticia6.png';
+import HeaderFaq from '../../components/FaleConosco/headerFaq/headerFaq'
 
 
 export default function Blog() {
   return (
     <>
-      <div className="header-blog">
-        <nav className="navigation">
-          <div className="logo">
-            <img src={Logo} alt="Logo Doracorde" />
-          </div>
-          <Link to="/">Home</Link>
-          <Link to="/instrumentos">Instrumentos</Link>
-          <Link to="/planos">Planos</Link>
-          <Link to="/depoimentos">Depoimentos</Link>
-          <Link to="/sobre">Sobre</Link>
-          <Link to="/blog">Blog</Link>
-          <div className="buttons">
-            <button className="login">
-              <a href="/login" className="login">
-                Entrar
-              </a>
-            </button>
-            <a href="/cadastro" className="cadastro">
-              <button className="start-now">
-                Comece agora
-              </button>
-            </a>
-          </div>
-        </nav>
-      </div>
-
+      
+      <HeaderFaq/>
       <div className="noticias">
         <h5>Blog</h5>
         <h3>Noticias</h3>

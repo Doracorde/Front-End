@@ -29,7 +29,7 @@ export default function Planos(){
                             "Acesso ilimitado as nossas aulas disponiveis",
                             "Remoção de anúncios "
                         ]}
-                        preco="$30"
+                        preco="R$30"
                         mensalidade="/mês"
                     />
                     <CardPlano
@@ -38,9 +38,9 @@ export default function Planos(){
                         descBeneficio={[
                             "Participação nas sugestões de novos arranjos",
                             "Contato direto com nossos profissionais de música",
-                            "Exibição de anúncios"
+                            " Sugestões de novos exercicios"
                         ]}
-                        preco="$40"
+                        preco="R$40"
                         mensalidade="/mês"
                     />
                 </section>

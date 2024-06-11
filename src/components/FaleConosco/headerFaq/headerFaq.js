@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import './headerFaq.css';
-import Logo from "../../../img/Logo.png"
+import Logo from "../../../assets/img/Logo.png"
 
 
 export default function Cabecalho(){
@@ -12,9 +12,9 @@ export default function Cabecalho(){
             <img src={Logo} alt="Logo Doracorde"/> 
           </div>
             <a href="/">Home</a>
-            <a href="/instrumentos">Instrumentos</a>
-            <a href="/planos">Planos</a>
-            <a href="/depoimentos">Depoimentos</a>
+            <a href="/">Instrumentos</a>
+            <a href="/">Planos</a>
+            <a href="/">Depoimentos</a>
             <a href="/sobre">Sobre</a>
             <a href="/blog">Blog</a>
             {/* <Link to='/blog'> <a >Blog</a> </Link> */}

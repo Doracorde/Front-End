@@ -12,9 +12,13 @@ import Depoimentos from './Pages/Depoimentos/Depoimentos';
 import Sobre from './Pages/Sobre/Sobre';
 import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
+
+import FaleConosco from './Pages/FaleConosco/Faq';
+
 import Sons from './Pages/Sons/Sons';
 import Perfil from './Pages/Perfil/Perfil'
 import Praticar from './Pages/Praticar/Praticar'
+
 
 function App() {
   return (
@@ -25,12 +29,16 @@ function App() {
           <Route path="/instrumentos" element={<Instrumentos />} />
           <Route path="/planos" element={<Planos />} />
           <Route path="/depoimentos" element={<Depoimentos />} />
-          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/sobre" Component={Sobre} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/dashdora" element={<Dashdora />} />
+
+          <Route path="/faq" Component={FaleConosco} />
+
           <Route path="/sons" element={<Sons />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/praticar" element={<Praticar />} />
+ 
         </Routes>
       </div>
     </Router>

@@ -7,11 +7,12 @@
   flex-direction: column;
   padding: 1rem;
   font-family: Urbanist;
-  background-image: url('../../../img/bg.png');
+  background-image: url('../../../assets/img/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   background-position: bottom;
+  padding-top: 0;
 }
 
 .logo-faq{
@@ -24,11 +25,14 @@
 .navigation-faq{
   display: flex;
   flex-direction: row;
-  width: 1105px;
-  height: 52px; 
+  width: 100%;
+  height: 82px; 
   justify-content: center;
   align-items: center;
   gap: 21px;
+  position: fixed;
+  z-index: 1000;
+  background:#fcfbd0;
 }
 
 .navigation-faq a {
@@ -36,6 +40,10 @@
   text-decoration: none;
   color: #4e342e;
   font-weight: bold; 
+}
+
+.navigation-faq a:hover{
+  color: #f9c402;
 }
 
 .buttons-faq{
