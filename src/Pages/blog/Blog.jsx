@@ -21,7 +21,7 @@ export default function Blog() {
       <div className="noticias">
         <h5>Blog</h5>
         <h3>Noticias</h3>
-        <p>Fique por dentro das principais noticias sobre o entretenimento, música e arte!</p>
+        <p>Fique por dentro das principais notícias sobre o entretenimento, música e arte!</p>
       </div>
 
       <div className="nav-container">
