@@ -22,6 +22,7 @@ export default function Cabecalho() {
       <nav className="nav-header">
         <button onClick={() => changeLanguage("pt")}>{t("Pt")}</button>
         <button onClick={() => changeLanguage("en")}>{t("En")}</button>
+        <button onClick={() => changeLanguage("en")}>{t("En")}</button>
         <div className="logo">
           <img src={Logo} alt={t("Logo Doracorde")} />
         </div>

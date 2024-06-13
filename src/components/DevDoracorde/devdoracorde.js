@@ -6,12 +6,13 @@ import Julia from "../../assets/img/julia.png";
 import Nilvan from "../../assets/img/nilvas.png";
 import Ryan from "../../assets/img/ryan.png";
 import Thiago from "../../assets/img/thi.png";
+import { t } from 'i18next';
 
 function DevDoracorde() {
     return (
         <section className='dev-container'>
             <div className="titledev">
-                <h2>Desenvolvedores</h2>
+                <h2>{t("Desenvolvedores")} </h2>
             </div>
 
             <div className="titleDescricao1">

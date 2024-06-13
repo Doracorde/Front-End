@@ -1,24 +1,50 @@
 {
-    "Pt": "Pt",
-    "Br": "Br",
-    "Logo Doracorde": "Doracorde Logo",
-    "Home": "Home",
-    "Instrumentos": "Instruments",
-    "Planos": "Plans",
-    "Teste": "Test",
-    "Depoimentos": "Testimonials",
-    "Sobre": "About",
-    "Blog": "Blog",
-    "Entrar": "Sign In",
-    "Comece agora": "Get Started Now",
-    "Harmonia para todos os": "Harmony for all",
-    "sentidos": "senses",
-    "Aqui se inicia uma nova era na educação musical, marcando o amanhecer de métodos inovadores e experiências transformadoras.": "Here begins a new era in music education, marking the dawn of innovative methods and transformative experiences.",
-    "Comece Agora": "Get Started Now",
-    "Descrição da imagem 2": "Image description 2",
-    "Uma mulher negra com deficiência visual, com borboleta em seu rosto": "A black woman with visual impairment, with a butterfly on her face",
-    "Descrição da imagem 3": "Image description 3"
-      
-      
+  "Pt": "Pt",
+  "Br": "Br",
+  "Logo Doracorde": "Doracorde Logo",
+  "Home": "Home",
+  "Instrumentos": "Instruments",
+  "Planos": "Plans",
+  "Teste": "Test",
+  "Depoimentos": "Testimonials",
+  "Sobre": "About",
+  "Blog": "Blog",
+  "Entrar": "Sign In",
+  "Comece agora": "Get Started Now",
+  "Harmonia para todos os": "Harmony for all",
+  "sentidos": "senses",
+  "Aqui se inicia uma nova era na educação musical, marcando o amanhecer de métodos inovadores e experiências transformadoras.": "Here begins a new era in music education, marking the dawn of innovative methods and transformative experiences.",
+  "Comece Agora": "Get Started Now",
+  "Descrição da imagem 2": "Image description 2",
+  "Uma mulher negra com deficiência visual, com borboleta em seu rosto": "A black woman with visual impairment, with a butterfly on her face",
+  "Descrição da imagem 3": "Image description 3",
+
+  "Aprenda e Melhore Suas Habilidades": "Learn and Improve Your Skills",
+  "Prepare-se para uma experiência única e enriquecedora no mundo da música.": "Prepare for a unique and enriching experience in the world of music.",
+  "Descubra Mais": "Discover More",
+  "Músicos tocando instrumentos": "Musicians playing instruments",
+  "Desenvolvedores" : "Developers"
+  {
+    "instrumentos": {
+      "titulo": "Instrumentos Musicais",
+      "subtitulo": "Confira alguns dos instrumentos que ensinamos!",
+      "guitarra": {
+        "titulo": "Guitarra",
+        "descricao": "Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de guitarra do mercado! Aulas online e presenciais com os melhores professores do Brasil!",
+        "botao": "Saiba Mais"
+      },
+      "violao": {
+        "titulo": "Violão",
+        "descricao": "Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de violão do mercado! Aulas online e presenciais com os melhores professores do Brasil!",
+        "botao": "Saiba Mais"
+      },
+      "piano": 
+        "titulo": "Piano",
+        "descricao": "Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de piano do mercado! Aulas online e presenciais com os melhores professores do Brasil!",
+        "botao": "Saiba Mais"
+      }
+    }
   }
   
+  
+}
