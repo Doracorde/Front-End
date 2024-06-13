@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/header';
 import Footer from './components/footer';
+import {useTranslation} from 'react-i18next';
+import './i18n';
 // import Harmonia from './components/harmonia';
 // import Logos from './components/logos';
 // import Aprenda from './components/aprenda';
@@ -21,6 +23,7 @@ import Praticar from './Pages/Praticar/Praticar'
 
 
 function App() {
+  
   return (
     <Router>
       <div>
