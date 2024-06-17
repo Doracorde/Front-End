@@ -2,9 +2,7 @@ import React from 'react'
 import './SessaoPlano.css'
 import CardPlano from '../../components/SessaoPlano/CardPlano/CardPlano'
 import { Link } from "react-router-dom";
-import React from 'react';
 import './SessaoPlano.css';
-import CardPlano from '../../components/SessaoPlano/CardPlano/CardPlano';
 import { useTranslation } from 'react-i18next';
 
 export default function Planos(){

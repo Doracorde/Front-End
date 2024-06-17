@@ -55,7 +55,7 @@
   gap: 9px;
 }
 
-.buttons-faq button {
+.buttons-faq {
   background-color: transparent;
   color: #4e342e;
   cursor: pointer;
