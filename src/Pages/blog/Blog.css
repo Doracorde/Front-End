@@ -47,7 +47,7 @@ a {
   gap: 9px;
 }
 
-.buttons button {
+.buttons, .button-blog {
   background-color: transparent;
   color: #4e342e;
   cursor: pointer;
@@ -256,7 +256,7 @@ main {
   border-radius: 5px;
 }
 
-.form button {
+.form button{
   padding: 10px 20px;
   font-size: 16px;
   background-color: #704214;

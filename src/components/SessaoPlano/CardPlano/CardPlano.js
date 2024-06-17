@@ -1,4 +1,5 @@
 import './CardPlano.css'
+import { Link } from "react-router-dom";
 
 export default function CardPlano(props){
     return(
@@ -22,7 +23,9 @@ export default function CardPlano(props){
                     <h3 className='precoPlano'>{props.preco}</h3>
                     <h5 className='mensalidadePlano'>{props.mensalidade}</h5>
                 </aside>
-                <button className='saibaMais' type="button">Saiba mais</button>
+                <Link to="/pagamento">
+                     <button className='saibaMais' type="button">Saiba mais</button>
+                </Link>
             </footer>  
           
        </article> 

@@ -33,21 +33,21 @@ export default function Cabecalho() {
           {t("Instrumentos")}
         </a>
         <a href="#plano" onClick={(e) => handleNavClick(e, "plano")}>
-          {t("Planos")} {t("Teste")}
+          {t("Planos")}
         </a>
         <a href="#depoimento" onClick={(e) => handleNavClick(e, "depoimento")}>
           {t("Depoimentos")}
         </a>
         <Link to="/sobre">{t("Sobre")}</Link>
         <Link to="/blog">{t("Blog")}</Link>
-        <div className="buttons">
+        <div className="buttons-header">
           <button className="login">
             <a href="/login" className="login">
               {t("Entrar")}
             </a>
           </button>
           <a href="/cadastro" className="cadastro">
-            <button className="start-now">{t("Comece agora")}</button>
+            <button className="start-now-header">{t("Comece agora")}</button>
           </a>
         </div>
       </nav>

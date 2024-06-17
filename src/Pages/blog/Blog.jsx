@@ -133,8 +133,8 @@ export default function Blog() {
         <div className="newsletter">
           <h3>Se inscreva na newsletter Doracorde</h3>
           <form className="form">
-            <input type="email" placeholder="Seu melhor email" />
-            <button type="submit">Enviar</button>
+            <input className="input-blog" type="email" placeholder="Seu melhor email" />
+            <button className='button-blog' type="submit">Enviar</button>
           </form>
         </div>
       </footer>
