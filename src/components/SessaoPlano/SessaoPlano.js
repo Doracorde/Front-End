@@ -1,51 +1,53 @@
-import React from 'react'
-import './SessaoPlano.css'
-import CardPlano from '../../components/SessaoPlano/CardPlano/CardPlano'
+import React from 'react';
+import './SessaoPlano.css';
+import CardPlano from '../../components/SessaoPlano/CardPlano/CardPlano';
+import { useTranslation } from 'react-i18next';
 
 export default function Planos(){
+    const { t } = useTranslation();
+
     return(
         <>
            <section className="Plano">
-                <h1>Nossas Batidas</h1>
-                <h5 className='subtituloPlano'>Conheça alguns dos nossos planos!</h5>
+                <h1>{t('Nossas Batidas')}</h1>
+                <h5 className='subtituloPlano'>{t('Conheça alguns dos nossos planos!')}</h5>
                 <section className="columns">
                     <CardPlano
-                        titulo="Solo"
-                        subtitulo="O que está incluso"
+                        titulo={t('Solo')}
+                        subtitulo={t('O que está incluso')}
                         descBeneficio={[
-                            "Acesso limitado a tablaturas e partituras",
-                            "Acesso limitado as nossas aulas disponiveis",
-                            "Exibição de anuncios"
-                
+                            t('Acesso limitado a tablaturas e partituras'),
+                            t('Acesso limitado as nossas aulas disponiveis'),
+                            t('Exibição de anuncios')
                         ]}
-                        preco="Gratuito"
-                        mensalidade="/mês"
+                        preco={t('Gratuito')}
+                        mensalidade={t('/mês')}
                     />
                     <CardPlano
-                        titulo="Banda"
-                        subtitulo="O que está incluso"
+                        titulo={t('Banda')}
+                        subtitulo={t('O que está incluso')}
                         descBeneficio={[
-                            "Acesso ilimitado a tablaturas e partituras",
-                            "Acesso ilimitado as nossas aulas disponiveis",
-                            "Remoção de anúncios "
+                            t('Acesso ilimitado a tablaturas e partituras'),
+                            t('Acesso ilimitado as nossas aulas disponiveis'),
+                            t('Remoção de anúncios ')
                         ]}
-                        preco="R$30"
-                        mensalidade="/mês"
+                        preco={t('R$30')}
+                        mensalidade={t('/mês')}
                     />
                     <CardPlano
-                        titulo="Orquestra"
-                        subtitulo="O que está incluso"
+                        titulo={t('Orquestra')}
+                        subtitulo={t('O que está incluso')}
                         descBeneficio={[
-                            "Participação nas sugestões de novos arranjos",
-                            "Contato direto com nossos profissionais de música",
-                            " Sugestões de novos exercicios"
+                            t('Participação nas sugestões de novos arranjos'),
+                            t('Contato direto com nossos profissionais de música'),
+                            t('Sugestões de novos exercicios')
                         ]}
-                        preco="R$40"
-                        mensalidade="/mês"
+                        preco={t('R$40')}
+                        mensalidade={t('/mês')}
                     />
                 </section>
                 <section className='aviso'>
-                    <h4>*Todos planos concedem o benefício do anterior</h4>
+                    <h4>{t('*Todos planos concedem o benefício do anterior')}</h4>
                 </section>
             </section>  
         </>
