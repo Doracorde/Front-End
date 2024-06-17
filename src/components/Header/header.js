@@ -7,6 +7,7 @@ import "../../i18n";
 import brasil from "../../assets/img/br.png"
 import espanha from "../../assets/img/es.png"
 import states from "../../assets/img/en.png"
+import Brasil from "../../assets/img/brasil.png"
 
 export default function Cabecalho() {
   const handleNavClick = (event, targetId) => {
@@ -49,15 +50,15 @@ export default function Cabecalho() {
           <a href="/cadastro" className="cadastro">
             <button className="start-now-header">{t("Comece agora")}</button>
           </a>
-          <div className="dropdown">
+        </div>
+        <div className="dropdown">
             <button className="btn-lng">{t("Idiomas")}</button>
             <div className="lng-container">
-              <button className="botaoLingua"  onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img><label className="fonteIdioma">Português</label></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("en")}><img className="flag" src={states}></img><label className="fonteIdioma">Inglês</label></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img><label className="fonteIdioma">Espanhol</label></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("en")}><img className="flag" src={states}></img></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img></button>
             </div>
           </div>
-        </div>
       </nav>
       <Harmonia />
     </header>
