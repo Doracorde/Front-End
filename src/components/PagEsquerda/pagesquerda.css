@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.conteudo-esquerda {
+    height: 466px;
+    width: 379px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-principal {
+  font-size: 25px;
+}
+
+.metodo-de-pag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3%;
+  gap: 15px;
+  font-family: urbanist;
+}
+
+.Credito,
+.PIX,
+.Boleto {
+  width: 127px;
+  height: 64px;
+  padding: 5%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: urbanist;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.tres-pontos {
+  width: 3vw;
+  height: 10vh;
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 40px;
+  height: 64px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.formulario {
+  margin-bottom: 35%;
+  align-items: center;
+}
+
+.termo-cvc {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+.email,
+.numero-form {
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+}
+
+.input-pay,
+.input-m {
+    border-radius: 6px;
+}

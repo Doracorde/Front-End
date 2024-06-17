@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/Doracorde_Favicon.ico" />
@@ -10,8 +11,9 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Doracorde</title>
 </head>
+
 <body>
-  <div id="root"></div> 
+  <div id="root"></div>
 
   <div
     class="AssistivePlugin assistaTag DisableSigns AssistiveHPosition_right AssistiveVPosition_bottom AssistiveBtnShape_circle AssistiveBtnSize_medium AssistiveIcon_default AssistiveLoaded AssistiveNoMainToast AssistiveMouse"
@@ -30,18 +32,12 @@
   </script>
   <script>
     (function () {
-      var s = document.createElement("script");
-      var h = document.querySelector("head") || document.body;
-      s.charset = "UTF-8";
-      s.src = "https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js";
-      s.async = true;
-      s.onload = function () {
-        if (window.assistive) {
-          window.assistive.init({});
-        }
-      };
-      h.appendChild(s);
-    })();
+      var s = document.createElement('script'); var h =
+        document.querySelector('head') || document.body; s.charset = "UTF-8"; s.src =
+          'https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js'; s.async = true; s.onload
+            = function () { assistive.init({}); }; h.appendChild(s);
+    })(); 
   </script>
 </body>
+
 </html>

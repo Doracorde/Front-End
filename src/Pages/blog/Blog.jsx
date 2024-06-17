@@ -133,6 +133,8 @@ function Blog() {
         <div className="newsletter">
           <h3>{t('Se inscreva na newsletter Doracorde')}</h3>
           <form className="form">
+            <input className="input-blog" type="email" placeholder="Seu melhor email" />
+            <button className='button-blog' type="submit">Enviar</button>
             <input type="email" placeholder={t('Seu melhor email')} />
             <button type="submit">{t('Enviar')}</button>
           </form>

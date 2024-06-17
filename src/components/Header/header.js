@@ -40,14 +40,14 @@ export default function Cabecalho() {
         </a>
         <Link to="/sobre">{t("Sobre")}</Link>
         <Link to="/blog">{t("Blog")}</Link>
-        <div className="buttons">
+        <div className="buttons-header">
           <button className="login">
             <a href="/login" className="login">
               {t("Entrar")}
             </a>
           </button>
           <a href="/cadastro" className="cadastro">
-            <button className="start-now">{t("Comece agora")}</button>
+            <button className="start-now-header">{t("Comece agora")}</button>
           </a>
           <div className="dropdown">
             <button className="btn-lng">{t("Idiomas")}</button>

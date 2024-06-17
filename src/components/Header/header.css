@@ -60,6 +60,7 @@
   color: #f9c402;
 }
 
+.buttons-header{
 .buttons {
   width: 283px;
   height: 52px;
@@ -69,7 +70,7 @@
   gap: 9px;
 }
 
-.buttons button {
+.buttons-header button {
   background-color: transparent;
   color: #4e342e;
   cursor: pointer;
@@ -80,6 +81,7 @@
   flex-shrink: 0;
 }
 
+.start-now-header{
 .start-now {
   background-color: #704214;
   color: #fff;
@@ -87,7 +89,7 @@
   gap: 15px;
 }
 
-.buttons .start-now {
+.buttons-header .start-now-header {
   border-radius: 5px;
   border: none;
   background-color: #704214;
