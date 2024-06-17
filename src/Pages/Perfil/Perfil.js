@@ -8,7 +8,7 @@ import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
 import Sair from '../../assets/img/sair.png';
 import './Perfil.css';
-
+import { useTranslation } from 'react-i18next';
 
 function Cabecalhodora() {
   return (
@@ -18,38 +18,38 @@ function Cabecalhodora() {
   );
 }
 
-function Sidebar() {
+function Sidebar({ t }) {
   return (
     <div className="sidebar">
       <Link to="/dashdora">
-        <img src={HomeIcon} alt="Aprender" className="sidebar-icon" />
-        Aprender
+        <img src={HomeIcon} alt={t('Aprender')} className="sidebar-icon" />
+        {t('Aprender')}
       </Link>
       <Link to="/praticar">
-        <img src={PracticeIcon} alt="Praticar" className="sidebar-icon" />
-        Tocar músicas
+        <img src={PracticeIcon} alt={t('Praticar')} className="sidebar-icon" />
+        {t('Praticar')}
       </Link>
       <Link to="/Sons">
-        <img src={SoundIcon} alt="Sons" className="sidebar-icon" />
-        Sons
+        <img src={SoundIcon} alt={t('Sons')} className="sidebar-icon" />
+        {t('Sons')}
       </Link>
       <Link to="/perfil">
-        <img src={ProfileIcon} alt="Perfil" className="sidebar-icon" />
-        Perfil
+        <img src={ProfileIcon} alt={t('Perfil')} className="sidebar-icon" />
+        {t('Perfil')}
       </Link>
       <Link to="/">
-        <img src={MoreIcon} alt="Mais" className="sidebar-icon" />
-        Mais
+        <img src={MoreIcon} alt={t('Mais')} className="sidebar-icon" />
+        {t('Mais')}
       </Link>
       <Link to="/">
-        <img src={Sair} alt="Sair" className="sidebar-icon" />
-        Sair
+        <img src={Sair} alt={t('Sair')} className="sidebar-icon" />
+        {t('Sair')}
       </Link>
     </div>
   );
 }
 
-function MainContent() {
+function MainContent({ t }) {
   return (
     <div className="main-content-profile">
       <div className="profile-header">
@@ -59,46 +59,46 @@ function MainContent() {
         <div className="profile-info">
           <h2>Jailson</h2>
           <p>@feliciathegoat</p>
-          <p>Ingressou em fevereiro de 2023</p>
-          <button className="edit-profile">Editar Perfil</button>
+          <p>{t('Ingressou em fevereiro de 2023')}</p>
+          <button className="edit-profile">{t('Editar Perfil')}</button>
         </div>
       </div>
       <div className="stats-and-friends">
         <div className="stats">
-          <h3>Estatísticas</h3>
+          <h3>{t('Estatísticas')}</h3>
           <div className="stats-grid">
             <div className="stat-item">
               <p>0</p>
-              <p>Day Streak</p>
+              <p>{t('Day Streak')}</p>
             </div>
             <div className="stat-item">
               <p>27</p>
-              <p>Total XP</p>
+              <p>{t('Total XP')}</p>
             </div>
             <div className="stat-item">
-              <p>Bronze</p>
-              <p>Current league</p>
+              <p>{t('Bronze')}</p>
+              <p>{t('Current league')}</p>
             </div>
             <div className="stat-item">
               <p>0</p>
-              <p>Top 3 finishes</p>
+              <p>{t('Top 3 finishes')}</p>
             </div>
           </div>
         </div>
         <div className="friends">
-          <h3>Amigos</h3>
-          <p>Aprender é mais divertido e eficaz quando você se conecta com outras pessoas.</p>
-          <button>Encontre amigos</button>
-          <button>Convide amigos</button>
-          <button>Conecte ao Facebook</button>
+          <h3>{t('Amigos')}</h3>
+          <p>{t('Aprender é mais divertido e eficaz quando você se conecta com outras pessoas.')}</p>
+          <button>{t('Encontre amigos')}</button>
+          <button>{t('Convide amigos')}</button>
+          <button>{t('Conecte ao Facebook')}</button>
         </div>
       </div>
       <div className="achievements">
-        <h3>Conquistas</h3>
+        <h3>{t('Conquistas')}</h3>
         <div className="achievement-item">
           <div className="achievement-info">
-            <p>Incêndios</p>
-            <p>Alcance uma sequência de 3 dias</p>
+            <p>{t('Incêndios')}</p>
+            <p>{t('Alcance uma sequência de 3 dias')}</p>
           </div>
           <div className="progress-bar">
             <div className="progress" style={{ width: '33%' }}></div>
@@ -106,8 +106,8 @@ function MainContent() {
         </div>
         <div className="achievement-item">
           <div className="achievement-info">
-            <p>Mago</p>
-            <p>Gane 100 XP</p>
+            <p>{t('Mago')}</p>
+            <p>{t('Gane 100 XP')}</p>
           </div>
           <div className="progress-bar">
             <div className="progress" style={{ width: '27%' }}></div>
@@ -115,8 +115,8 @@ function MainContent() {
         </div>
         <div className="achievement-item">
           <div className="achievement-info">
-            <p>Gane 100 XP</p>
-            <p>Aprenda 50 palavras novas em um único curso</p>
+            <p>{t('Gane 100 XP')}</p>
+            <p>{t('Aprenda 50 palavras novas em um único curso')}</p>
           </div>
           <div className="progress-bar">
             <div className="progress" style={{ width: '17%' }}></div>
@@ -128,12 +128,14 @@ function MainContent() {
 }
 
 function Perfil() {
+  const { t } = useTranslation();
+
   return (
     <div className="dashdora">
-      <Sidebar />
+      <Sidebar t={t} />
       <div className="main-section">
         <Cabecalhodora />
-        <MainContent />
+        <MainContent t={t} />
       </div>
     </div>
   );
