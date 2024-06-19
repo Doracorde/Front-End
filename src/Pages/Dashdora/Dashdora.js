@@ -7,7 +7,7 @@ import PracticeIcon from '../../assets/img/practice.png';
 import SoundIcon from '../../assets/img/sound.png';
 import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
-import ex1 from '../../assets/img/ex1.png'; // Adicione os caminhos das imagens
+import ex1 from '../../assets/img/ex1.png'; 
 import ex2 from '../../assets/img/ex2.png';
 import ex3 from '../../assets/img/ex3.png';
 import ex4 from '../../assets/img/ex4.png';
@@ -64,7 +64,7 @@ function Button({ text, onClick, className, icon }) {
 }
 
 function MainContent() {
-  const navigate = useNavigate(); // useNavigate importado
+  const navigate = useNavigate(); 
 
   const handleGuiaClick = () => {
     alert("Guia clicked");
@@ -75,7 +75,6 @@ function MainContent() {
   };
 
   const handleExClick = (ex) => {
-    // Adicione as rotas ideais aqui
     console.log(`${ex} clicked`);
   };
 
@@ -94,12 +93,29 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Ex1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Ex2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Ex3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Ex4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Ex5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Ex6" onClick={() => handleExClick('ex6')} className='box6' />
+          <Link to="/Exercicio1">
+          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
+          </Link>
+
+          <Link to="/Exercicio2">
+          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
+          </Link>
+
+          <Link to="/Exercicio3">
+          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
+          </Link>
+          
+          <Link to="/Exercicio4">
+          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
+          </Link>
+
+          <Link to="/Exercicio5">
+          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
+          </Link>
+
+          <Link to="/Exercicio6">
+          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
+          </Link>
         </div>
 
         <div className="unit2" onClick={() => handleUnitClick('unit1')}>
@@ -114,12 +130,12 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Ex1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Ex2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Ex3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Ex4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Ex5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Ex6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
+          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
+          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
+          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
+          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
+          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
         </div>
         <div className="unit3" onClick={() => handleUnitClick('unit1')}>
           <div className="unit-header">
@@ -133,14 +149,13 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Ex1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Ex2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Ex3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Ex4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Ex5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Ex6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
+          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
+          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
+          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
+          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
+          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
         </div>
-        {/* Adicione mais unidades conforme necessário */}
       </div>
       
       

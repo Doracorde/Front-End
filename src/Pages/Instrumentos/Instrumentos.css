@@ -1,0 +1,93 @@
+.header-dashdora {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.mus-main-content {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.mus-sidebar {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mus-sidebar h2 {
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.mus-section {
+  margin-bottom: 20px;
+}
+
+.mus-section h5 {
+  margin: 10px 0;
+  color: grey;
+}
+
+.mus-section a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.mus-section a:hover {
+  background-color: #FCFBD0;
+}
+
+.mus-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.mus-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mus-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.mus-card {
+  background-color: #fff;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.mus-card img {
+  width: 100%;
+  height: auto;
+}
+
+.mus-card-content {
+  padding: 20px;
+}

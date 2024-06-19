@@ -16,7 +16,6 @@ import HeaderFaq from '../../components/FaleConosco/headerFaq/headerFaq'
 export default function Blog() {
   return (
     <>
-      
       <HeaderFaq/>
       <div className="noticias">
         <h5>Blog</h5>
@@ -42,13 +41,16 @@ export default function Blog() {
             <span class="read-time">5 min de leitura</span>
             <h2>Deficientes visuais: saiba como ferramentas podem te ajudar a promover a equidade na sua empresa</h2>
             <p>Investir em ferramentas para deficientes visuais é essencial para alcançar a igualdade social. Afinal, elas fazem com que esse grupo consiga explorar todo o seu potencial sem limites. Então, veja quais são elas, entenda como são essenciais no dia a dia e no trabalho.</p>
+            <Link to="noticia1">
             <button>Leia mais</button>
+            </Link>
           </div>
         </section>
       <main>
 
         <section className="article-grid">
           <div className="article">
+
             <div className="article-image">
             <img src={noticia2} alt="Imagem de dois dados"/>
             </div>
