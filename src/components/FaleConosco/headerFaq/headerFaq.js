@@ -36,28 +36,28 @@ export default function Cabecalho() {
           <a href="/cadastro" className="cadastro">
             <button className="start-now-faq">{t("Comece agora")}</button>
           </a>
-          <div className="dropdown">
-        <button className="btn-lng">{t("Idiomas")}</button>
-        <div className="lng-container">
-          <button className="botaoLingua" onClick={() => changeLanguage("pt")}>
-            <img className="flag" src={brasil}></img>
-            <label className="fonteIdioma">Português</label>
-          </button>
-          <button className="botaoLingua" onClick={() => changeLanguage("en")}>
-            <img className="flag" src={states}></img>
-            <label className="fonteIdioma">Inglês</label>
-          </button>
-          <button className="botaoLingua" onClick={() => changeLanguage("es")}>
-            <img className="flag" src={espanha}></img>
-            <label className="fonteIdioma">Espanhol</label>
-          </button>
         </div>
-      </div>
-        </div>
+        <div className="dropdown">
+            <button className="btn-lng">{t("Idiomas")}</button>
+            <div className="lng-container">
+              <button className="botaoLingua" onClick={() => changeLanguage("pt")}>
+                <img className="flag" src={brasil}></img>
+                <label className="fonteIdioma">Português</label>
+              </button>
+              <button className="botaoLingua" onClick={() => changeLanguage("en")}>
+                <img className="flag" src={states}></img>
+                <label className="fonteIdioma">Inglês</label>
+              </button>
+              <button className="botaoLingua" onClick={() => changeLanguage("es")}>
+                <img className="flag" src={espanha}></img>
+                <label className="fonteIdioma">Espanhol</label>
+              </button>
+            </div>
+          </div>
       </nav>
-      
 
-      
+
+
     </header>
   );
 }

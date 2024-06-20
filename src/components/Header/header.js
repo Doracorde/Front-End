@@ -54,9 +54,9 @@ export default function Cabecalho() {
         <div className="dropdown">
             <button className="btn-lng">{t("Idiomas")}</button>
             <div className="lng-container">
-              <button className="botaoLingua"  onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("en")}><img className="flag" src={states}></img></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img><label className="fonteIdioma">Português</label></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("en")}><img className="flag" src={states}></img><label className="fonteIdioma">Inglês</label></button>
+              <button className="botaoLingua"  onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img><label className="fonteIdioma">Espanhol</label></button>
             </div>
           </div>
       </nav>
