@@ -42,7 +42,7 @@ export default function Cabecalho() {
         <Link to="/sobre">{t("Sobre")}</Link>
         <Link to="/blog">{t("Blog")}</Link>
         <div className="buttons-header">
-          <button className="login">
+          <button className="login-header">
             <a href="/login" className="login">
               {t("Entrar")}
             </a>

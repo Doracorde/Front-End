@@ -10,7 +10,7 @@ import espanha from "../../assets/img/es.png"
 import states from "../../assets/img/en.png"
 
 export default function Cabecalho() {
-  const { t, i18n  } = useTranslation();
+  const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -26,23 +26,23 @@ export default function Cabecalho() {
         <Link to="/">{t('Depoimentos')}</Link>
         <Link to="/sobre">{t('Sobre')}</Link>
         <Link to="/blog">{t('Blog')}</Link>
-        <div className="buttons">
+        <div className="buttons-sobre">
           <button className="login">
             <a href="/login" className="login">
               {t('Entrar')}
             </a>
           </button>
           <a href="/cadastro" className="cadastro">
-            <button className="start-now">
+            <button className="start-now-sobre">
               {t('Comece agora')}
             </button>
           </a>
           <div className="dropdown">
             <button className="btn-lng">{t("Idiomas")}</button>
             <div className="lng-container">
-              <button className="botaoLingua"  onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img><label className="fonteIdioma">Português</label></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("en")}><img className="flag" src={states}></img><label className="fonteIdioma">Inglês</label></button>
-              <button className="botaoLingua"  onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img><label className="fonteIdioma">Espanhol</label></button>
+              <button className="botaoLingua" onClick={() => changeLanguage("pt")}><img className="flag" src={brasil}></img><label className="fonteIdioma">Português</label></button>
+              <button className="botaoLingua" onClick={() => changeLanguage("en")}><img className="flag" src={states}></img><label className="fonteIdioma">Inglês</label></button>
+              <button className="botaoLingua" onClick={() => changeLanguage("es")}><img className="flag" src={espanha}></img><label className="fonteIdioma">Espanhol</label></button>
             </div>
           </div>
         </div>
