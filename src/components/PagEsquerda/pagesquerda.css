@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 .conteudo-esquerda {
-    height: 466px;
-    width: 379px;
-    display: flex;
-    flex-direction: column;
+  height: 466px;
+  width: 379px;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-principal {
@@ -62,17 +62,17 @@ form {
 .termo-cvc {
   display: flex;
   justify-content: space-between;
-  gap: 4%;
+  gap: 20px;
 }
 
 .email,
 .numero-form {
   display: flex;
   flex-direction: column;
-    width: 100%;
+  width: 100%;
 }
 
 .input-pay,
 .input-m {
-    border-radius: 6px;
+  border-radius: 6px;
 }

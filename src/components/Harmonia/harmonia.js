@@ -21,9 +21,9 @@ export default function Harmonia() {
           </a>
         </div>
         <div className="image-content">
-          <div className="img-wrapper"><img className="img1" src={imgmulher} alt={t("Descrição da imagem 2")} /></div>
-          <div className="img-wrapper"><img className="img2" src={imgflores} alt={t("Uma mulher negra com deficiencia visual, com borboleta em seu rosto")} /></div>
-          <div className="img-wrapper"><img className="img3" src={imghomem} alt={t("Descrição da imagem 3")} /></div>
+          <div className="img-wrapper"><img className="img1" src={imgmulher} alt={t("Uma mulher negra com deficiencia visual, com borboleta em seu rosto")} /></div>
+          <div className="img-wrapper"><img className="img2" src={imgflores} alt={t("Uma mulher branca com deficiencia visual, com flores em seu rosto")} /></div>
+          <div className="img-wrapper"><img className="img3" src={imghomem} alt={t("Uma homem negro com deficiencia visual, com borboleta em seu rosto")} /></div>
         </div>
       </div>
     </section>

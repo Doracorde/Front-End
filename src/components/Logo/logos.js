@@ -1,6 +1,5 @@
-import stripeLogo from '../../assets/img/stripe.png';
-import awsLogo from '../../assets/img/aws.png';
-import redditLogo from '../../assets/img/reddit.png';
+import Proa from '../../assets/img/proa.png'
+import Senac from '../../assets/img/senac.png'
 
 import './logo.css';
 
@@ -9,9 +8,8 @@ export default function Logos () {
         <section className="logos">
           <div className="img-section">
             <div className="logos-container">
-              <img src={stripeLogo} alt="Logo Stripe" />
-              <img src={awsLogo} alt="Logo AWS" />
-              <img src={redditLogo} alt="Logo Carrinho" />
+              <img src={Proa} alt="Logo Proa" />
+              <img src={Senac} alt="Logo Senac" />
             </div>
           </div>
       </section>

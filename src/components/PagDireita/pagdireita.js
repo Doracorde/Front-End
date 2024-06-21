@@ -20,7 +20,7 @@ export default function PagDireita() {
 
                     <div className='cupons'>
                         <p>Cupons</p>
-                        <p className="add-cupom">Adicionar cupons</p>
+                        <p className="add-cupom">Adicionar</p>
                     </div>
 
                     <div class="q-branco">
