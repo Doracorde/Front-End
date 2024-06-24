@@ -1,0 +1,91 @@
+.confirmar-container {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #FAFAFB;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.confirmar-head {
+    background-color: #F9C402;
+    padding: 20px 0;
+}
+
+.confirmar-head img {
+    width: 150px;
+}
+
+.confirmar-titulo h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.confirmar-texto1 p,
+.confirmar-texto2 p,
+.confirmar-texto3 p {
+    color: #666;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.confirmar-botao {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #F9C402;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.confirmar-texto4 a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.confirmar-direitos {
+    color: #999;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.confirmar-direitos span {
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+    .confirmar-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .confirmar-head img {
+        width: 120px;
+    }
+    
+    .confirmar-titulo h2 {
+        font-size: 20px;
+    }
+    
+    .confirmar-texto1 p,
+    .confirmar-texto2 p,
+    .confirmar-texto3 p,
+    .confirmar-texto4 a {
+        font-size: 14px;
+    }
+    
+    .confirmar-botao {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+    }
+}

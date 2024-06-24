@@ -50,6 +50,7 @@ function Blog() {
       <main>
         <section className="article-grid">
           <div className="article">
+
             <div className="article-image">
               <img src={noticia2} alt={t('Imagem de dois dados')}/>
             </div>

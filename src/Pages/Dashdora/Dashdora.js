@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Dashdora.css';
 import Logo from '../../assets/img/Logo.png';
@@ -7,7 +7,7 @@ import PracticeIcon from '../../assets/img/practice.png';
 import SoundIcon from '../../assets/img/sound.png';
 import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
-import ex1 from '../../assets/img/ex1.png';
+import ex1 from '../../assets/img/ex1.png'; 
 import ex2 from '../../assets/img/ex2.png';
 import ex3 from '../../assets/img/ex3.png';
 import ex4 from '../../assets/img/ex4.png';
@@ -67,8 +67,9 @@ function Button({ text, onClick, className, icon }) {
 }
 
 function MainContent() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); // Adicione esta linha
   const navigate = useNavigate();
+  const [hoveredEx, setHoveredEx] = useState(null);
 
   const handleGuiaClick = () => {
     alert(t("Guia clicked"));
@@ -82,6 +83,14 @@ function MainContent() {
     console.log(`${ex} clicked`);
   };
 
+  const handleMouseEnter = (ex) => {
+    setHoveredEx(ex);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredEx(null);
+  };
+
   return (
     <div className="main-content">
       <div className="left-column">
@@ -91,21 +100,63 @@ function MainContent() {
             <p>{t("Entenda como a música é formada")}</p>
           </div>
           <Button
-            text="Guia"
+            text={t("Guia")}
             onClick={handleGuiaClick}
             className="button-guia2"
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Ex1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Ex2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Ex3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Ex4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Ex5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Ex6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img
+            src={ex1}
+            alt="Exercício 1"
+            onMouseEnter={() => handleMouseEnter('ex1')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex1')}
+            className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex2}
+            alt="Exercício 2"
+            onMouseEnter={() => handleMouseEnter('ex2')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex2')}
+            className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex3}
+            alt="Exercício 3"
+            onMouseEnter={() => handleMouseEnter('ex3')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex3')}
+            className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
         </div>
         <div className="unit3" onClick={() => handleUnitClick('unit1')}>
-        <div className="unit-header">
+          <div className="unit-header">
             <h2>{t("Notas, figuras e pausas na partitura")}</h2>
             <p>{t("Aprenda sobre notas, figuras e pausas")}</p>
           </div>
@@ -116,16 +167,56 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Ex1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Ex2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Ex3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Ex4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Ex5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Ex6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img
+            src={ex1}
+            alt="Exercício 1"
+            onMouseEnter={() => handleMouseEnter('ex1')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex1')}
+            className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex2}
+            alt="Exercício 2"
+            onMouseEnter={() => handleMouseEnter('ex2')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex2')}
+            className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex3}
+            alt="Exercício 3"
+            onMouseEnter={() => handleMouseEnter('ex3')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex3')}
+            className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
         </div>
-        {/* Adicione mais unidades conforme necessário */}
       </div>
-      
       
       <div className="right-column">
         <div className="ads">
@@ -141,7 +232,6 @@ function MainContent() {
             <p>{t("DESATIVAR BLOQUEADOR DE ANÚNCIOS")}</p>
           </div>
         </div>
-
       </div>
     </div>
   );
