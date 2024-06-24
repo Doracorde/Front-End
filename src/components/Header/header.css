@@ -79,6 +79,7 @@
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .start-now-header, 
@@ -119,6 +120,7 @@
   align-items: center;
   width: 120px;
   height: 54px;
+  margin: 0;
 }
 
 .dropdown {
@@ -145,6 +147,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  margin: 0;
 }
 
 .flag {
