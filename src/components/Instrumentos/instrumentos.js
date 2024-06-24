@@ -5,6 +5,8 @@ import somlogo from '../../assets/img/som.png';
 import tecladologo from '../../assets/img/teclado.png';
 import violaologo from '../../assets/img/violao.png';
 import './instrumentos.css';
+import { Link } from 'react-router-dom';
+
 
 export default function Instrumentos () {
     return (
@@ -23,7 +25,9 @@ export default function Instrumentos () {
                 </Card.Text>
               </Card.Body>
               <Card.Footer style={{backgroundColor: "#FEFAEB", border:"none", width:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+                <Link to="/instrumentos">
                 <button className="btn-saiba-mais">Saiba Mais</button>
+                </Link>
               </Card.Footer>
               
             </Card>
@@ -37,7 +41,9 @@ export default function Instrumentos () {
                 </Card.Text>
               </Card.Body>
               <Card.Footer style={{backgroundColor: "#FEFAEB", border:"none", width:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
-              <button className="btn-saiba-mais">Saiba Mais</button>
+              <Link to="/instrumentos">
+                <button className="btn-saiba-mais">Saiba Mais</button>
+                </Link>
               </Card.Footer>
 
             </Card>
@@ -53,7 +59,9 @@ export default function Instrumentos () {
                 </Card.Text>
               </Card.Body>
               <Card.Footer style={{backgroundColor: "#FEFAEB", border:"none", width:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+              <Link to="/instrumentos">
                 <button className="btn-saiba-mais">Saiba Mais</button>
+                </Link>
               </Card.Footer>
 
             </Card>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Dashdora.css';
 import Logo from '../../assets/img/Logo.png';
@@ -64,7 +64,8 @@ function Button({ text, onClick, className, icon }) {
 }
 
 function MainContent() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+  const [hoveredEx, setHoveredEx] = useState(null);
 
   const handleGuiaClick = () => {
     alert("Guia clicked");
@@ -78,13 +79,21 @@ function MainContent() {
     console.log(`${ex} clicked`);
   };
 
+  const handleMouseEnter = (ex) => {
+    setHoveredEx(ex);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredEx(null);
+  };
+
   return (
     <div className="main-content">
       <div className="left-column">
         <div className="unit" onClick={() => handleUnitClick('unit1')}>
           <div className="unit-header">
             <h2>Conceitos básicos da música</h2>
-            <p>Entenda como a música é formada</p>
+            <p>Instrumentos comuns em música popular</p>
           </div>
           <Button
             text="Guia"
@@ -94,31 +103,68 @@ function MainContent() {
         </div>
         <div className="clickable-images">
           <Link to="/Exercicio1">
-          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
+            <img
+              src={ex1}
+              alt="Exercício 1- Sessão vocal e ritmica"
+              onMouseEnter={() => handleMouseEnter('ex1')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex1')}
+              className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+            />
           </Link>
-
           <Link to="/Exercicio2">
-          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
+            <img
+              src={ex2}
+              alt="Exercício 2"
+              onMouseEnter={() => handleMouseEnter('ex2')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex2')}
+              className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+            />
           </Link>
-
           <Link to="/Exercicio3">
-          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
+            <img
+              src={ex3}
+              alt="Exercício 3"
+              onMouseEnter={() => handleMouseEnter('ex3')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex3')}
+              className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+            />
           </Link>
-          
           <Link to="/Exercicio4">
-          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
+            <img
+              src={ex4}
+              alt="Exercício 4"
+              onMouseEnter={() => handleMouseEnter('ex4')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex4')}
+              className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+            />
           </Link>
-
           <Link to="/Exercicio5">
-          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
+            <img
+              src={ex5}
+              alt="Exercício 5"
+              onMouseEnter={() => handleMouseEnter('ex5')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex5')}
+              className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+            />
           </Link>
-
           <Link to="/Exercicio6">
-          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
+            <img
+              src={ex6}
+              alt="Exercício 6"
+              onMouseEnter={() => handleMouseEnter('ex6')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex6')}
+              className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+            />
           </Link>
         </div>
-
-        <div className="unit2" onClick={() => handleUnitClick('unit1')}>
+        
+        <div className="unit2" onClick={() => handleUnitClick('unit2')}>
           <div className="unit-header">
             <h2>Principais conceitos da partitura</h2>
             <p>Aprenda os conceitos da partitura</p>
@@ -130,14 +176,56 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img
+            src={ex1}
+            alt="Exercício 1"
+            onMouseEnter={() => handleMouseEnter('ex1')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex1')}
+            className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex2}
+            alt="Exercício 2"
+            onMouseEnter={() => handleMouseEnter('ex2')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex2')}
+            className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex3}
+            alt="Exercício 3"
+            onMouseEnter={() => handleMouseEnter('ex3')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex3')}
+            className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
         </div>
-        <div className="unit3" onClick={() => handleUnitClick('unit1')}>
+        <div className="unit3" onClick={() => handleUnitClick('unit3')}>
           <div className="unit-header">
             <h2>Notas, figuras e pausas na partitura</h2>
             <p>Aprenda sobre notas, figuras e pausas</p>
@@ -149,15 +237,56 @@ function MainContent() {
           />
         </div>
         <div className="clickable-images">
-          <img src={ex1} alt="Exercício 1" onClick={() => handleExClick('ex1')} className='box1' />
-          <img src={ex2} alt="Exercício 2" onClick={() => handleExClick('ex2')} className='box2' />
-          <img src={ex3} alt="Exercício 3" onClick={() => handleExClick('ex3')} className='box3' />
-          <img src={ex4} alt="Exercício 4" onClick={() => handleExClick('ex4')} className='box4' />
-          <img src={ex5} alt="Exercício 5" onClick={() => handleExClick('ex5')} className='box5' />
-          <img src={ex6} alt="Exercício 6" onClick={() => handleExClick('ex6')} className='box6' />
+          <img
+            src={ex1}
+            alt="Exercício 1"
+            onMouseEnter={() => handleMouseEnter('ex1')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex1')}
+            className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex2}
+            alt="Exercício 2"
+            onMouseEnter={() => handleMouseEnter('ex2')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex2')}
+            className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex3}
+            alt="Exercício 3"
+            onMouseEnter={() => handleMouseEnter('ex3')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex3')}
+            className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
         </div>
       </div>
-      
       
       <div className="right-column">
         <div className="ads">
@@ -173,7 +302,6 @@ function MainContent() {
             <p>DESATIVAR BLOQUEADOR DE ANÚNCIOS</p>
           </div>
         </div>
-
       </div>
     </div>
   );

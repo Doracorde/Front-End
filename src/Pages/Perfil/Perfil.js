@@ -57,9 +57,9 @@ function MainContent() {
           <img src={ProfileIcon} alt="Profile" />
         </div>
         <div className="profile-info">
-          <h2>Jailson</h2>
-          <p>@feliciathegoat</p>
-          <p>Ingressou em fevereiro de 2023</p>
+          <h2>Usuário</h2>
+          <p>@janedoe</p>
+          <p>Ingressou em julho de 2024</p>
           <button className="edit-profile">Editar Perfil</button>
         </div>
       </div>
