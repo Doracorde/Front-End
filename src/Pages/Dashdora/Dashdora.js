@@ -71,9 +71,6 @@ function MainContent() {
   const navigate = useNavigate();
   const [hoveredEx, setHoveredEx] = useState(null);
 
-  const handleGuiaClick = () => {
-    alert(t("Guia clicked"));
-  };
 
   const handleUnitClick = (unit) => {
     navigate(`/${unit}`);
@@ -94,18 +91,18 @@ function MainContent() {
   return (
     <div className="main-content">
       <div className="left-column">
-        <div className="unit" onClick={() => handleUnitClick('unit1')}>
+        <div className="unit" >
           <div className="unit-header">
             <h2>{t("Conceitos básicos da música")}</h2>
             <p>{t("Entenda como a música é formada")}</p>
           </div>
           <Button
             text={t("Guia")}
-            onClick={handleGuiaClick}
             className="button-guia2"
           />
         </div>
         <div className="clickable-images">
+          <Link to='/exercicio1'>
           <img
             src={ex1}
             alt="Exercício 1"
@@ -114,6 +111,9 @@ function MainContent() {
             onClick={() => handleExClick('ex1')}
             className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
           />
+          </Link>
+          
+          <Link>
           <img
             src={ex2}
             alt="Exercício 2"
@@ -122,6 +122,9 @@ function MainContent() {
             onClick={() => handleExClick('ex2')}
             className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
           />
+          </Link>
+
+          <Link>
           <img
             src={ex3}
             alt="Exercício 3"
@@ -130,6 +133,9 @@ function MainContent() {
             onClick={() => handleExClick('ex3')}
             className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
           />
+          </Link>
+
+          <Link>
           <img
             src={ex4}
             alt="Exercício 4"
@@ -138,6 +144,9 @@ function MainContent() {
             onClick={() => handleExClick('ex4')}
             className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
           />
+          </Link>
+
+          <Link>
           <img
             src={ex5}
             alt="Exercício 5"
@@ -146,6 +155,9 @@ function MainContent() {
             onClick={() => handleExClick('ex5')}
             className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
           />
+          </Link>
+
+          <Link>
           <img
             src={ex6}
             alt="Exercício 6"
@@ -154,15 +166,16 @@ function MainContent() {
             onClick={() => handleExClick('ex6')}
             className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
           />
+          </Link>
         </div>
-        <div className="unit3" onClick={() => handleUnitClick('unit1')}>
+        
+        <div className="unit3" >
           <div className="unit-header">
             <h2>{t("Notas, figuras e pausas na partitura")}</h2>
             <p>{t("Aprenda sobre notas, figuras e pausas")}</p>
           </div>
           <Button
             text={t("Guia")}
-            onClick={handleGuiaClick}
             className="button-guia3"
           />
         </div>
@@ -223,12 +236,17 @@ function MainContent() {
           <div className="ad ad-free-trial">
             <p><strong>{t("Experimente a Banda")}</strong></p>
             <p>{t("Sem anúncios, prática personalizada.")}</p>
+            <Link>
             <button>{t("EXPERIMENTE 2 SEMANAS GRÁTIS")}</button>
+            </Link>
           </div>
           <div className="ad ad-blocker">
             <p><strong>{t("Usando bloqueador de anúncios?")}</strong></p>
             <p>{t("Apoie a educação com a Banda Dora e removeremos os anúncios para você!")}</p>
+            <Link to='/'>
             <button>{t("EXPERIMENTE A BANDA GRATUITAMENTE")}</button>
+            </Link>
+
             <p>{t("DESATIVAR BLOQUEADOR DE ANÚNCIOS")}</p>
           </div>
         </div>

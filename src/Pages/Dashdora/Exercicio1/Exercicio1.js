@@ -1,84 +1,86 @@
 import React, { useState } from 'react';
 import Logo from '../../../assets/img/Logo.png';
+import Play from '../../../assets/img/play.png';
 import './Exercicio1.css';
-import Play from '../../../assets/img/play.png'
+import audioFile from '../../../assets/audio/a.mp3'; // Exemplo de arquivo de áudio
+import tipsort from '../../../assets/img/tip-stor.png';
 import { Link, useNavigate } from 'react-router-dom';
 
-function Cabecalhodora() {
-  return (
-    <div className="header-dashdora">
-      <img src={Logo} alt="Doracorde Logo" className="logo" />
-    </div>
-  );
-}
-
-function ProgressBar({ progress }) {
-
-  return (
-    <div className="progress-bar">
-      <div className="progress" style={{ width: `${progress}%` }}></div>
-      <Link to="/" className='back-button'>X</Link>
-    </div>
-  );
-}
-
-const audioFiles = {
-  piano: '/audio/piano.mp3',
-  guitarra: '/audio/guitarra.mp3',
-  baixo: '/audio/baixo.mp3',
-  bateria: '/audio/bateria.mp3',
-  voz: '/audio/voz.mp3'
-};
-
-const correctSound = '/audio/correct.mp3';
-const incorrectSound = '/audio/incorrect.mp3';
-
 function Exercicio1() {
-  const [selectedOption, setSelectedOption] = useState('');
-  const [isCorrect, setIsCorrect] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [attempts, setAttempts] = useState(0);
+  const [correct, setCorrect] = useState(0);
+  const [wrong, setWrong] = useState(0);
+  const [feedback, setFeedback] = useState('');
+  const [currentChord, setCurrentChord] = useState(generateRandomChord());
   
-  const handlePlayAudio = () => {
-    const audio = new Audio(audioFiles['piano']); //áudio  piano
-    audio.play();
+  const audio = new Audio(audioFile);
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
   };
 
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    const isCorrectAnswer = option === 'piano'; // Supondo que a resposta correta é 'piano'
-    setIsCorrect(isCorrectAnswer);
-    const feedbackAudio = new Audio(isCorrectAnswer ? correctSound : incorrectSound);
-    feedbackAudio.play();
+  const handleAnswer = (answer) => {
+    if (answer === currentChord.type) {
+      setCorrect(correct + 1);
+      setFeedback('Correto!');
+      nextChord();
+    } else {
+      setWrong(wrong + 1);
+      setFeedback('Errado, tente novamente.');
+    }
+    setAttempts(attempts + 1);
+  };
+
+  const nextChord = () => {
+    setCurrentChord(generateRandomChord());
   };
 
   return (
     <div className="dash-exercicio1">
-      <div className="main-section-exercicio1">
-        <Cabecalhodora />
-        <ProgressBar />
-        <div className="aprendizado-auditivo-exercicio1">
-          <h6>Qual instrumento está tocando?</h6>
-          <button onClick={handlePlayAudio} aria-label="Reproduzir áudio" className="button-ex1">
-            <img src={Play} alt='botão para tocar a música atual' className='image-play'/>
-          </button>
-          <div className="options-exercicio1">
-            {Object.keys(audioFiles).map((instrument) => (
-              <button
-                key={instrument}
-                onClick={() => handleOptionSelect(instrument)}
-                className={selectedOption === instrument ? 'selected-exercicio1' : ''}
-              >
-                {instrument}
-              </button>
-            ))}
-          </div>
-          {isCorrect !== null && (
-            <p>{isCorrect ? 'Correto!' : 'Incorreto, tente novamente.'}</p>
-          )}
+      <div className="header-dashdora">
+        <Link to='/dashdora'>
+          <img src={Logo} alt="Doracorde Logo" className="logo" />
+        </Link>
+      </div>
+      <div className="exercise-container">
+        <h2>Que acorde está tocando?</h2>
+        <button onClick={handlePlayPause} className="play-button">
+          <img src={Play} alt="Play" />
+          {isPlaying ? 'Pause' : 'Play'}
+        </button>
+        <div className="instructions">
+          <p>Ouça o áudio e selecione a resposta correta.</p>
+        </div>
+        <div className="options">
+          <button className="option-button" onClick={() => handleAnswer('maior')}>maior</button>
+          <button className="option-button" onClick={() => handleAnswer('menor')}>menor</button>
+          <button className="option-button" onClick={() => handleAnswer('diminuto')}>diminutos</button>
+          <button className="option-button" onClick={() => handleAnswer('aumentado')}>aumentados</button>
+        </div>
+        <div className="feedback">
+          <p>{feedback}</p>
         </div>
       </div>
-
+      <div className='observacao'>
+        <img src={tipsort} className='tipsort'/>
+        <p>
+        Um acorde maior tem um som alegre, relaxado e consonante. Um acorde menor tem um som triste, descontraído e consonante. Pode ser útil cantar as notas de baixo para cima.
+        </p>
+      </div>
     </div>
   );
+}
+
+function generateRandomChord() {
+  const chords = ['maior', 'menor', 'diminuto', 'aumentado'];
+  const randomIndex = Math.floor(Math.random() * chords.length);
+  return { type: chords[randomIndex] };
 }
 
 export default Exercicio1;
