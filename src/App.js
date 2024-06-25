@@ -24,6 +24,14 @@ import Cadastro from './Pages/Cadastro/Cadastro';
 import Confirmarcadastro from './Pages/Confirmar-cadastro/Confirmar';
 import Confirmar2 from './Pages/Confirmar2/Confirmar2';
 import Esqueceusenha from './Pages/login/Esqueceu-senha/Esqueceu-senha';
+import Noticia1 from './Pages/blog/Noticia1/noticia1';
+import Noticia2 from './Pages/blog/Noticia2/noticia2';
+import Noticia3 from './Pages/blog/Noticia3/noticia3';
+import Noticia4 from './Pages/blog/Noticia4/noticia4';
+import Noticia5 from './Pages/blog/Noticia5/noticia5';
+import Noticia6 from './Pages/blog/Noticia6/noticia6';
+import Noticia7 from './Pages/blog/Noticia7/noticia7';
+
 
 function App() {
   return (
@@ -48,6 +56,13 @@ function App() {
           <Route path="/confirmar" element={<Confirmarcadastro/>}/>
           <Route path="/confirmar2" element={<Confirmar2/>}/>
           <Route path="/esqueceusenha" element={<Esqueceusenha />}/>
+          <Route path="/noticia1" element={<Noticia1 />}/>
+          <Route path="/noticia2" element={<Noticia2 />}/>
+          <Route path="/noticia3" element={<Noticia3 />}/>
+          <Route path="/noticia4" element={<Noticia4 />}/>
+          <Route path="/noticia5" element={<Noticia5 />}/>
+          <Route path="/noticia6" element={<Noticia6 />}/>
+          <Route path="/noticia7" element={<Noticia7 />}/>
         </Routes>
       </div>
     </Router>
