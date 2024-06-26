@@ -113,7 +113,7 @@ function MainContent() {
           />
           </Link>
           
-          <Link>
+          <Link to='/exercicio2'>
           <img
             src={ex2}
             alt="Exercício 2"
@@ -124,7 +124,7 @@ function MainContent() {
           />
           </Link>
 
-          <Link>
+          <Link to='/exercicio3'>
           <img
             src={ex3}
             alt="Exercício 3"
@@ -135,7 +135,7 @@ function MainContent() {
           />
           </Link>
 
-          <Link>
+          <Link to='/exercicio4'>
           <img
             src={ex4}
             alt="Exercício 4"
@@ -146,7 +146,7 @@ function MainContent() {
           />
           </Link>
 
-          <Link>
+          <Link to='/exercicio5'>
           <img
             src={ex5}
             alt="Exercício 5"
@@ -157,7 +157,7 @@ function MainContent() {
           />
           </Link>
 
-          <Link>
+          <Link to='/exercicio6'>
           <img
             src={ex6}
             alt="Exercício 6"
