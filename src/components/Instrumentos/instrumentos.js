@@ -24,7 +24,7 @@ export default function Instrumentos() {
           <Card.Body>
             <Card.Title>{t('Guitarra')}</Card.Title>
             <Card.Text className='card-text'>
-              {t('Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de guitarra do mercado! Aulas online e presenciais com os melhores professores do Brasil!')}
+              {t(' A guitarra é um instrumento versátil, capaz de expressar uma ampla gama de emoções. Além disso, ao ensinar, também cultivamos habilidades técnicas e conhecimento musical sólido.')}
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -39,7 +39,7 @@ export default function Instrumentos() {
           <Card.Body>
             <Card.Title>{t('Violão')}</Card.Title>
             <Card.Text>
-              {t('Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de violão do mercado! Aulas online e presenciais com os melhores professores do Brasil!')}
+              {t('O violão é composto de um corpo de madeira, que fornece a amplificação da música produzida, e possui seis ou mais cordas, na maioria das vezes de aço, que são tocadas com os dedos ou usando palhetas')}
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -53,7 +53,7 @@ export default function Instrumentos() {
           <Card.Body>
             <Card.Title>{t('Piano')}</Card.Title>
             <Card.Text>
-              {t('Entre agora para o nosso clube de descontos! Faça parte e tenha acesso exclusivo às melhores marcas e modelos de piano do mercado! Aulas online e presenciais com os melhores professores do Brasil!')}
+              {t('O piano é composto por um corpo de madeira que amplifica a música produzida. Ele possui teclas que, quando pressionadas, acionam martelos para percutir as cordas.')}
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
