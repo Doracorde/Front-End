@@ -66,7 +66,7 @@
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  gap: 30px;
+  gap: 25px;
 }
 
 .buttons-sobre .buttons {
@@ -109,14 +109,13 @@
 }
 
 .btn-lng {
-  border-radius: 10px;
-  box-shadow: black;
+  border: none;
   font-weight: bold;
   background-color: transparent;
   color: #704214;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 100px;
   height: 54px;
 }

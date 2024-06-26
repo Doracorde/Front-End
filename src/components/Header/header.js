@@ -48,7 +48,7 @@ export default function Cabecalho() {
             </a>
           </button>
           <a href="/cadastro" className="cadastro">
-            <button className="start-now-header">{t("Comece agora")}</button>
+            <button className="start-now-header">{t("Cadastre-se")}</button>
           </a>
         </div>
         <div className="dropdown">
