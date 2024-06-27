@@ -43,7 +43,7 @@ function ConteudoEsquerda({ handleLogin }) {
                                 onChange={(e) => setEmail(e.target.value)}
                                 aria-label='Endereço de Email'
                                 id='email'
-                            />
+                            alt='email'/>
                         </label>
                     </div>
                     <div className='input-senha'>
@@ -54,7 +54,7 @@ function ConteudoEsquerda({ handleLogin }) {
                                 onChange={(e) => setPassword(e.target.value)}
                                 aria-label='Senha'
                                 id='senha'
-                            />
+                            alt='senha'/>
                         </label>
                     </div>
                     <div className='botao-login'>
