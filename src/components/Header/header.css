@@ -74,12 +74,13 @@
   background-color: transparent;
   color: #4e342e;
   cursor: pointer;
-  width: 168px;
-  height: 54px;
+  width: 70px;
+  height: 52px;
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
   margin: 0;
+  margin-left: 40px;
 }
 
 .start-now-header, 
@@ -97,6 +98,7 @@
   color: #fff;
   height: 54px;
   width: 168px;
+  margin-left: 40px;
 }
 
 .start-now a {
@@ -104,22 +106,18 @@
   color: #fff;
 }
 
-.login-header {
-  border-radius: 5px;
+.login-header  {
+  border-radius: 10px;
   border: none;
 }
 
 .btn-lng {
-  border-radius: 10px;
-  box-shadow: black;
   font-weight: bold;
   background-color: transparent;
   color: #704214;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 54px;
   margin: 0;
 }
 
@@ -171,9 +169,4 @@
 
 .dropdown:hover .lng-container {
   display: block;
-}
-
-.dropdown:hover .btn-lng {
-  background-color: #704214;
-  color: #fff;
 }

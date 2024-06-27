@@ -3,6 +3,8 @@ import './Cadastro.css';
 import imagemLogo2 from '../../assets/img/logo2.png';
 import Logo from '../../assets/img/Logo.png';
 import { Link, useNavigate } from 'react-router-dom';
+import api from '../../utils/axios';
+
 
 
 function ConteudoDireito() {
@@ -19,13 +21,26 @@ function ConteudoEsquerda({ handleCadastro }) {
     const [nome, setNome] = useState('');
     const [sobrenome, setSobrenome] = useState('');
     const [email, setEmail] = useState('');
-    const [companhia, setCompanhia] = useState('');
+    const [senha, setSenha] = useState('');
     const [pais, setPais] = useState('');
     const [telefone, setTelefone] = useState('');
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        handleCadastro({ nome, sobrenome, email, companhia, pais, telefone });
+        handleCadastro({ nome, sobrenome, email, senha, pais, telefone });
+        try {
+            const infos = {
+                email, senha, name:nome
+            }
+            const result = await api.post("usuario/cadastro", infos)
+            console.log(result)
+
+            navigate("/perfil")
+
+        } catch (error) {
+            console.log(error)
+        }
     };
 
     return (
@@ -63,11 +78,11 @@ function ConteudoEsquerda({ handleCadastro }) {
                     </div>
                     <div className='cadastro-input'>
                         <input
-                            type='text'
-                            placeholder='Nome da companhia'
-                            value={companhia}
-                            onChange={(e) => setCompanhia(e.target.value)}
-                            aria-label='Nome da companhia'
+                            type='password'
+                            placeholder='Senha'
+                            value={senha}
+                            onChange={(e) => setSenha(e.target.value)}
+                            aria-label='Senha'
                         />
                     </div>
                     <div className='cadastro-input-grupo'>
@@ -87,9 +102,9 @@ function ConteudoEsquerda({ handleCadastro }) {
                         />
                     </div>
                     <div className='cadastro-botao'>
-                        <Link to='/confirmar'>
+
                         <button type='submit'>INSCREVER-SE</button>
-                        </Link>
+
                     </div>
                 </form>
                 <div className='cadastro-botao'>

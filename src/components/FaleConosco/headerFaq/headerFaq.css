@@ -46,7 +46,7 @@
   color: #f9c402;
 }
 
-.buttons-faq{
+.buttons-faq {
   width: 283px;
   height: 52px;
   display: flex;
@@ -90,8 +90,8 @@
 
 .login-faq{
   border-radius: 5px;
-  border: none;
   background-color: transparent;
+  border: none;
   margin: 0;
 }
 
@@ -106,5 +106,5 @@
   align-items: center;
   width: 120px;
   height: 54px;
-  margin-left: 90px;
+  margin-left: 80px;
 }

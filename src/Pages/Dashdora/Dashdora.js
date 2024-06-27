@@ -113,6 +113,7 @@ function MainContent() {
             />
           </Link>
 
+
           <Link>
             <img
               src={ex2}
@@ -166,6 +167,62 @@ function MainContent() {
               onClick={() => handleExClick('ex6')}
               className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
             />
+
+          
+          <Link to='/exercicio2'>
+          <img
+            src={ex2}
+            alt="Exercício 2"
+            onMouseEnter={() => handleMouseEnter('ex2')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex2')}
+            className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+          />
+          </Link>
+
+          <Link to='/exercicio3'>
+          <img
+            src={ex3}
+            alt="Exercício 3"
+            onMouseEnter={() => handleMouseEnter('ex3')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex3')}
+            className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+          />
+          </Link>
+
+          <Link to='/exercicio4'>
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          </Link>
+
+          <Link to='/exercicio5'>
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          </Link>
+
+          <Link to='/exercicio6'>
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
+
           </Link>
         </div>
 
