@@ -28,48 +28,52 @@ function ConteudoEsquerda({ handleLogin }) {
     return (
         <div className='conteudo-esquerda'>
             <div className='logo-login'>
-            <Link to="/">
-                <img src={Logo} alt='Logo' />
-            </Link>
+                <Link to="/">
+                    <img src={Logo} alt='Logo' />
+                </Link>
             </div>
             <div className='informacoes-login'>
                 <h3>Entre na sua Conta!</h3>
                 <form onSubmit={handleSubmit}>
                     <div className='input-email'>
-                        <input
-                            type='text'
-                            placeholder='Endereço de Email*'
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            aria-label='Endereço de Email'
-                        />
+                        <label className='label-login' for="email">Endereço de Email
+                            <input
+                                type='text'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                aria-label='Endereço de Email'
+                                id='email'
+                            />
+                        </label>
                     </div>
                     <div className='input-senha'>
-                        <input
-                            type='password'
-                            placeholder='Senha*'
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            aria-label='Senha'
-                        />
+                        <label className='label-login' for="senha">Senha
+                            <input
+                                type='password'
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                aria-label='Senha'
+                                id='senha'
+                            />
+                        </label>
                     </div>
                     <div className='botao-login'>
                         <Link to="/perfil">
-                        <button type='submit'>
-                            LOGIN
-                            <img src={setalogin} alt='Seta de Login' />
-                        </button>
+                            <button type='submit'>
+                                LOGIN
+                                <img src={setalogin} alt='Seta de Login' />
+                            </button>
                         </Link>
                     </div>
                 </form>
                 <div className='forgot-password'>
                     <Link to='/esqueceusenha'>
-                    <h5>Esqueceu sua senha?</h5>
+                        <h5>Esqueceu sua senha?</h5>
                     </Link>
                 </div>
                 <div className='criar-nova-conta'>
                     <Link to="/Cadastro">
-                    <button>CRIAR NOVA CONTA</button>
+                        <button>CRIAR NOVA CONTA</button>
                     </Link>
                 </div>
                 <div className='direitos'>

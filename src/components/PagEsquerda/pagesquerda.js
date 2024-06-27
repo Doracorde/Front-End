@@ -6,7 +6,7 @@ import './pagesquerda.css'
 export default function PagEsquerda() {
     return (
         <>
-            <div className="conteudo-esquerda">
+            <div className="conteudo-esquerda-pag">
                 <div className="titulo-principal">
                     <h3>Insira as informações de pagamento</h3>
                 </div>
