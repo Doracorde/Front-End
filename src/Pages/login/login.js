@@ -32,7 +32,7 @@ function ConteudoEsquerda({ handleLogin }) {
                 <img src={Logo} alt='Logo' />
             </Link>
             </div>
-            <div className='informacoes'>
+            <div className='informacoes-login'>
                 <h3>Entre na sua Conta!</h3>
                 <form onSubmit={handleSubmit}>
                     <div className='input-email'>
