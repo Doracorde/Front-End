@@ -36,6 +36,7 @@ import Noticia4 from './Pages/blog/Noticia4/noticia4';
 import Noticia5 from './Pages/blog/Noticia5/noticia5';
 import Noticia6 from './Pages/blog/Noticia6/noticia6';
 import Noticia7 from './Pages/blog/Noticia7/noticia7';
+import { Pagamento } from './Pages/Paymethots/Paymethods';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/instrumentos" element={<Instrumentos />} />
           <Route path="/planos" element={<Planos />} />
+          <Route path="/pagamento" element={<Pagamento />} />
           <Route path="/depoimentos" element={<Depoimentos />} />
           <Route path="/sobre" Component={Sobre} />
           <Route path="/blog" element={<Blog />} />
