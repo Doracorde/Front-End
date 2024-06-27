@@ -7,7 +7,7 @@ import tipsort from '../../../assets/img/tip-stor.png';
 import acorde from '../../../assets/img/acorde.png';
 import { Link, useNavigate } from 'react-router-dom';
 
-function Exercicio1() {
+function Exercicio1Component() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [attempts, setAttempts] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -90,4 +90,4 @@ function generateRandomChord() {
   return { type: chords[randomIndex] };
 }
 
-export default Exercicio1;
+export default Exercicio1Component;
