@@ -7,7 +7,7 @@ import Trilha from "../../assets/img/trilha.png"
 import { Link } from "react-router-dom";
 
 
-export function Pagamento() {
+export default function Pagamento() {
     return (
         <>
             <div className="tela-pagamento">
