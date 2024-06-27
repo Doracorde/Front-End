@@ -1,7 +1,7 @@
 .login-container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -18,7 +18,6 @@
 .logo-login {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 20px;
 }
 
 .logo-login img {
@@ -37,9 +36,18 @@
     margin-bottom: 20px;
 }
 
+.label-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-senha input {
+    margin-top: 15px;
+}
+
 .input-email, .input-senha {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .input-email input, .input-senha input {
@@ -57,7 +65,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .botao-login button  {
@@ -80,7 +88,6 @@
 
 .forgot-password {
     align-self: flex-start;
-    margin-bottom: 20px;
 }
 
 .forgot-password a {
@@ -94,7 +101,6 @@
 
 .criar-nova-conta {
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .criar-nova-conta button {
