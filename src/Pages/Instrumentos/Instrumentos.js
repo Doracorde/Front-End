@@ -28,34 +28,33 @@ export default function FerramentasMusica() {
           <h2>Ferramentas</h2>
           <div className="mus-section">
             <h5 className='h5-sidebar'>Instrumentos</h5>
-            <Link to="/instrumentos/piano">Piano</Link>
-            <Link to="/instrumentos/guitarra">Guitarra</Link>
-            <Link to="/instrumentos/baixo">Baixo</Link>
-            <Link to="/instrumentos/bateria">Bateria</Link>
+            <Link to="/piano">Piano</Link>
+            <Link to="/guitarra">Guitarra</Link>
+            <Link to="/baixo">Baixo</Link>
+            <Link to="/bateria">Bateria</Link>
           </div>
 
           <div className="mus-section">
             <h5 className='h5-sidebar'>Equipamento</h5>
-            <Link to="/equipamento/gerador-de-acordes">Gerador de acordes</Link>
-            <Link to="/equipamento/caixa-de-ritmos">Caixa de ritmos</Link>
-            <Link to="/equipamento/metronomo">Metrônomo</Link>
-            <Link to="/equipamento/afinador">Afinador</Link>
+            <Link to="/gerador-de-acordes">Gerador de acordes</Link>
+            <Link to="/caixa-de-ritmos">Caixa de ritmos</Link>
+            <Link to="/metronomo">Metrônomo</Link>
+            <Link to="/afinador">Afinador</Link>
           </div>
 
           <div className="mus-section">
             <h5 className='h5-sidebar'>Identificadores</h5>
-            <Link to="/identificadores/notas">Notas</Link>
-            <Link to="/identificadores/intervalos">Intervalos</Link>
-            <Link to="/identificadores/acordes">Acordes</Link>
-            <Link to="/identificadores/escalas">Escalas</Link>
+            <Link to="/identificador-de-notas">Notas</Link>
+            <Link to="/identificador-de-intervalos">Intervalos</Link>
+            <Link to="/identificador-de-acordes">Acordes</Link>
+            <Link to="/identificador-de-escalas">Escalas</Link>
           </div>
 
           <div className="mus-section">
             <h5 className='h5-sidebar'>Mais</h5>
-            <Link to="/mais/circulo-de-quintas">Círculo de quintas</Link>
-            <Link to="/mais/termos-musicais">Termos musicais</Link>
-            <Link to="/mais/intervalos-em-cancoes">Intervalos em canções</Link>
-            <Link to="/mais/folhas-de-pauta">Folhas de pauta</Link>
+            <Link to="/termos-musicais">Termos musicais</Link>
+            <Link to="/intervalos-em-cancoes">Intervalos em canções</Link>
+            <Link to="/folhas-de-pauta">Folhas de pauta</Link>
             <Link to="/">Voltar para página inicial </Link>
 
           </div>
@@ -67,69 +66,97 @@ export default function FerramentasMusica() {
           <div className="mus-cards-grid">
             <div className="mus-card">
               <h2 >Piano</h2>
-              <p>Toca o piano virtual e visualiza notas, acordes e escalas. <Link to="/instrumentos/piano">Piano</Link>.</p>
+              <Link to="/piano">
+              <p>Toque o piano virtual e visualiza notas, acordes e escalas.</p>
               <img src={piano} alt="Piano" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Guitarra</h2>
-              <p>Toca a guitarra virtual e visualiza notas, acordes e escalas. <Link to="/instrumentos/guitarra">Guitarra</Link>.</p>
+              <Link to="/guitarra">
+              <p>Toca a guitarra virtual e visualiza notas, acordes e escalas.</p>
               <img src={guitarra} alt="Guitarra" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Baixo</h2>
-              <p>Toca o baixo virtual e visualiza notas, acordes e escalas. <Link to="/instrumentos/baixo">Baixo</Link>.</p>
+              <Link to="/baixo">
+              <p>Toca o baixo virtual e visualiza notas, acordes e escalas</p>
               <img src={baixocard} alt="Baixo" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Bateria</h2>
-              <p>Toca a bateria virtual e pratica as tuas batidas e ritmos. <Link to="/instrumentos/bateria">Bateria</Link>.</p>
+              <Link to="/bateria">
+              <p>Toca a bateria virtual e pratica as tuas batidas e ritmos.</p>
               <img src={bateria} alt="Bateria" />
+              </Link>
+
             </div>
             <div className="mus-card">
               <h2>Gerador de acordes</h2>
-              <p>Crie acordes facilmente com esta ferramenta. <Link to="/equipamento/gerador-de-acordes">Gerador de acordes</Link>.</p>
+              <Link to="/gerador-de-acordes">
+              <p>Crie acordes facilmente com esta ferramenta.</p>
               <img src={geradordeacordes} alt="Gerador de acordes" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Caixa de ritmos</h2>
-              <p>Crie e pratique ritmos com esta ferramenta. <Link to="/equipamento/caixa-de-ritmos">Caixa de ritmos</Link>.</p>
+              <Link to="/caixa-de-ritmos">
+              <p>Crie e pratique ritmos com esta ferramenta. </p>
               <img src={caixaderitmos} alt="Caixa de ritmos" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Metrônomo</h2>
-              <p>Melhore sua precisão rítmica com este metrônomo. <Link to="/equipamento/metronomo">Metrônomo</Link>.</p>
+              <Link to="/metronomo">
+              <p>Melhore sua precisão rítmica com este metrônomo.</p>
               <img src={metronomo} alt="Metrônomo" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Afinador</h2>
-              <p>Afine seu instrumento musical com afinador online. <Link to="/equipamento/afinador">Afinador</Link>.</p>
+              <Link to="/afinador">
+              <p>Afine seu instrumento musical com afinador online. </p>
               <img src={afinador} alt="Afinador" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Identificador de notas</h2>
-              <p>Descubra as notas no piano, na guitarra e no baixo. <Link to="/identificadores/notas">Identificador de notas</Link>.</p>
+              <Link to="/identificador-de-notas">
+              <p>Descubra as notas no piano, na guitarra e no baixo. .</p>
               <img src={identificadordenotas} alt="Identificador de notas" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Identificador de intervalos</h2>
-              <p>Encontre intervalos no piano, na guitarra e no baixo. <Link to="/identificadores/intervalos">Identificador de intervalos</Link>.</p>
+              <Link to="/identificador-de-intervalos">
+              <p>Encontre intervalos no piano, na guitarra e no baixo. 
+                Identificador de intervalos.</p>
               <img src={identificadordeintervalos} alt="Identificador de intervalos" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Identificador de acordes</h2>
-              <p>Descubra os acordes no piano, na guitarra e no baixo. <Link to="/identificadores/acordes">Identificador de acordes</Link>.</p>
+              <Link to="/identificador-de-acordes">
+              <p>Descubra os acordes no piano, na guitarra e no baixo.</p>
               <img src={identificadordeacordes} alt="Identificador de acordes" />
+              </Link>
             </div>
             <div className="mus-card">
               <h2>Identificador de escalas</h2>
-              <p>Descubra as escalas no piano, na guitarra e no baixo. <Link to="/identificadores/escalas">Identificador de escalas</Link>.</p>
+              <Link to="/identificador-de-escalas">
+              <p>Descubra as escalas no piano, na guitarra e no baixo.</p>
               <img src={identificadordeescalas} alt="Identificador de escalas" />
+              </Link>
             </div>
 
             <div className="mus-card">
               <h2>Termos musicais</h2>
-              <p>Aprenda sobre termos musicais utilizados na teoria musical. <Link to="/mais/termos-musicais">Termos musicais</Link>.</p>
+              <Link to="/termos-musicais">Termos musicais
+              <p>Aprenda sobre termos musicais utilizados na teoria musical.</p>
               <img src={termosmusicais} alt="Termos musicais" />
+              </Link>
             </div>
 
           </div>

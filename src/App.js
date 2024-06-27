@@ -9,6 +9,19 @@ import './i18n';
 // import Aprenda from './components/aprenda';
 import Home from './Pages/Home/Home';
 import Instrumentos from './Pages/Instrumentos/Instrumentos';
+import Afinador from './Pages/Afinador/Afinador';
+import Bateria from './Pages/Bateria/Bateria';
+import Piano from './Pages/Piano/Piano';
+import Guitarra from './Pages/Guitarra/Guitarra';
+import Baixo from './Pages/Baixo/Baixo';
+import Caixaderitmos from './Pages/Caixaderitmos/Caixaderitmos';
+import Geradordeacordes from './Pages/Geradordeacordes/Geradordeacordes';
+import Identificadordeescalas from './Pages/Identificadordeescalas/Identificadordeescalas';
+import Identificadordeacordes from './Pages/Identificadordeacordes/Identificadordeacordes';
+import Identificadordeintervalos from './Pages/Identificadordeintervalos/Identificadordeintervalos';
+import Identificadordenotas from './Pages/Identificadordenotas/Identificadordenotas';
+import Metronomo from './Pages/Metronomo/Metronomo';
+import Termosmusicais from './Pages/Termosmusicais/Termosmusicais';
 import Planos from './Pages/Planos/Planos';
 import Depoimentos from './Pages/Depoimentos/Depoimentos';
 import Sobre from './Pages/Sobre/Sobre';
@@ -61,6 +74,19 @@ function App() {
           <Route path="/exercicio5" element={<Exercicio5/>}/>
           <Route path="/exercicio6" element={<Exercicio6/>}/>
           <Route path="/instrumentos" element={<Instrumentos/>}/>
+          <Route path="/piano" element={<Piano/>}/>
+          <Route path="/guitarra" element={<Guitarra/>}/>
+          <Route path="/afinador" element={<Afinador/>}/>
+          <Route path="/baixo" element={<Baixo/>}/>
+          <Route path="/bateria" element={<Bateria/>}/>
+          <Route path="/caixa-de-ritmos" element={<Caixaderitmos/>}/>
+          <Route path="/gerador-de-acordes" element={<Geradordeacordes/>}/>
+          <Route path="/identificador-de-notas" element={<Identificadordenotas/>}/>
+          <Route path="/identificador-de-escalas" element={<Identificadordeescalas/>}/>
+          <Route path="/identificador-de-intervalos" element={<Identificadordeintervalos/>}/>
+          <Route path="/identificador-de-acordes" element={<Identificadordeacordes/>}/>
+          <Route path="/termosmusicais" element={<Termosmusicais/>}/>
+          <Route path="/metronomo" element={<Metronomo/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/cadastro" element={<Cadastro/>}/>
           <Route path="/confirmar" element={<Confirmarcadastro/>}/>
