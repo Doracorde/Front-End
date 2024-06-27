@@ -16,9 +16,9 @@ import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
 import FaleConosco from './Pages/FaleConosco/Faq';
 import Sons from './Pages/Sons/Sons';
-import Perfil from './Pages/Perfil/Perfil'
-import Praticar from './Pages/Praticar/Praticar'
-import Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1';
+import Perfil from './Pages/Perfil/Perfil';
+import Praticar from './Pages/Praticar/Praticar';
+import Trilha1Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1';
 import Trilha2Exercicio1 from './Pages/Dashdora/Trilha2-exercicio1/Acorde-exercicio.jsx';
 import Trilha2Exercicio2 from './Pages/Dashdora/Trilha2-exercicio2/Acorde-exercicio2.jsx'; 
 import Trilha2Exercicio3 from './Pages/Dashdora/Trilha2-exercicio3/Acorde-exercicio3.jsx'; 
@@ -55,7 +55,7 @@ function App() {
           <Route path="/sons" element={<Sons />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/praticar" element={<Praticar />} />
-          <Route path="/exercicio1" element={<Exercicio1/>}/>
+          <Route path="/exercicio1" element={<Trilha1Exercicio1/>}/>
           <Route path="/exercicios/trilha-2/1" element={<Trilha2Exercicio1/>}/>
           <Route path="/exercicios/trilha-2/2" element={<Trilha2Exercicio2/>}/>
           <Route path="/exercicios/trilha-2/3" element={<Trilha2Exercicio3/>}/>
