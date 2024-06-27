@@ -18,18 +18,18 @@ import FaleConosco from './Pages/FaleConosco/Faq';
 import Sons from './Pages/Sons/Sons';
 
 import Perfil from './Pages/Perfil/Perfil';
-import Praticar from './Pages/Praticar/Praticar';
+
 import Trilha1Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1';
 
-import Perfil from './Pages/Perfil/Perfil'
-import Praticar from './Pages/Praticar/Praticar'
 
-import Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1';
+import Praticar from './Pages/Praticar/Praticar';
+
+
 
 import Trilha2Exercicio1 from './Pages/Dashdora/Trilha2-exercicio1/Acorde-exercicio.jsx';
 import Trilha2Exercicio2 from './Pages/Dashdora/Trilha2-exercicio2/Acorde-exercicio2.jsx'; 
 import Trilha2Exercicio3 from './Pages/Dashdora/Trilha2-exercicio3/Acorde-exercicio3.jsx'; 
-import Pagamento from './Pages/Paymethots/Paymethods.js'
+import Pagamento from './Pages/Paymethots/Paymethods'
 
 import Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1'
 import Exercicio2 from './Pages/Dashdora/Exercicio2/Exercicio2'
@@ -54,7 +54,7 @@ import Noticia7 from './Pages/blog/Noticia7/noticia7';
 import Metronomo from './Pages/Metronomo/Metronomo';
 
 
-import { Pagamento } from './Pages/Paymethots/Paymethods';
+
 
 
 
@@ -66,7 +66,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/instrumentos" element={<Instrumentos />} />
           <Route path="/planos" element={<Planos />} />
-          <Route path="/pagamento" element={<Pagamento />} />
+         
           <Route path="/depoimentos" element={<Depoimentos />} />
           <Route path="/sobre" Component={Sobre} />
           <Route path="/blog" element={<Blog />} />

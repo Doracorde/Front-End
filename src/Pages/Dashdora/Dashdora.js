@@ -168,7 +168,7 @@ function MainContent() {
               className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
             />
 
-          
+          </Link>
           <Link to='/exercicio2'>
           <img
             src={ex2}
