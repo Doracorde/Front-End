@@ -23,6 +23,11 @@ import Praticar from './Pages/Praticar/Praticar'
 import { Pagamento } from './Pages/Paymethots/Paymethods';
 
 
+import Bateria, { bateria } from './Pages/Bateria/Bateria'
+import {PercussaoCorporal} from './Pages/PercussaoCorporal/Percussaoc';
+
+
+
 
 function App() {
 
@@ -45,9 +50,20 @@ function App() {
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/praticar" element={<Praticar />} />
 
+          <Route path="/bateria" Component={Bateria} />
+
+          <Route path="/PercussaoCorporal" Component={PercussaoCorporal} />
+
+
+
         </Routes>
+
+        
+
       </div>
     </Router>
+
+      
   );
 }
 
