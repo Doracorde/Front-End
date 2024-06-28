@@ -166,3 +166,28 @@ hr {
   margin: 0;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .cardPlano {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .cardCabecalho {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .subtituloContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .planoRodape {
+    max-width: 100%;
+    width: 90%;
+    padding-left: 0;
+    text-align: center;
+  }
+}

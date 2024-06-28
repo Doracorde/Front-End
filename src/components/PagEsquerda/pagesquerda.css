@@ -76,3 +76,28 @@ form {
 .input-m {
   border-radius: 6px;
 }
+
+@media (max-width: 768px) {
+  .conteudo-esquerda-pag {
+    max-width: 100%;
+  }
+
+  .metodo-de-pag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .Credito,
+  .PIX,
+  .Boleto {
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .tres-pontos {
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
