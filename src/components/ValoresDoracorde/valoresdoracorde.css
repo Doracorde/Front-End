@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 1040px;
   align-items: center;
-  gap:97px;
+  gap: 97px;
   margin-top: 226px;
 }
 
@@ -22,7 +22,7 @@
   margin: 0 auto;
 }
 
-.icon-fa{
+.icon-fa {
   width: 80px;
   height: 80px;
   display: block;
@@ -30,8 +30,7 @@
   margin-bottom: 20px;
 }
 
-.icon-do{
- 
+.icon-do {
   display: block;
   margin: 0 auto;
   margin-bottom: 8px;
@@ -89,4 +88,38 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .valores-container {
+    gap: 30px; /* Reduz o espaçamento entre os elementos */
+    margin-top: 80px; /* Ajusta o espaçamento superior */
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .valores-doracorde h2 {
+    font-size: 32px;
+  }
+
+  .descricaoValores {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .titleDescricao {
+    font-size: 24px;
+  }
+
+  .missao-descricao {
+    font-size: 0.9rem;
+  }
+
+  .devs {
+    font-size: 20px;
+  }
 }

@@ -1,47 +1,80 @@
 .tablature-controls {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 20px;
-  }
-  
-  .tablature-controls button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .tablature-controls button:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .tablature-container {
-    display: flex;
-  }
-  
-  .tablature-content {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    overflow: auto;
-  }
-  
-  .tablature-content pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.tablature-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tablature-controls button:hover {
+  background-color: #f0f0f0;
+}
+
+.tablature-container {
+  display: flex;
+}
+
+.tablature-content {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.tablature-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tablature-header {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tablature-controls {
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
-.tablature-header{
-    text-align: center;
+  .tablature-controls button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .tablature-controls button:last-child {
+    margin-right: 0;
+  }
+
+  .tablature-container {
+    flex-direction: column;
+  }
+
+  .tablature-content {
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
-  

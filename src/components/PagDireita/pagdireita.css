@@ -15,8 +15,8 @@
 }
 
 .pay-container {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .tipo-plano,
@@ -112,4 +112,32 @@
   cursor: pointer;
   background-color: #704214;
   margin: 5%;
+}
+
+@media (max-width: 768px) {
+  .pay-box {
+    padding: 20px;
+  }
+
+  .plano {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-doracorde {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cupons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ordem,
+  .total {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
