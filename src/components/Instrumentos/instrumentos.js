@@ -7,7 +7,7 @@ import tecladologo from '../../assets/img/teclado.png';
 import violaologo from '../../assets/img/violao.png';
 import './instrumentos.css';
 import { useTranslation } from 'react-i18next';
-import '../../i18n';
+import '../../i18n'
 import { Link } from 'react-router-dom';
 
 

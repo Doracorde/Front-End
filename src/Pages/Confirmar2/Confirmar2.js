@@ -1,9 +1,13 @@
+import React from 'react';
 import Logo from '../../assets/img/Logo.png';
 import imagemlogo2 from '../../assets/img/logo2.png';
 import './Confirmar2.css';
 import { Link } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
+import '../../i18n'
 function Conteudocentral() {
+    const { t } = useTranslation();
+
     return (
         <>
             <div className='logo-confirmar2'>
@@ -11,27 +15,27 @@ function Conteudocentral() {
             </div>
 
             <div className='confirmar2-informations'>
-                <h3>Confirme seu endereço de e-mail</h3>
-                <h5>Verifique seu e-mail para saber a próxima etapa de inscrição.</h5>
+                <h3>{t('Confirme seu endereço de e-mail')}</h3>
+                <h5>{t('Verifique seu e-mail para saber a próxima etapa de inscrição.')}</h5>
                 <div className='confirmar2-botaoinscreverse'>
                     <Link to='/faq'>
-                    <button>CONTATO COM O SUPORTE</button>
+                        <button>{t('CONTATO COM O SUPORTE')}</button>
                     </Link>
                 </div>
 
                 <div className='confirmar2-botaovolteaologin'>
                     <Link to='/perfil'>
-                        <button>CONTINUAR</button>
+                        <button>{t('CONTINUAR')}</button>
                     </Link>
                 </div>
 
                 <div className='confirmar2-botaovoltar'>
                     <Link to='/login'>
-                        <button>VOLTE AO LOGIN</button>
+                        <button>{t('VOLTE AO LOGIN')}</button>
                     </Link>
                 </div>
                 <div className='confirmar2-direitos'>
-                    Termos e Condições • Política de Privacidade
+                    {t('Termos e Condições • Política de Privacidade')}
                 </div>
             </div>
         </>

@@ -15,6 +15,7 @@ import MagoIcon from '../../assets/img/mago.png';
 import GanheXpIcon from '../../assets/img/paper.png';
 
 function Cabecalhodora() {
+  const { t } = useTranslation();
   return (
     <div className="header-dashdora">
       <img src={Logo} alt="Doracorde Logo" className="logo" />

@@ -1,40 +1,36 @@
-import './pagConfirmacao.css'
-import '../../src/imagem/Check.png'
-import Check from "../../src/imagem/Check.png"
+import './pagConfirmacao.css';
+import Check from "../../src/imagem/Check.png";
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
-export default function Confirmacao (){
+export default function Confirmacao() {
+    const { t } = useTranslation();
+
     return (
-    <>
         <div className="all">
-        
             <div className="amarelo-confirmacao">
                 <div className="branco-confirmacao">
                     <div>
-                        <img src='../../src/imagem/Check.png' alt='' />
-                        <CCheck/>
-                        <h1>Obrigado!</h1>
+                        <img src={Check} alt={t('símbolo de confirmação')} />
+                        <CCheck />
+                        <h1>{t('thanks')}</h1>
                     </div>
 
                     <div>
-                        <p>Volte ao inicio para atualizar sua Conta</p>
-                        <button className='bt-inicio'>Inicio</button>
+                        <p>{t('goBack')}</p>
+                        <button className='bt-inicio'>{t('start')}</button>
                     </div>
-                    
                 </div>
-
             </div>
-
         </div>
-
-    </>
-
     );
 }
 
-export function CCheck (){
-    return(
+export function CCheck() {
+    const { t } = useTranslation();
+    return (
         <div>
-            <img className='check' src={Check} alt='simbolo de confirmação'/>
+            <img className='check' src={Check} alt={t('símbolo de confirmação')} />
         </div>
     );
 }
