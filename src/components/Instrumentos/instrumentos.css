@@ -103,7 +103,7 @@
 
 @media (max-width: 920px) {
   .instrumentos {
-    height: 1880px;
+    height: 2000px;
   }
 
   .instrumentos > h1{
@@ -124,6 +124,13 @@
 
   .card-footer-custom{
     height: 120px;
+  }
+  .card-footer-custom > a {
+    margin: 0;
+  }
+
+  .btn-saiba-mais {
+    margin: 0;
   }
 
 }

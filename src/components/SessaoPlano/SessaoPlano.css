@@ -79,7 +79,7 @@ h1 {
   }
   .columns {
     float: 0;
-    width: 1232px;
+    width: 400px;
     padding: 8px;
     display: flex;
     flex-direction: column;
