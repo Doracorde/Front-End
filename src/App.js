@@ -53,6 +53,11 @@ import Noticia7 from './Pages/blog/Noticia7/noticia7';
 
 import Metronomo from './Pages/Metronomo/Metronomo';
 
+import Bateria, { bateria } from './Pages/Bateria/Bateria'
+import {PercussaoCorporal} from './Pages/PercussaoCorporal/Percussaoc';
+
+
+
 
 
 
@@ -75,6 +80,13 @@ function App() {
           <Route path="/sons" element={<Sons />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/praticar" element={<Praticar />} />
+
+
+          <Route path="/bateria" Component={Bateria} />
+
+          <Route path="/PercussaoCorporal" Component={PercussaoCorporal} />
+
+
 
           <Route path="/exercicio1" element={<Trilha1Exercicio1/>}/>
 
@@ -105,9 +117,15 @@ function App() {
           <Route path="/noticia6" element={<Noticia6 />}/>
           <Route path="/noticia7" element={<Noticia7 />}/>
           <Route path="/equipamento/metronomo" element={<Metronomo/>}/>
+
         </Routes>
+
+        
+
       </div>
     </Router>
+
+      
   );
 }
 

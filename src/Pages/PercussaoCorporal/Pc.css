@@ -1,0 +1,58 @@
+.conteudo-pc{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 5%;
+}
+
+.container-ferramentas-pc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 5px;
+    width: 50%;
+    height: 100%;
+}
+
+.main-pc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-pc{
+    box-shadow: 0 2px 5px;
+    height: 100%;
+    width: 80%;
+    padding: 5%;
+}
+
+.titulo-pag-pc{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10%;
+}
+
+.texto-pag-pc{
+    font-size: 20px;
+}
+
+
+.ritmografia-img{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.box-cinza{
+    background-color: rgb(204, 200, 200 ,0.8) ;
+    border: 0 1px 1px;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
