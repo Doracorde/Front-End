@@ -56,34 +56,7 @@
   color: #0e0d0d !important;
 }
 
-.card-group-custom {
-  width: 1071px;
-  height: 650px;
-  display: flex;
-  flex-direction: row;
-  gap: 29px;
-}
 
-.card-custom {
-  width: 271px;
-  height: 100%;
-  background-color: #FEFAEB;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 21px;
-  margin: 0;
-}
-
-.card-footer-custom {
-  background-color: #FEFAEB;
-  border: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .btn-saiba-mais {
   width: 280px;
