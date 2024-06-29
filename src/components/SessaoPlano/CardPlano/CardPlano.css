@@ -167,4 +167,12 @@ hr {
   width: 100%;
 }
 
+@media (max-width: 920px){
+  .cardPlano{
+    width: 90%;
+  }
 
+  .saibaMais{
+    width: 90%;
+  } 
+}

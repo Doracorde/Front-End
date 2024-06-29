@@ -86,4 +86,11 @@ span.swiper-pagination-bullet {
   background-color: #704214;
 }
 
-
+@media (max-width: 920px){
+  .card-comentario{
+    width: 300px;
+  }
+  .comentario-texto{
+    width: 300px;
+  }
+}
