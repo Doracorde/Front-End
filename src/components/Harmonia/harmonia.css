@@ -101,3 +101,11 @@
     margin-top: 20px;
     font-weight: 600;
   }
+
+
+  @media (max-width: 920px) {
+    .image-content {
+      display: none;
+    }
+  }
+  

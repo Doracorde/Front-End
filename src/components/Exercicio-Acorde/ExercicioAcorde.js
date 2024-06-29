@@ -31,11 +31,11 @@ export default function ExercicioAcorde(props) {
                         </h3>
                     </div>
                     <div className="play-container">
-                        <button className="btn-play" onClick={playAudio}>
-
+                        <button  className="btn-play" onClick={playAudio}>
+                            Play e Pause 
                         </button>
                     </div>
-                    <div className="opcoes-container">
+                    <div  className="opcoes-container">
                         {props.nomesOpcoes.map((nomeOpcao, index) => (
                             <button
                                 key={index}
