@@ -22,7 +22,7 @@
   margin-bottom: 20px;
 }
 
-.card{
+.card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -48,9 +48,9 @@
   margin-bottom: 10px;
 }
 
-.card-text{
+.card-text {
   padding-top: 1rem;
-  font-size: 1.3rem !important; 
+  font-size: 1.3rem !important;
   font-weight: bold;
   color: #0e0d0d !important;
 }
@@ -69,4 +69,40 @@
   text-align: center;
   font-family: Urbanist;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .btn-saiba-mais {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
 }

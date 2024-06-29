@@ -1,59 +1,85 @@
-.Depoimento{
-    width: 100%;
-    height: 836px;
-    background: #F3F3F3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top:98px ;
+.Depoimento {
+  width: 100%;
+  height: 836px;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 98px;
 }
 
-.subtitulo{
-    width: 99px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.subtitulo {
+  width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.subtitulo > h4{
-    color: var(--grey-600, #3E3D3B);
-    text-align: center;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.subtitulo > h4 {
+  color: var(--grey-600, #3e3d3b);
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.titulo{
-    display: flex;
-    width: 669px;
-    height: 48px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    align-items: center;
+.titulo {
+  display: flex;
+  width: 669px;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
 }
 
-.titulo> h2{
-    color: var(--grey-700, #1F1F1E);
-    text-align: center;
-    font-family: Urbanist;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.titulo > h2 {
+  color: var(--grey-700, #1f1f1e);
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.carrosel-depoimento{
-    width: 1440px;
-    height: 486px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.carrosel-depoimento {
+  width: 1440px;
+  height: 486px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+@media (max-width: 1440px) {
+  .Depoimento {
+    padding-top: 50px; /* Reduz o espaço superior */
+  }
 
+  .titulo {
+    margin-top: 20px; /* Reduz o espaço superior */
+    margin-bottom: 20px; /* Reduz o espaço inferior */
+  }
+}
 
+@media (max-width: 768px) {
+  .Depoimento {
+    padding-top: 30px; /* Reduz o espaço superior */
+  }
 
+  .subtitulo > h4 {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+  }
+
+  .titulo > h2 {
+    font-size: 32px; /* Reduz o tamanho da fonte */
+  }
+
+  .carrosel-depoimento {
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    margin-bottom: 10px; /* Reduz o espaço inferior */
+  }
+}

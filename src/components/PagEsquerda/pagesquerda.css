@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-.conteudo-esquerda {
+.conteudo-esquerda-pag {
   height: 466px;
   width: 379px;
   display: flex;
@@ -50,7 +50,7 @@
 form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5%;
+  /* margin-bottom: 2%; */
   padding: 2%;
 }
 
@@ -75,4 +75,29 @@ form {
 .input-pay,
 .input-m {
   border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .conteudo-esquerda-pag {
+    max-width: 100%;
+  }
+
+  .metodo-de-pag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .Credito,
+  .PIX,
+  .Boleto {
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .tres-pontos {
+    width: auto;
+    margin-bottom: 10px;
+  }
 }

@@ -1,22 +1,33 @@
-.logomarca{
-    width: 706.578px;
-    height: 184px;
-    margin: auto;
+.logomarca {
+  width: 706.578px;
+  height: 184px;
+  margin: auto;
 }
 
-.slogan{
-    width: 100%;
-    text-align: right;
-    color: #704214;
-    font-size: 30px;
+.slogan {
+  width: 100%;
+  text-align: right;
+  color: #704214;
+  font-size: 30px;
 }
 
-.slogan > h5{
-    
-    text-align: right;
-    font-family: Urbanist;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.slogan > h5 {
+  text-align: right;
+  font-family: Urbanist;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan {
+    font-size: 18px;
+  }
 }

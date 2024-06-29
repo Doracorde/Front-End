@@ -1,54 +1,102 @@
-.lista-navegacao{
-    width: 169px;
-    height: 243.94px;
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.lista-navegacao {
+  width: 169px;
+  height: 243.94px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
-.navegacao-cabecalho{
-    width: 100%;
-    height: 31.164px;
-    color: #FFF;
-    margin-bottom: 1rem;
+.navegacao-cabecalho {
+  width: 100%;
+  height: 31.164px;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
-.navegacao-cabecalho > h4{
-    font-family: Urbanist;
-    font-size: 1.563rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-   
+.navegacao-cabecalho > h4 {
+  font-family: Urbanist;
+  font-size: 1.563rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
 }
 
-.info-footer{
-    display: flex;
-    flex-direction: column;
+.info-footer {
+  display: flex;
+  flex-direction: column;
 }
 
-/* FooterNav.css */
 .lista-info a {
-    text-decoration: none;
-    color: inherit; /* Mantém a cor do texto do pai */
+  text-decoration: none;
+  color: inherit;
 }
 
 .lista-info a:hover {
-    text-decoration: underline; /* Ou qualquer outro estilo para hover */
+  text-decoration: underline;
 }
 
+.lista-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 1.188rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+}
 
-.lista-info{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-    list-style-type: none;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 1.188rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0;
+/* Media Queries */
+@media (max-width: 1024px) {
+  .lista-navegacao {
+    width: 150px;
+    height: auto;
+  }
+
+  .navegacao-cabecalho > h4 {
+    font-size: 1.4rem;
+  }
+
+  .lista-info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lista-navegacao {
+    width: 120px;
+    height: auto;
+  }
+
+  .navegacao-cabecalho > h4 {
+    font-size: 1.2rem;
+  }
+
+  .lista-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lista-navegacao {
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  .navegacao-cabecalho > h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .lista-info {
+    font-size: 0.8rem;
+    align-items: center;
+  }
 }
