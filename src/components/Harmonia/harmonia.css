@@ -201,16 +201,5 @@
     font-weight: 600;
   }
 
-
-  @media (max-width: 920px) {
-    .image-content {
-      display: none;
-    }
-  }
-  
-
-    width: 100%;
-    padding: 10px 15px;
-  }
 }
 
