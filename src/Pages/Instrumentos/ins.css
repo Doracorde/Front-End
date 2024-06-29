@@ -47,7 +47,7 @@
 }
 
 .mus-section a:hover {
-  background-color: #FCFBD0;
+  background-color: #fcfbd0;
 }
 
 .mus-content {
@@ -81,8 +81,6 @@
   flex-direction: column;
 }
 
-
-
 .mus-card img {
   width: 100%;
   height: auto;
@@ -90,4 +88,28 @@
 
 .mus-card-content {
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .header-dashdora {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .mus-main-content {
+    padding: 10px;
+  }
+
+  .mus-sidebar {
+    margin-left: 0;
+  }
+
+  .mus-content {
+    margin-left: 0;
+  }
+
+  .mus-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }

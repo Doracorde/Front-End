@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/img/Logo.png';
-import imagemlogo2 from '../../assets/img/logo2.png';
+import Loguinho from '../../assets/img/loguinho.png';
 import './Confirmar2.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -46,7 +46,7 @@ function Sidecontent() {
     return (
         <div className='confirmar2-cadastro-conteudo-direita'>
             <div className='confirmar2-cadastro-logo-inferior-direito'>
-                <img src={imagemlogo2} alt='Logo 2' />
+                <img src={Loguinho} alt='Logo 2' />
             </div>
         </div>
     );

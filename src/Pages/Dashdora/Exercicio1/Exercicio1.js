@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../../assets/img/Logo.png';
 import Play from '../../../assets/img/play.png';
 import './Exercicio1.css';
-import audioFile from '../../../assets/audio/a.mp3'; // Exemplo de arquivo de áudio
+import audioFile from '../../../assets/audio/a.mp3';
 import tipsort from '../../../assets/img/tip-stor.png';
 import acorde from '../../../assets/img/acorde.png';
 import { Link, useNavigate } from 'react-router-dom';
@@ -19,6 +19,12 @@ function Exercicio1() {
   const [showHelp, setShowHelp] = useState(false);
   
   const audio = new Audio(audioFile);
+
+  useEffect(() => {
+    return () => {
+      audio.pause();
+    };
+  }, [audio]);
 
   const handlePlayPause = () => {
     if (isPlaying) {

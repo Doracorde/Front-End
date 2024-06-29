@@ -1,7 +1,7 @@
-import './style.css'
+import './ConteudoDireita.css'
 import imagemlogin from '../../imagens/imagem_login.png'
 import imagemlogo2 from '../../imagens/logo2.png'
-export function Conteudo_direita(){
+export default function Conteudo_direita(){
 
 return(
     <>

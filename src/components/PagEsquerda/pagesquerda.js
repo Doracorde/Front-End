@@ -1,12 +1,10 @@
 import React from 'react';
 import { MdOutlinePix } from "react-icons/md";
-import { CiCreditCard1 } from "react-icons/ci";
-import { CiBarcode } from "react-icons/ci";
+import { CiCreditCard1, CiBarcode } from "react-icons/ci";
 import './pagesquerda.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
-
 
 export default function PagEsquerda() {
     const { t } = useTranslation();
@@ -16,7 +14,7 @@ export default function PagEsquerda() {
             <div className="titulo-principal">
                 <h3>{t('Insira as informações de pagamento')}</h3>
             </div>
-            {/* fim div titulo principal */}
+            {}
             <div className="metodo-de-pag">
                 <div>
                     <button className="Credito"><CiCreditCard1 />{t('Cartão')}</button>
@@ -31,11 +29,11 @@ export default function PagEsquerda() {
                     <button className="tres-pontos">...</button>
                 </div>
             </div>
-            {/* fim da div metodo pagamento */}
+            {}
             <div className="formulario">
                 <form action="">
                     <div className="numero-form">
-                        <label htmlFor="number">{t('Número do cartão')}</label>
+                        <label htmlFor="numero-cartao">{t('Número do cartão')}</label>
                         <input className="input-m" type="number" id='numero-cartao' name='numero' placeholder="1234 1234 1234 1234" required />
                     </div>
                     <div className="termo-cvc">
@@ -54,12 +52,12 @@ export default function PagEsquerda() {
                         <input className="input-m" type="email" id="email" name="email" placeholder="Seuemail@gmail.com" required />
                     </div>
                     <div>
-                        <input type="checkbox" required />
+                        <input type="checkbox" id="termos" required />
                         <label htmlFor="termos">{t('Li e concordo com os termos da Políticas de Privacidade')}</label>
                     </div>
                 </form>
             </div>
-            {/* fim div formulario */}
+            {}
         </div>
     );
 }

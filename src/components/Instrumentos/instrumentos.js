@@ -20,7 +20,7 @@ export default function Instrumentos() {
       <p>{t('Confira alguns dos instrumentos que ensinamos!')}</p>
       <CardGroup style={{ width: "1071px", height: "650px", display: "flex", flexDirection: "row", gap: "29px" }}>
         <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", display: "flex", alignItems: "center", paddingTop: "21px", margin: "0" }}>
-          <Card.Img variant="top" src={somlogo} />
+          <Card.Img variant="top" src={somlogo} alt='amplificador de guitarra'/>
           <Card.Body>
             <Card.Title>{t('Guitarra')}</Card.Title>
             <Card.Text className='card-text'>
@@ -35,7 +35,7 @@ export default function Instrumentos() {
           </Card.Footer>
         </Card>
         <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", alignItems: "center", paddingTop: "21px", margin: "0" }}>
-          <Card.Img variant="top" src={violaologo} />
+          <Card.Img variant="top" src={violaologo} alt='violão' />
           <Card.Body>
             <Card.Title>{t('Violão')}</Card.Title>
             <Card.Text>
@@ -49,7 +49,7 @@ export default function Instrumentos() {
           </Card.Footer>
         </Card>
         <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", alignItems: "center", paddingTop: "21px", margin: "0" }}>
-          <Card.Img variant="top" src={tecladologo} />
+          <Card.Img variant="top" src={tecladologo} alt='piano digital'/>
           <Card.Body>
             <Card.Title>{t('Piano')}</Card.Title>
             <Card.Text>

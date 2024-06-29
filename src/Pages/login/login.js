@@ -5,7 +5,7 @@ import Logo from '../../assets/img/Logo.png';
 import setalogin from '../../assets/img/setalogin.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import '../../i18n'
+import '../../i18n';
 
 function ConteudoDireito() {
     return (
@@ -43,7 +43,7 @@ function ConteudoEsquerda({ handleLogin }) {
                             placeholder={t('Endereço de Email*')}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            aria-label='Endereço de Email'
+                            aria-label={t('Endereço de Email')}
                         />
                     </div>
                     <div className='input-senha'>
@@ -52,16 +52,14 @@ function ConteudoEsquerda({ handleLogin }) {
                             placeholder={t('Senha*')}
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            aria-label='Senha'
+                            aria-label={t('Senha')}
                         />
                     </div>
                     <div className='botao-login'>
-                        <Link to="/perfil">
-                            <button type='submit'>
-                                {t('LOGIN')}
-                                <img src={setalogin} alt='Seta de Login' />
-                            </button>
-                        </Link>
+                        <button type='submit'>
+                            {t('LOGIN')}
+                            <img src={setalogin} alt='Seta de Login' />
+                        </button>
                     </div>
                 </form>
                 <div className='forgot-password'>
@@ -84,9 +82,9 @@ function ConteudoEsquerda({ handleLogin }) {
 
 function Login() {
     const handleLogin = (data) => {
-        // enviar dados para o back-end
+        
         console.log('Login data:', data);
-        // usar fetch para enviar os dados para o back-end
+       
     };
 
     return (
