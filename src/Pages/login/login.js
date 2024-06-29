@@ -3,8 +3,9 @@ import './login.css';
 import imagemlogin from '../../assets/img/imagem_login.png';
 import Logo from '../../assets/img/Logo.png';
 import setalogin from '../../assets/img/setalogin.png';
-import { Link, useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 function ConteudoDireito() {
     return (
@@ -17,6 +18,7 @@ function ConteudoDireito() {
 }
 
 function ConteudoEsquerda({ handleLogin }) {
+    const { t } = useTranslation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -33,34 +35,36 @@ function ConteudoEsquerda({ handleLogin }) {
                 </Link>
             </div>
             <div className='informacoes-login'>
-                <h3>Entre na sua Conta!</h3>
+                <h3>{t('Entre na sua Conta!')}</h3>
                 <form onSubmit={handleSubmit}>
                     <div className='input-email'>
-                        <label className='label-login' for="email">Endereço de Email
+                        <label className='label-login' htmlFor="email">{t('Endereço de Email')}
                             <input
                                 type='text'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 aria-label='Endereço de Email'
                                 id='email'
-                            alt='email'/>
+                                alt='email'
+                            />
                         </label>
                     </div>
                     <div className='input-senha'>
-                        <label className='label-login' for="senha">Senha
+                        <label className='label-login' htmlFor="senha">{t('Senha')}
                             <input
                                 type='password'
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 aria-label='Senha'
                                 id='senha'
-                            alt='senha'/>
+                                alt='senha'
+                            />
                         </label>
                     </div>
                     <div className='botao-login'>
                         <Link to="/perfil">
                             <button type='submit'>
-                                LOGIN
+                                {t('LOGIN')}
                                 <img src={setalogin} alt='Seta de Login' />
                             </button>
                         </Link>
@@ -68,16 +72,16 @@ function ConteudoEsquerda({ handleLogin }) {
                 </form>
                 <div className='forgot-password'>
                     <Link to='/esqueceusenha'>
-                        <h5>Esqueceu sua senha?</h5>
+                        <h5>{t('Esqueceu sua senha?')}</h5>
                     </Link>
                 </div>
                 <div className='criar-nova-conta'>
                     <Link to="/Cadastro">
-                        <button>CRIAR NOVA CONTA</button>
+                        <button>{t('CRIAR NOVA CONTA')}</button>
                     </Link>
                 </div>
                 <div className='direitos'>
-                    Termos e Condições • Política de Privacidade
+                    {t('Termos e Condições • Política de Privacidade')}
                 </div>
             </div>
         </div>

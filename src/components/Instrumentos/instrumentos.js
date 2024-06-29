@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import { Link } from 'react-router-dom';
 
-
 export default function Instrumentos() {
   const { t } = useTranslation();
 
@@ -27,7 +26,11 @@ export default function Instrumentos() {
               {t('A guitarra é um instrumento versátil, capaz de expressar uma ampla gama de emoções. Além disso, ao ensinar, também cultivamos habilidades técnicas e conhecimento musical sólido.')}
             </Card.Text>
           </Card.Body>
+
           <Card.Footer className="card-footer-custom">
+
+          <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
@@ -41,7 +44,11 @@ export default function Instrumentos() {
               {t('O violão é composto de um corpo de madeira, que fornece a amplificação da música, e possui seis ou mais cordas, na maioria das vezes de aço, que são tocadas com os dedos ou usando palhetas')}
             </Card.Text>
           </Card.Body>
+
           <Card.Footer className="card-footer-custom">
+
+          <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
@@ -55,7 +62,11 @@ export default function Instrumentos() {
               {t('O piano é composto por um corpo de madeira que amplifica a música produzida. Ele possui teclas que, quando pressionadas, acionam martelos para percutir as cordas.')}
             </Card.Text>
           </Card.Body>
+
           <Card.Footer className="card-footer-custom">
+
+          <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
