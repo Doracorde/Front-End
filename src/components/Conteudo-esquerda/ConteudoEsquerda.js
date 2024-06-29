@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import Logo from '../../imagens/Logo.png';
 import setaLogo from '../../assets/img/setalogin.png';
@@ -7,6 +7,9 @@ import '../../i18n';
 
 export function Conteudo_esquerda() {
   const { t } = useTranslation();
+  const [infos, setInfos] = useState({
+
+  })
 
   return (
     <>
@@ -27,7 +30,7 @@ export function Conteudo_esquerda() {
         </div>
 
         <div className='input2'>
-          <input type='text' placeholder={`    ${t('Nome da compania')}`} />
+          <input type='password' placeholder={`    ${t('Senha')}`} />
         </div>
 
         <div className='input1'>

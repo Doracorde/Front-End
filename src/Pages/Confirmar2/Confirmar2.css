@@ -1,0 +1,95 @@
+.confirmar2-imagemlogo2 img {
+  width: 10%;
+  margin-bottom: 80vh;
+  margin-left: 770px;
+}
+
+.logo-confirmar2 {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.confirmar2-informations {
+  margin-left: 190px;
+  margin-top: 80px;
+}
+
+.confirmar2-informations h3 {
+  margin-left: 20px;
+}
+
+.confirmar2-informations h5 {
+  margin-left: 20px;
+}
+
+button {
+  margin-top: 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.confirmar2-direitos {
+  margin-top: 300px;
+  margin-left: 80px;
+}
+
+.confirmar2-botaoinscreverse button {
+  width: 226px;
+  height: 42px;
+  margin-left: 20px;
+  background-color: #f9c402;
+  color: white;
+  border: none;
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+  border-radius: 4px;
+}
+
+.confirmar2-botaovolteaologin button {
+  width: 125px;
+  height: 42px;
+  margin-left: 20px;
+  background-color: #704214;
+  color: white;
+  border: none;
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+  border-radius: 4px;
+}
+
+.confirmar2-botaovoltar button {
+  width: 345px;
+  height: 42px;
+  margin-left: 20px;
+  margin-top: 115px;
+  background-color: #704214;
+  color: white;
+  border: none;
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .confirmar2-imagemlogo2 img {
+    margin-left: 0;
+  }
+
+  .logo-confirmar2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .confirmar2-informations {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .confirmar2-direitos {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .confirmar2-botaoinscreverse button,
+  .confirmar2-botaovolteaologin button,
+  .confirmar2-botaovoltar button {
+    max-width: 100%;
+  }
+}

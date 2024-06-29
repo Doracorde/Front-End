@@ -1,48 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 .all {
-    max-width: 1647px;
-    font-family: urbanist;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  max-width: 1647px;
+  font-family: urbanist;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.amarelo-confirmacao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10% 20%;
-    margin: 5%;
-    background-color: #F9C402;
-    border-radius: 4% ;
-    font-size: 16px;
-    text-align: center;
+.amarelo-confirmacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 20%;
+  margin: 5%;
+  background-color: #f9c402;
+  border-radius: 4%;
+  font-size: 16px;
+  text-align: center;
 }
 
-.branco-confirmacao{
-    display: flex;
-    align-items: center;
-    padding: 20%;
-    width: 100%;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    border-radius: 2%;
+.branco-confirmacao {
+  display: flex;
+  align-items: center;
+  padding: 20%;
+  width: 100%;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 2%;
 }
 
-.bt-inicio{
+.bt-inicio {
   border: none;
   border-radius: 5px;
   color: #fff;
   font-size: 1.2em;
   padding: 10px 20px;
   cursor: pointer;
-    background-color: #704214;
+  background-color: #704214;
 }
 
-.check{
-    width: 50px;
-    height: 50px;
+.check {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .all {
+    padding: 10px;
+  }
+  .amarelo-confirmacao {
+    padding: 8%;
+  }
+  .branco-confirmacao {
+    padding: 8%;
+  }
+  .bt-inicio {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amarelo-confirmacao {
+    padding: 15% 10%;
+  }
+  .branco-confirmacao {
+    padding: 15% 10%;
+  }
+  .check {
+    width: 40px;
+    height: 40px;
+  }
 }

@@ -9,6 +9,10 @@ import MoreIcon from '../../assets/img/more.png';
 import Sair from '../../assets/img/sair.png';
 import './Perfil.css';
 import { useTranslation } from 'react-i18next';
+import DuolingoPersonagens from '../../assets/img/duolingo-personagens.png';
+import IncendiosIcon from '../../assets/img/incendios.png';
+import MagoIcon from '../../assets/img/mago.png';
+import GanheXpIcon from '../../assets/img/paper.png';
 
 function Cabecalhodora() {
   return (
@@ -57,10 +61,10 @@ function MainContent({ t }) {
           <img src={ProfileIcon} alt="Profile" />
         </div>
         <div className="profile-info">
-          <h2>Jailson</h2>
-          <p>@feliciathegoat</p>
-          <p>{t('Ingressou em fevereiro de 2023')}</p>
-          <button className="edit-profile">{t('Editar Perfil')}</button>
+          <h2>Usuário</h2>
+          <p>@janedoe</p>
+          <p>Ingressou em julho de 2024</p>
+          <button className="edit-profile">Editar Perfil</button>
         </div>
       </div>
       <div className="stats-and-friends">
@@ -69,15 +73,15 @@ function MainContent({ t }) {
           <div className="stats-grid">
             <div className="stat-item">
               <p>0</p>
-              <p>{t('Day Streak')}</p>
+              <p>{t('Dias de ofensiva')}</p>
             </div>
             <div className="stat-item">
               <p>27</p>
-              <p>{t('Total XP')}</p>
+              <p>{t('Total de pontos')}</p>
             </div>
             <div className="stat-item">
               <p>{t('Bronze')}</p>
-              <p>{t('Current league')}</p>
+              <p>{t('Liga atual')}</p>
             </div>
             <div className="stat-item">
               <p>0</p>
@@ -86,46 +90,66 @@ function MainContent({ t }) {
           </div>
         </div>
         <div className="friends">
-          <h3>{t('Amigos')}</h3>
-          <p>{t('Aprender é mais divertido e eficaz quando você se conecta com outras pessoas.')}</p>
-          <button>{t('Encontre amigos')}</button>
-          <button>{t('Convide amigos')}</button>
-          <button>{t('Conecte ao Facebook')}</button>
+        <div className="friends-section">
+      <div className="friends-header">
+        <h3>{t('Amigos')}</h3>
+        <div className="tabs">
         </div>
       </div>
-      <div className="achievements">
-        <h3>{t('Conquistas')}</h3>
-        <div className="achievement-item">
-          <div className="achievement-info">
-            <p>{t('Incêndios')}</p>
-            <p>{t('Alcance uma sequência de 3 dias')}</p>
-          </div>
+      <div className="friends-content">
+        <img src={DuolingoPersonagens} alt="Duolingo Personagens" />
+        <p>{t('Aprender é mais divertido e eficaz quando você se conecta com outras pessoas.')}</p>
+      </div>
+      <div className="friends-actions">
+        <Link to='/sobre'>
+        <button className="action-button">{t('Encontre amigos')}</button>
+        </Link>
+        <button className="action-button">{t('Convide amigos')}</button>
+        <button className="action-button">{t('Conecte ao Facebook')}</button>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div className="achievements-section">
+      <h3>{t('Conquistas')}</h3>
+      <div className="achievement-item-perfil">
+        <img src={IncendiosIcon} alt="Incêndios" className="achievement-icon" />
+        <div className="achievement-info">
+          <p>{t('Incêndios')}</p>
+          <p>{t('Alcance uma sequência de 3 dias')}</p>
           <div className="progress-bar">
             <div className="progress" style={{ width: '33%' }}></div>
           </div>
         </div>
-        <div className="achievement-item">
-          <div className="achievement-info">
-            <p>{t('Mago')}</p>
-            <p>{t('Gane 100 XP')}</p>
-          </div>
+      </div>
+      <div className="achievement-item-perfil">
+        <img src={MagoIcon} alt="Mago" className="achievement-icon" />
+        <div className="achievement-info">
+          <p>{t('Mago')}</p>
+          <p>{t('Ganhe 100 XP')}</p>
           <div className="progress-bar">
             <div className="progress" style={{ width: '27%' }}></div>
           </div>
         </div>
-        <div className="achievement-item">
-          <div className="achievement-info">
-            <p>{t('Gane 100 XP')}</p>
-            <p>{t('Aprenda 50 palavras novas em um único curso')}</p>
-          </div>
+      </div>
+      <div className="achievement-item-perfil">
+        <img src={GanheXpIcon} alt="Ganhe 100 XP" className="achievement-icon" />
+        <div className="achievement-info">
+          <p>{t('Ganhe 100 XP')}</p>
+          <p>{t('Aprenda 50 acordes novos em um único curso')}</p>
           <div className="progress-bar">
             <div className="progress" style={{ width: '17%' }}></div>
           </div>
         </div>
       </div>
+
+    </div>
+
     </div>
   );
 }
+
+
 
 function Perfil() {
   const { t } = useTranslation();

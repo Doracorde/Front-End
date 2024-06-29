@@ -16,7 +16,7 @@ function ValoresDoracorde() {
 
       <div className="descricaoValores">
         <div className="missao">
-          <img src={Sol} alt={t("Missão")} className="icon" />
+          <img src={Sol} alt={t("Missão")} className="icon"/>
           <h3 className="titleDescricao">{t("Missão (Sol)")}</h3>
           <div className="missao-descricao">
             <p>

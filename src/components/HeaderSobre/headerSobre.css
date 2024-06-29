@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 .header {
   width: 100%;
@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  padding-top:0 ;
+  padding-top: 0;
   font-family: Urbanist;
-  background-image: url('../../assets/img/bg.png');
+  background-image: url("../../assets/img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -22,11 +22,11 @@
   margin-right: 137px;
 }
 
-.navigation{
+.navigation {
   display: flex;
   flex-direction: row;
-  width:100%;
-  height:82px;
+  width: 100%;
+  height: 82px;
   justify-content: center;
   align-items: center;
   gap: 21px;
@@ -35,11 +35,11 @@
   z-index: 1000;
 }
 
-.nav-header{
+.nav-header {
   display: flex;
   flex-direction: row;
-  width:100%;
-  height:82px;
+  width: 100%;
+  height: 82px;
   justify-content: center;
   align-items: center;
   gap: 21px;
@@ -52,51 +52,51 @@
   margin-right: 1rem;
   text-decoration: none;
   color: #4e342e;
-  font-weight: bold; 
+  font-weight: bold;
   width: 100%;
 }
 
-.nav-header a:hover{
+.nav-header a:hover {
   color: #f9c402;
 }
 
-.buttons{
+.buttons-sobre {
   width: 283px;
   height: 52px;
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  gap: 9px;
+  gap: 25px;
 }
 
-.buttons button {
+.buttons-sobre .buttons {
   background-color: transparent;
   color: #4e342e;
   cursor: pointer;
   width: 168px;
-
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
 }
 
-.start-now{
+.start-now-sobre {
   background-color: #704214;
   color: #fff;
   cursor: pointer;
   gap: 15px;
-
 }
 
-.buttons .start-now {
+.buttons-sobre .start-now-sobre {
   border-radius: 5px;
   border: none;
   background-color: #704214;
   color: #fff;
-  height: 100%;
+  height: 54px;
+  width: 168px;
+  margin: 0;
 }
 
-.start-now a{
+.start-now-sobre a {
   margin: 0;
   color: #fff;
 }
@@ -104,5 +104,128 @@
 .login {
   border-radius: 5px;
   border: none;
+  background-color: transparent;
+  margin: 0;
 }
 
+.btn-lng {
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+  color: #704214;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 54px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 700px;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-right: 100px;
+  }
+
+  .navigation,
+  .nav-header {
+    height: 70px;
+    gap: 15px;
+  }
+
+  .buttons-sobre {
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  .buttons-sobre .buttons,
+  .buttons-sobre .start-now-sobre {
+    width: 150px;
+    height: 48px;
+  }
+
+  .btn-lng {
+    width: 90px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 600px;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    margin-right: 50px;
+  }
+
+  .navigation,
+  .nav-header {
+    height: 60px;
+    gap: 10px;
+  }
+
+  .buttons-sobre {
+    margin-left: 15px;
+    width: 200px;
+  }
+
+  .buttons-sobre .buttons,
+  .buttons-sobre .start-now-sobre {
+    width: 130px;
+    height: 40px;
+  }
+
+  .btn-lng {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 500px;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 0.8rem;
+    margin-right: 20px;
+  }
+
+  .navigation,
+  .nav-header {
+    height: 50px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .navigation a,
+  .nav-header a {
+    margin-right: 0.5rem;
+  }
+
+  .buttons-sobre {
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons-sobre .buttons,
+  .buttons-sobre .start-now-sobre {
+    width: 100%;
+    height: 40px;
+  }
+
+  .btn-lng {
+    width: 70px;
+    height: 40px;
+  }
+}
