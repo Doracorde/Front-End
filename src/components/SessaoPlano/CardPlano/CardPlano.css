@@ -169,10 +169,14 @@ hr {
 
 @media (max-width: 920px){
   .cardPlano{
-    width: 90%;
+    width: 85%;
+    height: 670px;
   }
 
   .saibaMais{
     width: 90%;
   } 
+  .planoRodape {
+    padding: 1rem;
+  }
 }
