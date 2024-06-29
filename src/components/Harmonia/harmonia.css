@@ -187,7 +187,30 @@
   }
 
   .comece-agora-btn {
+
+    width: 168px;
+    background-color: #704214;
+    color: #fff;
+    padding: 15px 25px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 15px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+
+  @media (max-width: 920px) {
+    .image-content {
+      display: none;
+    }
+  }
+  
+
     width: 100%;
     padding: 10px 15px;
   }
 }
+

@@ -106,6 +106,7 @@ textarea {
   margin-top: 16px;
   border-radius: 10px;
   border: 2px solid #e0e0e0;
+  resize: vertical;
 }
 
 .btn-sobre {
