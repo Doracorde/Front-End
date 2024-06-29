@@ -19,10 +19,10 @@ export default function Instrumentos() {
       <p>{t('Confira alguns dos instrumentos que ensinamos!')}</p>
       <CardGroup className="card-group-custom">
         <Card className="card-custom">
-          <Card.Img variant="top" src={somlogo} alt='amplificador de guitarra' />
+          <Card.Img variant="top" src={somlogo} alt="amplificador de guitarra" />
           <Card.Body>
             <Card.Title>{t('Guitarra')}</Card.Title>
-            <Card.Text className='card-text'>
+            <Card.Text className="card-text">
               {t('A guitarra é um instrumento versátil, capaz de expressar uma ampla gama de emoções. Além disso, ao ensinar, também cultivamos habilidades técnicas e conhecimento musical sólido.')}
             </Card.Text>
           </Card.Body>
@@ -37,7 +37,7 @@ export default function Instrumentos() {
           </Card.Footer>
         </Card>
         <Card className="card-custom">
-          <Card.Img variant="top" src={violaologo} alt='violão' />
+          <Card.Img variant="top" src={violaologo} alt="violão" />
           <Card.Body>
             <Card.Title>{t('Violão')}</Card.Title>
             <Card.Text>
@@ -55,7 +55,7 @@ export default function Instrumentos() {
           </Card.Footer>
         </Card>
         <Card className="card-custom">
-          <Card.Img variant="top" src={tecladologo} alt='piano digital' />
+          <Card.Img variant="top" src={tecladologo} alt="piano digital" />
           <Card.Body>
             <Card.Title>{t('Piano')}</Card.Title>
             <Card.Text>
