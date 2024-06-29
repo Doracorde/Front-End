@@ -8,7 +8,7 @@
   margin-top: 200px;
   align-items: center;
   justify-content: center;
-  gap: 58px;
+
 }
 
 .text-header {
@@ -100,106 +100,44 @@
   font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-  .harmonia-section {
-    width: 90%;
-    flex-direction: column;
-    height: auto;
-    gap: 30px;
+@media (max-width: 920px) {
+  .harmonia-section{
+    width: 350px;
+    height: 450px;
+    margin-top: 120px;
+    gap:0rem;
   }
 
-  .text-header {
-    width: 100%;
+  .image-content{
+    display: none;
+  }
+
+  .text-header{
+    gap: 5rem;
+  }
+
+  .text-header > h1 {
     text-align: center;
-    align-items: center;
+    font-size: 32px;
   }
-
-  .text-header > h1 {
-    font-size: 2.5rem;
-  }
-
+ 
   .text-header > p {
-    font-size: 1.5rem;
-  }
-
-  .image-content {
-    width: 80%;
-  }
-
-  .img-wrapper .img2 {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .harmonia-section {
-    width: 100%;
-    margin-top: 100px;
-  }
-
-  .text-header > h1 {
-    font-size: 2rem;
-  }
-
-  .text-header > p {
-    font-size: 1.2rem;
-  }
-
-  .image-content {
-    width: 90%;
-  }
-
-  .img-wrapper .img2 {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .harmonia-section {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .text-header {
-    width: 100%;
+  
+    font-size: 1.5em;
     text-align: center;
   }
 
-  .text-header > h1 {
-    font-size: 1.5rem;
-  }
-
-  .text-header > p {
-    font-size: 1rem;
-  }
-
-  .image-content {
-    width: 100%;
-  }
-
-  .img-wrapper {
-    position: relative;
-  }
-
-  .img-wrapper .img2 {
-    position: relative;
-    margin: 0;
-  }
-
-  .comece-agora-btn {
-
-    width: 168px;
-    background-color: #704214;
-    color: #fff;
-    padding: 15px 25px;
+  .text-header > a {
+    display: flex;
     align-items: center;
-    border-radius: 5px;
-    cursor: pointer;
-    gap: 15px;
-    border: none;
-    margin-top: 20px;
-    font-weight: 600;
+    justify-content: center;
   }
-
 }
+
+@media(max-width: 1480px){
+  .image-content{
+    display: none;
+  }
+}
+
 

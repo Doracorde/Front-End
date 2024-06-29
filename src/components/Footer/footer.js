@@ -39,6 +39,7 @@ export default function Footer() {
               "/instrumentos",
               "/teoria-musical",
             ]}
+            
           />
           <FooterNav
             titulo={t('Suporte')}

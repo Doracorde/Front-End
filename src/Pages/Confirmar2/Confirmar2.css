@@ -67,29 +67,4 @@ button {
   border-radius: 4px;
 }
 
-@media (max-width: 768px) {
-  .confirmar2-imagemlogo2 img {
-    margin-left: 0;
-  }
 
-  .logo-confirmar2 {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .confirmar2-informations {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .confirmar2-direitos {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .confirmar2-botaoinscreverse button,
-  .confirmar2-botaovolteaologin button,
-  .confirmar2-botaovoltar button {
-    max-width: 100%;
-  }
-}

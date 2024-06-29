@@ -45,36 +45,4 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .tablature-controls {
-    flex-direction: row;
-    gap: 20px;
-    margin-right: 0;
-    margin-bottom: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
 
-  .tablature-controls button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .tablature-controls button:last-child {
-    margin-right: 0;
-  }
-
-  .tablature-container {
-    flex-direction: column;
-  }
-
-  .tablature-content {
-    padding: 15px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-}

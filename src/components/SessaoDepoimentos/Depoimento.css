@@ -54,32 +54,4 @@
   text-align: center;
 }
 
-@media (max-width: 1440px) {
-  .Depoimento {
-    padding-top: 50px; /* Reduz o espaço superior */
-  }
 
-  .titulo {
-    margin-top: 20px; /* Reduz o espaço superior */
-    margin-bottom: 20px; /* Reduz o espaço inferior */
-  }
-}
-
-@media (max-width: 768px) {
-  .Depoimento {
-    padding-top: 30px; /* Reduz o espaço superior */
-  }
-
-  .subtitulo > h4 {
-    font-size: 12px; /* Reduz o tamanho da fonte */
-  }
-
-  .titulo > h2 {
-    font-size: 32px; /* Reduz o tamanho da fonte */
-  }
-
-  .carrosel-depoimento {
-    height: auto; /* Ajusta a altura conforme o conteúdo */
-    margin-bottom: 10px; /* Reduz o espaço inferior */
-  }
-}

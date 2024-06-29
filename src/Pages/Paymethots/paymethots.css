@@ -47,20 +47,4 @@
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
-  .conteudo {
-    padding: 10px;
-  }
 
-  .pag {
-    gap: 10px;
-  }
-
-  .trilha-pagamento {
-    margin-bottom: 10px;
-  }
-
-  .tela-pagamento {
-    padding: 10px;
-  }
-}

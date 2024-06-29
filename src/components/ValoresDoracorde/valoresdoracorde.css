@@ -90,36 +90,3 @@
   line-height: normal;
 }
 
-@media (max-width: 768px) {
-  .valores-container {
-    gap: 30px; /* Reduz o espaçamento entre os elementos */
-    margin-top: 80px; /* Ajusta o espaçamento superior */
-  }
-
-  .icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-  }
-
-  .valores-doracorde h2 {
-    font-size: 32px;
-  }
-
-  .descricaoValores {
-    gap: 30px;
-    margin-top: 30px;
-  }
-
-  .titleDescricao {
-    font-size: 24px;
-  }
-
-  .missao-descricao {
-    font-size: 0.9rem;
-  }
-
-  .devs {
-    font-size: 20px;
-  }
-}
