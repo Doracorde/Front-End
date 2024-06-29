@@ -8,90 +8,99 @@ import ProfileIcon from '../../assets/img/profile-icon.png';
 import MoreIcon from '../../assets/img/more.png';
 import Sair from '../../assets/img/sair.png';
 import './Praticar.css';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 function Cabecalhodora() {
+  const { t } = useTranslation();
+
   return (
     <div className="header-dashdora">
-      <img src={Logo} alt="Doracorde Logo" className="logo" />
+      <img src={Logo} alt={t('Doracorde Logo')} className="logo" />
     </div>
   );
 }
 
 function Sidebar() {
+  const { t } = useTranslation();
+
   return (
     <div className="sidebar">
       <Link to="/dashdora">
-        <img src={HomeIcon} alt="Aprender" className="sidebar-icon" />
-        Aprender
+        <img src={HomeIcon} alt={t('Aprender')} className="sidebar-icon" />
+        {t('Aprender')}
       </Link>
       <Link to="/praticar">
-        <img src={PracticeIcon} alt="Praticar" className="sidebar-icon" />
-        Tocar músicas
+        <img src={PracticeIcon} alt={t('Praticar')} className="sidebar-icon" />
+        {t('Tocar músicas')}
       </Link>
       <Link to="/Sons">
-        <img src={SoundIcon} alt="Sons" className="sidebar-icon" />
-        Sons
+        <img src={SoundIcon} alt={t('Sons')} className="sidebar-icon" />
+        {t('Sons')}
       </Link>
       <Link to="/perfil">
-        <img src={ProfileIcon} alt="Perfil" className="sidebar-icon" />
-        Perfil
+        <img src={ProfileIcon} alt={t('Perfil')} className="sidebar-icon" />
+        {t('Perfil')}
       </Link>
       <Link to="/">
-        <img src={MoreIcon} alt="Mais" className="sidebar-icon" />
-        Mais
+        <img src={MoreIcon} alt={t('Mais')} className="sidebar-icon" />
+        {t('Mais')}
       </Link>
       <Link to="/">
-        <img src={Sair} alt="Sair" className="sidebar-icon" />
-        Sair
+        <img src={Sair} alt={t('Sair')} className="sidebar-icon" />
+        {t('Sair')}
       </Link>
     </div>
   );
 }
 
 function TablatureControls() {
+  const { t } = useTranslation();
+
   return (
     <div className="tablature-controls">
-      <button>Auto rolagem</button>
-      <button>Texto</button>
-      <button>Acordes</button>
-      <button>Afinação</button>
+      <button>{t('Auto rolagem')}</button>
+      <button>{t('Texto')}</button>
+      <button>{t('Acordes')}</button>
+      <button>{t('Afinação')}</button>
     </div>
   );
 }
 
 function MainContent() {
+  const { t } = useTranslation();
+
   return (
     <div className="main-content">
       <div className="tablature-header">
-        <h1>Evidências</h1>
-        <p>Chitãozinho & Xororó</p>
-      <div className="tablature-container">
-        <div className="tablature-content">
-          <pre>
-            {`
-            B          Bbm
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Ebm/C              F7
-            Nulla at justo non nunc diam elementum at quis felis.
-            Bbm/Ab       Eb
-            Praesent lobortis tortor et nulla molestie ornare.
-            B
-            Nunc sed odio quis nisi pellentesque tempor et a dolor.
-            Ebm/C       F7
-            Cras non tellus ornare, aliquet nisl id, porta velit.
-            Bbm/Ab
-            Ut suscipit metus nec felis tristique tempor.
-            Eb               B
-            Donec euismod velit ante, ut auctor nunc ornare gravida.
-            Eb
-            Donec a sapien quis nisl dignissim vulputate et in lorem.
-            `}
-          </pre>
+        <h1>{t('Evidências')}</h1>
+        <p>{t('Chitãozinho & Xororó')}</p>
+        <div className="tablature-container">
+          <div className="tablature-content">
+            <pre>
+              {`
+              B          Bbm
+              ${t('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')}
+              Ebm/C              F7
+              ${t('Nulla at justo non nunc diam elementum at quis felis.')}
+              Bbm/Ab       Eb
+              ${t('Praesent lobortis tortor et nulla molestie ornare.')}
+              B
+              ${t('Nunc sed odio quis nisi pellentesque tempor et a dolor.')}
+              Ebm/C       F7
+              ${t('Cras non tellus ornare, aliquet nisl id, porta velit.')}
+              Bbm/Ab
+              ${t('Ut suscipit metus nec felis tristique tempor.')}
+              Eb               B
+              ${t('Donec euismod velit ante, ut auctor nunc ornare gravida.')}
+              Eb
+              ${t('Donec a sapien quis nisl dignissim vulputate et in lorem.')}
+              `}
+            </pre>
+          </div>
+          <TablatureControls />
         </div>
-      <TablatureControls />
       </div>
-      </div>
-
     </div>
   );
 }

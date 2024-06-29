@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import { Link } from 'react-router-dom';
 
-
 export default function Instrumentos() {
   const { t } = useTranslation();
 
@@ -28,7 +27,6 @@ export default function Instrumentos() {
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
@@ -43,7 +41,7 @@ export default function Instrumentos() {
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Link to="/instrumentos">
+            <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
           </Card.Footer>
@@ -57,7 +55,7 @@ export default function Instrumentos() {
             </Card.Text>
           </Card.Body>
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Link to="/instrumentos">
+            <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
           </Card.Footer>
