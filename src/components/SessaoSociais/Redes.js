@@ -4,24 +4,24 @@ import { useTranslation } from "react-i18next";
 import Crianca from '../../assets/images/Rectangle 150877.png';
 
 export default function RedesSociais() {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
 
-  return (
-    <>
-      <section className="sessaoSocias">
-        <div className="containerRedesSociais">
-          <aside className="imagem">
-            <img src={Crianca} alt="Criança"></img>
-          </aside>
+    return (
+        <>
+            <section className="sessaoSocias">
+                <div className="containerRedesSociais">
+                    <aside className="imagem">
+                        <img src={Crianca} alt="Criança"></img>
+                    </aside>
 
-          <aside className="redeSociais">
-            <aside className="descricaoRede">
-              <h2>
-                {t("Fique por dentro das novidades da")}
-                <span className="amarelo">{t("Doracorde")}</span>{" "}
-                {t("nas redes sociais")}
-              </h2>
-            </aside>
+                    <aside className="redeSociais">
+                        <aside className="descricaoRede">
+                            <h2>
+                                {t("Fique por dentro das novidades da")}
+                                <span className="amarelo">{t("Doracorde")}</span>{" "}
+                                {t("nas redes sociais")}
+                            </h2>
+                        </aside>
 
                         <aside className="iconeRede">
                             <button className="botaoRedes" type="button">

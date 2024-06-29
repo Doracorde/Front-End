@@ -23,6 +23,11 @@ html {
     overflow-x: hidden;
   }
 }
+@media(max-width: 1480px){
+  html, body{
+    overflow-x: hidden;
+  }
+}
 
 .App-header {
   background-color: #282c34;
@@ -39,42 +44,4 @@ html {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (max-width: 1024px) {
-  .App-header {
-    font-size: calc(10px + 3vmin);
-  }
-
-  .App-logo {
-    height: 30vmin;
-  }
-}
-
-@media (max-width: 768px) {
-  .App-header {
-    font-size: calc(10px + 4vmin);
-  }
-
-  .App-logo {
-    height: 25vmin;
-  }
-}
-
-@media (max-width: 480px) {
-  .App-header {
-    font-size: calc(10px + 5vmin);
-    padding: 1rem;
-  }
-
-  .App-logo {
-    height: 20vmin;
-  }
-}

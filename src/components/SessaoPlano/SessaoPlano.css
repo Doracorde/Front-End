@@ -70,28 +70,31 @@ h1 {
   margin-top: 36px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 920px){
+  .Plano{
+    height: 2080px;
+  }
+  .Plano > h1{
+    font-size: 2em;
+  }
   .columns {
+    float: 0;
+    width: 1232px;
+    padding: 8px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
     align-items: center;
+    margin-top: 36px;
   }
 
-  .cardPreco {
-    width: 80%;
-    max-width: none;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 32px;
+  .aviso{
+    width: 95%;
   }
 
-  .subtituloPlano {
-    font-size: 14px;
-  }
-
-  .aviso {
-    font-size: 14px;
+  .aviso > h4 {
+    margin: 0;
+    margin-top:2rem;
   }
 }

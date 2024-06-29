@@ -122,44 +122,4 @@
   height: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 800px) {
-  .cadastro-conteudo-direita {
-    display: none;
-  }
 
-  .cadastro-conteudo-esquerda {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .cadastro-informations {
-    padding-left: 20px;
-    align-items: center;
-  }
-}
-
-@media (min-width: 801px) {
-  .cadastro-container {
-    flex-direction: row;
-  }
-
-  .cadastro-conteudo-esquerda {
-    width: 50%;
-  }
-
-  .cadastro-conteudo-direita {
-    display: flex;
-    width: 50%;
-    background-color: #ffc727;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 10px 20px;
-    height: 100vh;
-  }
-
-  .cadastro-informations {
-    align-items: flex-start;
-    padding-left: 40px;
-  }
-}

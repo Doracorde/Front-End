@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.rodape > hr {
+.rodape>hr {
   width: 100%;
   border: none;
   border-top: 1px solid #a9a9aa;
@@ -60,7 +60,7 @@
   text-align: center;
 }
 
-.texto-rodape > h6 {
+.texto-rodape>h6 {
   font-family: Urbanist;
   font-size: 1.188rem;
   font-style: normal;
@@ -80,7 +80,7 @@
   text-align: center;
 }
 
-.direitos-autorais > h6 {
+.direitos-autorais>h6 {
   font-size: 1.188rem;
   font-style: normal;
   font-weight: 400;
@@ -88,87 +88,35 @@
 }
 
 /* Responsividade */
-@media (max-width: 1024px) {
+
+@media (max-width: 920px) {
   .content-rodape {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+    width: 350px;
+    height: 274px;
+    margin-top: 9.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .desc-rodape {
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-
-  .logo-branco {
-    width: 70px;
-    height: 90px;
-  }
-
-  .texto-rodape > h6 {
-    font-size: 1rem;
-  }
-
-  .direitos-autorais > h6 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-rodape {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .desc-rodape {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .logo-branco {
-    width: 60px;
-    height: 80px;
-  }
-
-  .texto-rodape > h6 {
-    font-size: 0.9rem;
-  }
-
-  .direitos-autorais > h6 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .rodape {
-    height: auto;
-    padding: 1rem;
+  .footer-nav-hide {
+    display: none;
   }
 
   .content-rodape {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+    justify-content: center;
   }
 
-  .desc-rodape {
-    width: 100%;
-    margin-bottom: 1rem;
+  .texto-rodape>h6 {
+    font-family: Urbanist;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 31px;
+    margin-top: 1rem;
   }
 
-  .logo-branco {
-    width: 50px;
-    height: 70px;
-  }
-
-  .texto-rodape > h6 {
-    font-size: 0.8rem;
-  }
-
-  .direitos-autorais > h6 {
-    font-size: 0.8rem;
+  .direitos-autorais{
+    width: 300px;
   }
 }

@@ -86,22 +86,4 @@ span.swiper-pagination-bullet {
   background-color: #704214;
 }
 
-@media (max-width: 1200px) {
-  .slide-item {
-    padding: 0 20px; /* Espaçamento lateral menor */
-  }
-}
 
-@media (max-width: 768px) {
-  .comentario-slide {
-    font-size: 20px; /* Redução adicional do tamanho da fonte */
-  }
-
-  .card-comentario {
-    max-width: 300px; /* Redução da largura máxima para telas menores */
-  }
-
-  .slide-content {
-    font-size: 24px; /* Redução adicional do tamanho da fonte */
-  }
-}

@@ -31,31 +31,3 @@
   margin: 0 10px;
 }
 
-@media (max-width: 1440px) {
-  .logos-container {
-    max-width: 1200px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .logos-container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 768px) {
-  .logos-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logos-container img {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .logos-container img {
-    width: 60px;
-  }
-}

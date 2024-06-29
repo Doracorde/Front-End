@@ -46,30 +46,4 @@
   height: 50px;
 }
 
-@media (max-width: 1200px) {
-  .all {
-    padding: 10px;
-  }
-  .amarelo-confirmacao {
-    padding: 8%;
-  }
-  .branco-confirmacao {
-    padding: 8%;
-  }
-  .bt-inicio {
-    padding: 12px 24px;
-  }
-}
 
-@media (max-width: 768px) {
-  .amarelo-confirmacao {
-    padding: 15% 10%;
-  }
-  .branco-confirmacao {
-    padding: 15% 10%;
-  }
-  .check {
-    width: 40px;
-    height: 40px;
-  }
-}

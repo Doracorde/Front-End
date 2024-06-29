@@ -17,44 +17,56 @@ export default function Instrumentos() {
     <section className="instrumentos">
       <h1>{t('Instrumentos Musicais')}</h1>
       <p>{t('Confira alguns dos instrumentos que ensinamos!')}</p>
-      <CardGroup style={{ width: "1071px", height: "650px", display: "flex", flexDirection: "row", gap: "29px" }}>
-        <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", display: "flex", alignItems: "center", paddingTop: "21px", margin: "0" }}>
-          <Card.Img variant="top" src={somlogo} alt='amplificador de guitarra'/>
+      <CardGroup className="card-group-custom">
+        <Card className="card-custom">
+          <Card.Img variant="top" src={somlogo} alt='amplificador de guitarra' />
           <Card.Body>
             <Card.Title>{t('Guitarra')}</Card.Title>
             <Card.Text className='card-text'>
-              {t(' A guitarra é um instrumento versátil, capaz de expressar uma ampla gama de emoções. Além disso, ao ensinar, também cultivamos habilidades técnicas e conhecimento musical sólido.')}
+              {t('A guitarra é um instrumento versátil, capaz de expressar uma ampla gama de emoções. Além disso, ao ensinar, também cultivamos habilidades técnicas e conhecimento musical sólido.')}
             </Card.Text>
           </Card.Body>
+
+          <Card.Footer className="card-footer-custom">
+
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
           </Card.Footer>
         </Card>
-        <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", alignItems: "center", paddingTop: "21px", margin: "0" }}>
+        <Card className="card-custom">
           <Card.Img variant="top" src={violaologo} alt='violão' />
           <Card.Body>
             <Card.Title>{t('Violão')}</Card.Title>
             <Card.Text>
-              {t('O violão é composto de um corpo de madeira, que fornece a amplificação da música produzida, e possui seis ou mais cordas, na maioria das vezes de aço, que são tocadas com os dedos ou usando palhetas')}
+              {t('O violão é composto de um corpo de madeira, que fornece a amplificação da música, e possui seis ou mais cordas, na maioria das vezes de aço, que são tocadas com os dedos ou usando palhetas')}
             </Card.Text>
           </Card.Body>
+
+          <Card.Footer className="card-footer-custom">
+
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>
           </Card.Footer>
         </Card>
-        <Card style={{ width: "271px", height: "100%", backgroundColor: "#FEFAEB", borderRadius: "20px", alignItems: "center", paddingTop: "21px", margin: "0" }}>
-          <Card.Img variant="top" src={tecladologo} alt='piano digital'/>
+        <Card className="card-custom">
+          <Card.Img variant="top" src={tecladologo} alt='piano digital' />
           <Card.Body>
             <Card.Title>{t('Piano')}</Card.Title>
             <Card.Text>
               {t('O piano é composto por um corpo de madeira que amplifica a música produzida. Ele possui teclas que, quando pressionadas, acionam martelos para percutir as cordas.')}
             </Card.Text>
           </Card.Body>
+
+          <Card.Footer className="card-footer-custom">
+
           <Card.Footer style={{ backgroundColor: "#FEFAEB", border: "none", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
             <Link to="/instrumentos">
               <button className="btn-saiba-mais">{t('Saiba Mais')}</button>
             </Link>

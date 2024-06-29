@@ -119,29 +119,3 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
-  .noticia-container {
-    padding: 10px;
-  }
-
-  .noticia-header {
-    font-size: 24px;
-  }
-
-  .noticia-content {
-    font-size: 14px;
-  }
-
-  .related-articles {
-    padding: 30px 10px;
-  }
-
-  .related-articles h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-
-  .article-item {
-    width: 45%;
-  }
-}
