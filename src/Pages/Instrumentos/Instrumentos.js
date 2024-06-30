@@ -16,6 +16,8 @@ import metronomo from '../../assets/img/metronomo.jpg';
 import piano from '../../assets/img/pianocard.jpg';
 import termosmusicais from '../../assets/img/termos-musicais.jpg';
 import api from '../../utils/axios';
+import Footer from '../../components/Footer/footer';
+
 
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
@@ -34,36 +36,36 @@ export default function FerramentasMusica() {
         <div className="mus-sidebar">
           <h2>{t('Ferramentas')}</h2>
           <div className="mus-section">
-            <h5 className='h5-sidebar'>{t('Instrumentos')}</h5>
-            <Link to="/instrumentos/piano">{t('Piano')}</Link>
-            <Link to="/instrumentos/guitarra">{t('Guitarra')}</Link>
-            <Link to="/instrumentos/baixo">{t('Baixo')}</Link>
-            <Link to="/instrumentos/bateria">{t('Bateria')}</Link>
+            <h5 className='h5-sidebar'>Instrumentos</h5>
+            <Link to="/piano">Piano</Link>
+            <Link to="/guitarra">Guitarra</Link>
+            <Link to="/baixo">Baixo</Link>
+            <Link to="/bateria">Bateria</Link>
           </div>
 
           <div className="mus-section">
-            <h5 className='h5-sidebar'>{t('Equipamento')}</h5>
-            <Link to="/equipamento/gerador-de-acordes">{t('Gerador de acordes')}</Link>
-            <Link to="/equipamento/caixa-de-ritmos">{t('Caixa de ritmos')}</Link>
-            <Link to="/equipamento/metronomo">{t('Metrônomo')}</Link>
-            <Link to="/equipamento/afinador">{t('Afinador')}</Link>
+            <h5 className='h5-sidebar'>Equipamento</h5>
+            <Link to="/gerador-de-acordes">Gerador de acordes</Link>
+            <Link to="/caixa-de-ritmos">Caixa de ritmos</Link>
+            <Link to="/metronomo">Metrônomo</Link>
+            <Link to="/afinador">Afinador</Link>
           </div>
 
           <div className="mus-section">
-            <h5 className='h5-sidebar'>{t('Identificadores')}</h5>
-            <Link to="/identificadores/notas">{t('Notas')}</Link>
-            <Link to="/identificadores/intervalos">{t('Intervalos')}</Link>
-            <Link to="/identificadores/acordes">{t('Acordes')}</Link>
-            <Link to="/identificadores/escalas">{t('Escalas')}</Link>
+            <h5 className='h5-sidebar'>Identificadores</h5>
+            <Link to="/identificador-de-notas">Notas</Link>
+            <Link to="/identificador-de-intervalos">Intervalos</Link>
+            <Link to="/identificador-de-acordes">Acordes</Link>
+            <Link to="/identificador-de-escalas">Escalas</Link>
           </div>
 
           <div className="mus-section">
-            <h5 className='h5-sidebar'>{t('Mais')}</h5>
-            <Link to="/mais/circulo-de-quintas">{t('Círculo de quintas')}</Link>
-            <Link to="/mais/termos-musicais">{t('Termos musicais')}</Link>
-            <Link to="/mais/intervalos-em-cancoes">{t('Intervalos em canções')}</Link>
-            <Link to="/mais/folhas-de-pauta">{t('Folhas de pauta')}</Link>
-            <Link to="/">{t('Voltar para página inicial')}</Link>
+            <h5 className='h5-sidebar'>Mais</h5>
+            <Link to="/termos-musicais">Termos musicais</Link>
+            <Link to="/intervalos-em-cancoes">Intervalos em canções</Link>
+            <Link to="/folhas-de-pauta">Folhas de pauta</Link>
+            <Link to="/">Voltar para página inicial </Link>
+
           </div>
         </div>
 
@@ -71,74 +73,104 @@ export default function FerramentasMusica() {
           <h1>{t('Ferramentas de música')}</h1>
           <div className="mus-cards-grid">
             <div className="mus-card">
-              <h2>{t('Piano')}</h2>
-              <p>{t('Toca o piano virtual e visualiza notas, acordes e escalas.')} <Link to="/instrumentos/piano">{t('Piano')}</Link>.</p>
-              <img src={piano} alt={t('Piano')} />
+              <h2 >Piano</h2>
+              <Link to="/piano">
+                <p>Toque o piano virtual e visualiza notas, acordes e escalas.</p>
+                <img src={piano} alt="Piano" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Guitarra')}</h2>
-              <p>{t('Toca a guitarra virtual e visualiza notas, acordes e escalas.')} <Link to="/instrumentos/guitarra">{t('Guitarra')}</Link>.</p>
-              <img src={guitarra} alt={t('Guitarra')} />
+              <h2>Guitarra</h2>
+              <Link to="/guitarra">
+                <p>Toca a guitarra virtual e visualiza notas, acordes e escalas.</p>
+                <img src={guitarra} alt="Guitarra" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Baixo')}</h2>
-              <p>{t('Toca o baixo virtual e visualiza notas, acordes e escalas.')} <Link to="/instrumentos/baixo">{t('Baixo')}</Link>.</p>
-              <img src={baixocard} alt={t('Baixo')} />
+              <h2>Baixo</h2>
+              <Link to="/baixo">
+                <p>Toca o baixo virtual e visualiza notas, acordes e escalas</p>
+                <img src={baixocard} alt="Baixo" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Bateria')}</h2>
-              <p>{t('Toca a bateria virtual e pratica as tuas batidas e ritmos.')} <Link to="/instrumentos/bateria">{t('Bateria')}</Link>.</p>
-              <img src={bateria} alt={t('Bateria')} />
+              <h2>Bateria</h2>
+              <Link to="/bateria">
+                <p>Toca a bateria virtual e pratica as tuas batidas e ritmos.</p>
+                <img src={bateria} alt="Bateria" />
+              </Link>
+
             </div>
             <div className="mus-card">
-              <h2>{t('Gerador de acordes')}</h2>
-              <p>{t('Crie acordes facilmente com esta ferramenta.')} <Link to="/equipamento/gerador-de-acordes">{t('Gerador de acordes')}</Link>.</p>
-              <img src={geradordeacordes} alt={t('Gerador de acordes')} />
+              <h2>Gerador de acordes</h2>
+              <Link to="/gerador-de-acordes">
+                <p>Crie acordes facilmente com esta ferramenta.</p>
+                <img src={geradordeacordes} alt="Gerador de acordes" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Caixa de ritmos')}</h2>
-              <p>{t('Crie e pratique ritmos com esta ferramenta.')} <Link to="/equipamento/caixa-de-ritmos">{t('Caixa de ritmos')}</Link>.</p>
-              <img src={caixaderitmos} alt={t('Caixa de ritmos')} />
+              <h2>Caixa de ritmos</h2>
+              <Link to="/caixa-de-ritmos">
+                <p>Crie e pratique ritmos com esta ferramenta. </p>
+                <img src={caixaderitmos} alt="Caixa de ritmos" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Metrônomo')}</h2>
-              <p>{t('Melhore sua precisão rítmica com este metrônomo.')} <Link to="/equipamento/metronomo">{t('Metrônomo')}</Link>.</p>
-              <img src={metronomo} alt={t('Metrônomo')} />
+              <h2>Metrônomo</h2>
+              <Link to="/metronomo">
+                <p>Melhore sua precisão rítmica com este metrônomo.</p>
+                <img src={metronomo} alt="Metrônomo" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Afinador')}</h2>
-              <p>{t('Afine seu instrumento musical com afinador online.')} <Link to="/equipamento/afinador">{t('Afinador')}</Link>.</p>
-              <img src={afinador} alt={t('Afinador')} />
+              <h2>Afinador</h2>
+              <Link to="/afinador">
+                <p>Afine seu instrumento musical com afinador online. </p>
+                <img src={afinador} alt="Afinador" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Identificador de notas')}</h2>
-              <p>{t('Descubra as notas no piano, na guitarra e no baixo.')} <Link to="/identificadores/notas">{t('Identificador de notas')}</Link>.</p>
-              <img src={identificadordenotas} alt={t('Identificador de notas')} />
+              <h2>Identificador de notas</h2>
+              <Link to="/identificador-de-notas">
+                <p>Descubra as notas no piano, na guitarra e no baixo. .</p>
+                <img src={identificadordenotas} alt="Identificador de notas" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Identificador de intervalos')}</h2>
-              <p>{t('Encontre intervalos no piano, na guitarra e no baixo.')} <Link to="/identificadores/intervalos">{t('Identificador de intervalos')}</Link>.</p>
-              <img src={identificadordeintervalos} alt={t('Identificador de intervalos')} />
+              <h2>Identificador de intervalos</h2>
+              <Link to="/identificador-de-intervalos">
+                <p>Encontre intervalos no piano, na guitarra e no baixo.
+                  Identificador de intervalos.</p>
+                <img src={identificadordeintervalos} alt="Identificador de intervalos" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Identificador de acordes')}</h2>
-              <p>{t('Descubra os acordes no piano, na guitarra e no baixo.')} <Link to="/identificadores/acordes">{t('Identificador de acordes')}</Link>.</p>
-              <img src={identificadordeacordes} alt={t('Identificador de acordes')} />
+              <h2>Identificador de acordes</h2>
+              <Link to="/identificador-de-acordes">
+                <p>Descubra os acordes no piano, na guitarra e no baixo.</p>
+                <img src={identificadordeacordes} alt="Identificador de acordes" />
+              </Link>
             </div>
             <div className="mus-card">
-              <h2>{t('Identificador de escalas')}</h2>
-              <p>{t('Descubra as escalas no piano, na guitarra e no baixo.')} <Link to="/identificadores/escalas">{t('Identificador de escalas')}</Link>.</p>
-              <img src={identificadordeescalas} alt={t('Identificador de escalas')} />
+              <h2>Identificador de escalas</h2>
+              <Link to="/identificador-de-escalas">
+                <p>Descubra as escalas no piano, na guitarra e no baixo.</p>
+                <img src={identificadordeescalas} alt="Identificador de escalas" />
+              </Link>
             </div>
 
             <div className="mus-card">
-              <h2>{t('Termos musicais')}</h2>
-              <p>{t('Aprenda sobre termos musicais utilizados na teoria musical.')} <Link to="/mais/termos-musicais">{t('Termos musicais')}</Link>.</p>
-              <img src={termosmusicais} alt={t('Termos musicais')} />
+              <h2>Termos musicais</h2>
+              <Link to="/termosmusicais">Termos musicais
+                <p>Aprenda sobre termos musicais utilizados na teoria musical.</p>
+                <img src={termosmusicais} alt="Termos musicais" />
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+
   );
 }

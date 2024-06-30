@@ -10,9 +10,9 @@ import tom1 from '../Bateria/sons/tom1.wav';
 import surdo from '../Bateria/sons/surdu.mp3';
 import crash from '../Bateria/sons/crash.mp3';
 import ride from '../Bateria/sons/ride.mp3';
-import pentagrama from "../Bateria/image/pentagrama.png"
-import ritmo3 from '../Bateria/image/ritmo3.png'
-import ritmo2 from "../Bateria/image/ritmo2.png"
+import pentagrama from "../Bateria/image/pentagrama.png";
+import ritmo3 from '../Bateria/image/ritmo3.png';
+import ritmo2 from "../Bateria/image/ritmo2.png";
 
 // Importar useTranslation do react-i18next
 import { useTranslation } from 'react-i18next';
