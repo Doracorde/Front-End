@@ -1,0 +1,15 @@
+.error-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-error{
+    width: 283px;
+    height: 52px;
+    gap: 9px;
+    background-color: #704214;
+    color: white;
+  }

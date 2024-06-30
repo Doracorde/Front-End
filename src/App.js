@@ -49,7 +49,7 @@ import Noticia4 from './Pages/blog/Noticia4/noticia4';
 import Noticia5 from './Pages/blog/Noticia5/noticia5';
 import Noticia6 from './Pages/blog/Noticia6/noticia6';
 import Noticia7 from './Pages/blog/Noticia7/noticia7';
-
+import ErrorPage from './Pages/Error/Error';
 
 function App() {
   return (
@@ -99,6 +99,7 @@ function App() {
           <Route path="/noticia5" element={<Noticia5 />}/>
           <Route path="/noticia6" element={<Noticia6 />}/>
           <Route path="/noticia7" element={<Noticia7 />}/>
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </Router>
