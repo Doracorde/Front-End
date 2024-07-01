@@ -39,7 +39,8 @@
   font-weight: 600;
   line-height: normal;
 }
-.form-cabecalho > p {
+
+.form-cabecalho>p {
   margin: 0;
 }
 
@@ -71,8 +72,9 @@
 
 .contact-form p,
 .contact-info p {
-  color: #666;
+  color: #000;
   line-height: 0.5;
+  font-weight: 500;
 }
 
 input[type="text"],
@@ -162,6 +164,70 @@ textarea {
   font-size: 24px;
 }
 
+@media(max-width: 920px) {
+  .form-cabecalho {
+    width: 100%;
+  }
 
+  .illustration {
+    display: none;
+  }
 
+  .contact-page {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 726px;
+    padding: 0px;
+    background-color: #fff;
+    margin-top: 5rem;
+    height: 726px;
 
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-left: 120px;
+    margin: 0;
+  }
+
+  .form-cabecalho>p {
+    margin: 0;
+    line-height: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  input[type="msg"],
+  textarea {
+    display: flex;
+    width: 100%;
+    height: 168px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    resize: vertical;
+  }
+
+  .btn-sobre {
+    width: 100%;
+    height: 60px;
+    align-self: center;
+  }
+}
