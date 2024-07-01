@@ -145,6 +145,10 @@
         padding: 20px;
     }
 
+    form{
+        width: 100%;
+    }
+
     .informacoes {
         padding-left: 20px;
         align-items: center;
@@ -154,9 +158,16 @@
         padding-left: 0px;
     }
 
+    .input-email input, .input-senha input {
+        width: 90%;
+        height: 100%;
+    }
+
     .direitos {
         margin-top: auto;
         text-align: center;
         padding: 20px 20px 20px 0px;
     }
+
+
 }
