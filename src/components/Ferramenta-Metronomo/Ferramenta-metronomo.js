@@ -117,37 +117,7 @@ const FerramentaMetronomo = () => {
 
   return (
     <div className="container">
-      <ModalInstrucoes isOpen={openModal} setModalOpen={setOpenModal}
-        descInstrucoes={[
-          "Botão INICIAR/PARAR:",
-          "Abaixo do texto indicador de velocidade do metrônomo, há um botão para iniciar ou parar o metrônomo.",
-          "Função: Inicia ou para o metrônomo.",
-          "Como Usar: Clique uma vez para iniciar o metrônomo. Clique novamente para parar.",
-        ]}
-        funcao2={["Função: Ajusta a velocidade das batidas por minuto (BPM).",
-          "O controle deslizante está posicionado acima do texto indicador de velocidade e abaixo do valor numérico do BPM. À esquerda do controle deslizante, há um botão para diminuir o BPM em -1, e à direita, um botão para aumentar o BPM em +1.",
-          "Como Usar: Arraste o controle deslizante para a direita para aumentar o BPM e para a esquerda para diminuir.",
-        ]}
-        funcao3={["Botões de Ajuste de Compasso:",
-          "Função: Ajusta o número de batidas por compasso.",
-          "Os ajustes de compasso estão localizados abaixo do botão de iniciar o metrônomo. À esquerda, encontra-se o botão que diminui o compasso em -1, e à direita, o botão que adiciona +1 ao compasso. Entre eles, está a numeração que indica a quantidade atual de compassos utilizados.",
-          "Como Usar: Clique no botão com sinal de - para diminuir o número de batidas por compasso. Clique no botão com sinal de + para aumentar o número de batidas por compasso."
-        ]}
-        funcao4={["Parando o Metrônomo:",
-          "Clique novamente no botão PARAR para parar o metrônomo quando não precisar mais ouvir as batidas.",
-        ]}
-        funcao5={["Indicador de batidas tocadas:",
-          "Acima do valor numérico do BPM., há uma série de bolas que representam as batidas. A quantidade dessas bolas pode ser alterada conforme o número de batidas por compasso que você escolher. A cada batida, a bola correspondente muda de cor para indicar que a batida foi tocada. Quando a próxima batida ocorre, a bola seguinte muda de cor e a bola anterior volta a ficar cinza, indicando que aquela batida já foi tocada."
-        ]}
-        funcao6={["Indicador de velocidade do BPM::",
-          "Abaixo do indicador de batidas, há um indicador valor numérico do BPM. velocidade do BPM que se ajusta conforme você aumenta ou diminui a velocidade do metrônomo.",
-        ]}
-        funcao7={["Texto informativo de velocidade:",
-          "Abaixo do controle deslizante de velocidade do BPM e dos botões de ajuste de BPM, existe um texto que descreve a velocidade atual em palavras. O texto varia de 'super lento' a 'super rápido', conforme a velocidade do BPM é ajustada.",
-        ]}
-        funcao8={["Para sair do painel de ajuda clique no botão com o símbolo de X ou aperte ESC",
-        ]}
-      />
+     
       <div className='metronome'>
         <div aria-label="Indicador visual da numeração das batidas tocadas" className='batida'>{displayCount}</div>
         <div aria-label="Bolas indicadoras de batidas atuais: Bolas que mudam de cor para mostrar a batida atual e as anteriores que já foram tocadas." className='batidas-display'>
