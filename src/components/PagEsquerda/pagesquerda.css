@@ -77,6 +77,11 @@ form {
   border-radius: 6px;
 }
 
+.container-check{
+  margin-top: 1.5rem;
+
+}
+
 
 @media (max-width: 920px) {
   .conteudo-esquerda-pag {

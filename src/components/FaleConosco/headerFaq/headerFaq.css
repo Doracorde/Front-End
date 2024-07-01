@@ -109,3 +109,22 @@
   margin-left: 80px;
 }
 
+@media (max-width: 920px){
+  .navigation-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation-faq > a{
+    display: none;
+  }
+
+  .buttons-faq{
+    display: none;
+  }
+
+  .logo-faq{
+    margin: 0;
+  }
+}

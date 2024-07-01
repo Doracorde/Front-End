@@ -49,7 +49,7 @@ export default function PagEsquerda() {
             <label htmlFor="email">{t('E-mail')}</label>
             <input className="input-m" type="email" id="email" name="email" placeholder={t('Seuemail@gmail.com')} required={true} />
           </div>
-          <div>
+          <div className='container-check'>
             <input type="checkbox" required={true}></input>
             <label htmlFor="">{t('Li e concordo com os termos da Políticas de Privacidade')}</label>
           </div>
