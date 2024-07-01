@@ -227,3 +227,27 @@
     background: #F9C402;
     color: #704214;
 }
+
+@media (max-width: 920px){
+    .metronome{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: 800px;
+        justify-content: space-between;
+    }
+
+    .tempo-settings .decrease-tempo{
+        width: 50px;
+        height: 50px;
+    } 
+
+    .tempo-settings .increase-tempo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-info{
+        display: none;
+    }
+}
