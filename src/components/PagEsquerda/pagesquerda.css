@@ -81,7 +81,7 @@ form {
 @media (max-width: 920px) {
   .conteudo-esquerda-pag {
     height: 466px;
-    width: 379px;
+    width: 300px;
     display: flex;
     flex-direction: column;
   }
