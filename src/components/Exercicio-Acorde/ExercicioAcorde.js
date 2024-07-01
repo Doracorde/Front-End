@@ -3,7 +3,6 @@ import { useState } from "react";
 import './ExercicioAcorde.css';
 import acerto from '../../assets/audio/correctSound.mp3';
 
-
 export default function ExercicioAcorde(props) {
 
     const [disabledButtons, setDisabledButtons] = useState([]);

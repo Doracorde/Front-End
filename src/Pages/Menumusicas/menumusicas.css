@@ -1,0 +1,201 @@
+.conteudodireitamenumusicas{
+    display: inline-block;
+    position: absolute;
+    margin-left: 200px;
+    
+}
+
+
+.bannermenumusicas2{
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 25px;
+    border-radius: 10px;
+    
+    
+
+}
+
+.bannermenumusicas2 img{
+    width: 1400px;
+    height: 350px;
+    border-radius: 20px;
+   
+}
+
+.titulotodasasmusicasmenumusicas{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.agrupamentomenumusicas{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menumusicas{
+    border: 1px solid grey;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 50px;
+   
+}
+
+
+.linksmenumusicas a{
+    text-decoration: none;
+    color: black;
+}
+
+.agrupamentomenumusicas2{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.numerosmusicasmenu{
+    margin-top: 30px;
+    position: absolute;
+}
+
+.menumusicas h6{
+    margin-left: 100px;
+    font-size: 20px;
+    margin-top: 40px;
+    position: absolute;
+}
+.menumusicas h5{
+    margin-left: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    color: #84827F;
+    position: absolute;
+}
+
+.instrumentosmenumusicas{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    height: 40px;
+}
+
+.mostrarmaismenumusicas{
+    margin-top: 40px;
+    margin-left: 73vh;
+    cursor: pointer;
+}
+.containertablatura{
+    background-color: white;
+    border: 1px solid grey;
+    width: 260px;
+    height: 100vh;
+    display: inline-block;
+  }
+  
+  .logotablatura{
+    position: absolute;
+  }
+  .usuariotablatura{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 75px;
+    font-weight: bold;
+  }
+  
+  .emailusuariotablatura{
+    margin-top: 32px;
+    margin-left: 75px;
+    position: absolute;
+  }
+  
+  .barradepesquisatablatura{
+    margin-top: 100px;
+    margin-left: 0px;
+    position: absolute;
+    border: 1px solid grey;
+    width: 218px;
+    height: 56px;
+    border-radius: 16px;
+  
+  }
+  
+  .barradepesquisatablatura svg{
+    font-size: 2rem;
+    margin-top: 11px;
+    margin-left: 15px;
+    position: absolute;
+  }
+  
+  .searchtablatura{
+    position: absolute;
+    margin-left: 15px;
+  }
+  .pesquisartablatura{
+    position: absolute;
+    
+  }
+  
+  .iconestablatura{
+    margin-top: 170px;
+    margin-left: 20px;
+   
+  }
+  
+  .botaotablatura{
+    width: 218px;
+    height: 56px;
+    margin-top: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+   
+  }
+  .botaotablatura2{
+    width: 218px;
+    height: 56px;
+    margin-top: 370px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botaotablatura:hover{
+    border: none;
+    border-radius: 8px;
+    background: #FCFBD0;
+  }
+  .botaotablatura2:hover{
+    border: none;
+    border-radius: 8px;
+    background: #FCFBD0;
+  }
+  .iconestablatura svg{
+    position: absolute; 
+   
+  }
+  
+  .svg1tablatura svg{
+    margin-top: 63px;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  .svg2tablatura svg{
+    margin-top: 170px;
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+  .svg3tablatura svg{
+    margin-top: 278px;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  .svg4tablatura svg{
+    margin-top: 700px;
+    font-size: 2rem;
+  }
+  

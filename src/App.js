@@ -27,6 +27,7 @@ import Blog from './Pages/blog/Blog';
 import Dashdora from './Pages/Dashdora/Dashdora';
 import FaleConosco from './Pages/FaleConosco/Faq';
 import Sons from './Pages/Sons/Sons';
+import Menumusicas from './Pages/Menumusicas/menumusicas.js';
 
 import Perfil from './Pages/Perfil/Perfil';
 
@@ -47,9 +48,13 @@ import Exercicio2 from './Pages/Dashdora/Exercicio2/Exercicio2'
 import Exercicio3 from './Pages/Dashdora/Exercicio3/Exercicio3'
 import Exercicio4 from './Pages/Dashdora/Exercicio4/Exercicio4'
 import Exercicio5 from './Pages/Dashdora/Exercicio5/Exercicio5'
+import Ceuazul from './Pages/ceuazul/ceuazul.js'
+import Everlong from './Pages/Everlong/everlong.js'
+import Tempoperdido from './Pages/Tempoperdido/tempoperdido.js'
 import Exercicio6 from './Pages/Dashdora/Exercicio6/Exercicio6'
-
 import Login from './Pages/login/login'
+import Holiday from './Pages/Holiday/holiday.js'
+import Harrypottertheme from './Pages/Harrypottertheme/harrypottertheme.js'
 import Cadastro from './Pages/Cadastro/Cadastro';
 import Confirmarcadastro from './Pages/Confirmar-cadastro/Confirmar';
 import Confirmar2 from './Pages/Confirmar2/Confirmar2';
@@ -61,8 +66,10 @@ import Noticia4 from './Pages/blog/Noticia4/noticia4';
 import Noticia5 from './Pages/blog/Noticia5/noticia5';
 import Noticia6 from './Pages/blog/Noticia6/noticia6';
 import Noticia7 from './Pages/blog/Noticia7/noticia7';
-
+import Sotuessanto from './Pages/Sotuessanto/sotuessanto.js';
 import Metronomo from './Pages/Metronomo/Metronomo.jsx';
+import Evidencias from './Pages/Evidencias/evidencias.js';
+import Lugaraosol from './Pages/Lugaraosol/lugaraosol.js';
 
 import Bateria from './Pages/Bateria/Bateria.js'
 import {PercussaoCorporal} from './Pages/PercussaoCorporal/Percussaoc';
@@ -91,7 +98,15 @@ function App() {
           <Route path="/sons" element={<Sons />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/praticar" element={<Praticar />} />
-
+          <Route path="/tocarmusicas/sotuessanto" element={<Sotuessanto />} />
+          <Route path="/tocarmusicas/everlong" element={<Everlong />} />
+          <Route path="/tocarmusicas/harrypottertheme" element={<Harrypottertheme />} />
+          <Route path="/menumusicas" element={<Menumusicas />} />
+          <Route path="/tocarmusicas/evidencias" element={<Evidencias />} />
+          <Route path="/tocarmusicas/holiday" element={<Holiday />} />
+          <Route path="/tocarmusicas/ceuazul" element={<Ceuazul />} />
+          <Route path="/tocarmusicas/tempoperdido" element={<Tempoperdido />} />
+          <Route path="/tocarmusicas/lugaraosol" element={<Lugaraosol />} />
 
           <Route path="/bateria" Component={Bateria} />
 
