@@ -127,7 +127,7 @@
   .cadastro-container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -137,13 +137,22 @@
   }
   .cadastro-conteudo-esquerda {
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 120px;
   }
+
+  .cadastro-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    padding-left: 40px;
+  }
+  
   .cadastro-input-grupo {
     display: flex;
     flex-direction: column;
