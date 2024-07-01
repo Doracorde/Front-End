@@ -120,4 +120,8 @@
   height: 54px;
 }
 
-
+@media (max-width: 1068px){
+  .buttons-sobre {
+    display: none;
+  }
+}

@@ -14,7 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .devList {
@@ -99,4 +100,46 @@
   gap: 10px;
 }
 
+@media (max-width: 920px){
+  .dev-container {
+    width: 300px;
+    height: 3900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-top: 300px;
+  }
 
+  .titleDescricao1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgdev {
+    position: absolute;
+    z-index: 2;
+    margin-top: 160px;
+    margin-bottom: 70px;
+  }
+
+  .imgdev-bootom {
+    position: absolute;
+    z-index: 2;
+    margin-top: 160px;
+    margin-bottom: 70px;
+  }
+  .devDesc {
+    color: #704214;
+    font-family: Urbanist;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-weight: 600;
+    width: 320px;
+    text-align: center;
+  }
+}

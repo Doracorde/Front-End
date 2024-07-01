@@ -20,4 +20,21 @@
   line-height: normal;
 }
 
+@media (max-width: 920px){
+  .logomarca{
+    width: 300px;
 
+  }
+  .logo-sobre{
+    width: 300px;
+  }
+
+  .slogan > h5 {
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
