@@ -122,4 +122,23 @@
   height: 40px;
 }
 
-
+@media (max-width: 920px) {
+  .cadastro-conteudo-direita{
+    display:none;
+  }
+  .cadastro-conteudo-esquerda {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cadastro-input-grupo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cadastro-input-grupo input {
+    width: 100%;
+  }
+}
