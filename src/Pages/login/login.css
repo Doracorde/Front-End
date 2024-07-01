@@ -135,7 +135,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     .conteudo-direita {
         display: none;
     }
@@ -148,5 +148,15 @@
     .informacoes {
         padding-left: 20px;
         align-items: center;
+    }
+
+    .informacoes-login {
+        padding-left: 0px;
+    }
+
+    .direitos {
+        margin-top: auto;
+        text-align: center;
+        padding: 20px 20px 20px 0px;
     }
 }

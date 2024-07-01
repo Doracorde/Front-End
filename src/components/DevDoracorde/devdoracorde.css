@@ -100,7 +100,7 @@
   gap: 10px;
 }
 
-@media (max-width: 920px){
+@media (max-width: 1020px){
   .dev-container {
     width: 300px;
     height: 3900px;

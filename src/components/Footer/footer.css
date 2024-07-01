@@ -89,7 +89,7 @@
 
 /* Responsividade */
 
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
   .content-rodape {
     width: 350px;
     height: 274px;
