@@ -104,4 +104,14 @@ form {
   .tres-pontos {
     justify-content: center;
   }
+
+  .metodo-de-pag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    margin-top: 1rem;
+    gap: 8px;
+    font-family: urbanist;
+  }
 }
