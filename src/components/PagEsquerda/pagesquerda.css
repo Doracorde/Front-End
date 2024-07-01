@@ -77,3 +77,31 @@ form {
   border-radius: 6px;
 }
 
+
+@media (max-width: 920px) {
+  .conteudo-esquerda-pag {
+    height: 466px;
+    width: 379px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-pay,
+  .input-m {
+    width: 100%;
+  }
+
+  .Boleto {
+    display: none;
+  }
+
+  .termo-cvc {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .tres-pontos {
+    justify-content: center;
+  }
+}

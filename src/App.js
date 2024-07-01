@@ -139,6 +139,7 @@ function App() {
           <Route path="/noticia5" element={<Noticia5 />}/>
           <Route path="/noticia6" element={<Noticia6 />}/>
           <Route path="/noticia7" element={<Noticia7 />}/>
+          <Route path="/pagamento" element={<Pagamento />}/>
           <Route path="/equipamento/metronomo" element={<Metronomo/>}/>
 
         </Routes>

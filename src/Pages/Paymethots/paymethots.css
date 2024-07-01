@@ -47,4 +47,35 @@
   flex-direction: column;
 }
 
+@media (max-width: 920px){
+  .container-voltar {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 2%;
+    width: 100%;
+  }
+  .tela-pagamento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .trilha-pagamento {
+   display: none;
+  }
+
+  .conteudo {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 0px;
+  }
+}

@@ -114,4 +114,8 @@
   margin: 5%;
 }
 
-
+@media (max-width: 920px){
+  .pay-box{
+    display: none;
+  }
+}
