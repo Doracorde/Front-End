@@ -36,7 +36,7 @@ function Sidebar() {
         <img src={HomeIcon} alt={t("Aprender")} className="sidebar-icon" />
         {t("Aprender")}
       </Link>
-      <Link to="/praticar">
+      <Link to="/menumusicas">
         <img src={PracticeIcon} alt={t("Tocar músicas")} className="sidebar-icon" />
         {t("Tocar músicas")}
       </Link>
@@ -171,7 +171,7 @@ function MainContent() {
           </Link>
         </div>
 
-        <div className="unit3" >
+        <div className="unit2" >
           <div className="unit-header">
             <h2>{t("Notas, figuras e pausas na partitura")}</h2>
             <p>{t("Aprenda sobre notas, figuras e pausas")}</p>
@@ -205,6 +205,75 @@ function MainContent() {
           </Link>
 
           <Link to='/exercicios/trilha-2/3'>
+            <img
+              src={ex3}
+              alt="Exercício 3"
+              onMouseEnter={() => handleMouseEnter('ex3')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex3')}
+              className={`box3 ${hoveredEx === 'ex3' ? 'hovered' : ''}`}
+            />
+          </Link>
+
+          <img
+            src={ex4}
+            alt="Exercício 4"
+            onMouseEnter={() => handleMouseEnter('ex4')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex4')}
+            className={`box4 ${hoveredEx === 'ex4' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex5}
+            alt="Exercício 5"
+            onMouseEnter={() => handleMouseEnter('ex5')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex5')}
+            className={`box5 ${hoveredEx === 'ex5' ? 'hovered' : ''}`}
+          />
+          <img
+            src={ex6}
+            alt="Exercício 6"
+            onMouseEnter={() => handleMouseEnter('ex6')}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleExClick('ex6')}
+            className={`box6 ${hoveredEx === 'ex6' ? 'hovered' : ''}`}
+          />
+        </div>
+        <div className="unit3" >
+          <div className="unit-header">
+            <h2>{t("Ritmos e imitação")}</h2>
+            <p>{t("Acompanhe as batidas e clique no ritmo delas")}</p>
+          </div>
+          <Button
+            text={t("Guia")}
+            className="button-guia3"
+          />
+        </div>
+        <div className="clickable-images">
+          <Link to='/exercicios/trilha-3/1'>
+            <img
+              src={ex1}
+              alt="Exercício 1"
+              onMouseEnter={() => handleMouseEnter('ex1')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex1')}
+              className={`box1 ${hoveredEx === 'ex1' ? 'hovered' : ''}`}
+            />
+          </Link>
+
+          <Link to='/exercicios/trilha-3/2'>
+            <img
+              src={ex2}
+              alt="Exercício 2"
+              onMouseEnter={() => handleMouseEnter('ex2')}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleExClick('ex2')}
+              className={`box2 ${hoveredEx === 'ex2' ? 'hovered' : ''}`}
+            />
+          </Link>
+
+          <Link to='/exercicios/trilha-3/3'>
             <img
               src={ex3}
               alt="Exercício 3"

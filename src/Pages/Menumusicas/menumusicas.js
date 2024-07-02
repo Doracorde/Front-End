@@ -22,97 +22,97 @@ import '../../i18n'
 
 
 
-function Conteudo_direitamenumusicas(){
+function Conteudo_direitamenumusicas() {
 
-return(
+  return (
     <>
-    <div className='conteudodireitamenumusicas'>
-        
+      <div className='conteudodireitamenumusicas'>
 
-            <div className='bannermenumusicas2'>
-                    <img className='imagembannertablatura' alt='Imagem de um homem segurando um violão' src={imagembannermenumusicas2}/>
-                    
-            </div>
 
-            <div className='titulotodasasmusicasmenumusicas'><h1>Todas as músicas para tocar</h1></div>
-            <div className='agrupamentomenumusicas'>
+        <div className='bannermenumusicas2'>
+          <img className='imagembannertablatura' alt='Imagem de um homem segurando um violão' src={imagembannermenumusicas2} />
 
-            <span className='linksmenumusicas'><a href='/tocarmusicas/evidencias'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemum}/><h6>Evidências</h6><h5>Chitãozinho & Xororó</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+        </div>
 
-                <span className='linksmenumusicas'><a href='/tocarmusicas/sotuessanto'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemdois}/><h6>Só Tu És Santo</h6><h5>Morada</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+        <div className='titulotodasasmusicasmenumusicas'><h1>Todas as músicas para tocar</h1></div>
+        <div className='agrupamentomenumusicas'>
 
-                <span className='linksmenumusicas'><a href='/tocarmusicas/lugaraosol'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemtres}/><h6>Lugar Ao Sol</h6><h5>Charlie Brown Jr.</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/evidencias'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemum} /><h6>Evidências</h6><h5>Chitãozinho & Xororó</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-                <span className='linksmenumusicas'> <a href='/tocarmusicas/tempoperdido'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemquatro}/><h6>Tempo Perdido</h6><h5>Legião Urbana</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
-                
-            </div>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/sotuessanto'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemdois} /><h6>Só Tu És Santo</h6><h5>Morada</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            <div className='agrupamentomenumusicas2'>
-            <span className='linksmenumusicas'><a href='/tocarmusicas/holiday'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemcinco}/><h6>Holiday</h6><h5>Green Day</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/lugaraosol'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemtres} /><h6>Lugar Ao Sol</h6><h5>Charlie Brown Jr.</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            <span className='linksmenumusicas'><a href='/tocarmusicas/harrypottertheme'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemseis}/><h6>Harry Potter Theme</h6><h5>Temas de Filmes</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+          <span className='linksmenumusicas'> <a href='/tocarmusicas/tempoperdido'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemquatro} /><h6>Tempo Perdido</h6><h5>Legião Urbana</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            <span className='linksmenumusicas'><a href='/tocarmusicas/ceuazul'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemsete}/><h6>Céu Azul</h6><h5>Charlie Brown Jr.</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
+        </div>
 
-            <span className='linksmenumusicas'><a href='/tocarmusicas/everlong'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemoito}/><h6>Everlong</h6><h5>Foo Fighters</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum}/></div></a></span>
-                
-            </div>
+        <div className='agrupamentomenumusicas2'>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/holiday'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemcinco} /><h6>Holiday</h6><h5>Green Day</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            
+          <span className='linksmenumusicas'><a href='/tocarmusicas/harrypottertheme'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemseis} /><h6>Harry Potter Theme</h6><h5>Temas de Filmes</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            <div className='mostrarmaismenumusicas'>Mostrar mais músicas</div>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/ceuazul'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemsete} /><h6>Céu Azul</h6><h5>Charlie Brown Jr.</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
 
-            
-        
-        
-    </div>
+          <span className='linksmenumusicas'><a href='/tocarmusicas/everlong'><div className='menumusicas'><img className='numerosmusicasmenu' src={imagemoito} /><h6>Everlong</h6><h5>Foo Fighters</h5><img className='instrumentosmenumusicas' alt='Tablatura e partitura' src={instrumentosum} /></div></a></span>
+
+        </div>
+
+
+
+        <div className='mostrarmaismenumusicas'>Mostrar mais músicas</div>
+
+
+
+
+      </div>
     </>
 
 
-)
+  )
 
 }
 function Sidebar() {
-    const { t } = useTranslation();
-  
-    return (
-      <div className="sidebar">
-        <Link to="/dashdora">
-          <img src={HomeIcon} alt={t("Aprender")} className="sidebar-icon" />
-          {t("Aprender")}
-        </Link>
-        <Link to="/praticar">
-          <img src={PracticeIcon} alt={t("Tocar músicas")} className="sidebar-icon" />
-          {t("Tocar músicas")}
-        </Link>
-        <Link to="/sons">
-          <img src={SoundIcon} alt={t("Sons")} className="sidebar-icon" />
-          {t("Sons")}
-        </Link>
-        <Link to="/perfil">
-          <img src={ProfileIcon} alt={t("Perfil")} className="sidebar-icon" />
-          {t("Perfil")}
-        </Link>
-        <Link to="/">
-          <img src={MoreIcon} alt={t("Mais")} className="sidebar-icon" />
-          {t("Mais")}
-        </Link>
-        <Link to="/">
-          <img src={Sair} alt={t("Sair")} className="sidebar-icon" />
-          {t("Sair")}
-        </Link>
-      </div>
-    );
-  }
+  const { t } = useTranslation();
+
+  return (
+    <div className="sidebar">
+      <Link to="/dashdora">
+        <img src={HomeIcon} alt={t("Aprender")} className="sidebar-icon" />
+        {t("Aprender")}
+      </Link>
+      <Link to="/menumusicas">
+        <img src={PracticeIcon} alt={t("Tocar músicas")} className="sidebar-icon" />
+        {t("Tocar músicas")}
+      </Link>
+      <Link to="/sons">
+        <img src={SoundIcon} alt={t("Sons")} className="sidebar-icon" />
+        {t("Sons")}
+      </Link>
+      <Link to="/perfil">
+        <img src={ProfileIcon} alt={t("Perfil")} className="sidebar-icon" />
+        {t("Perfil")}
+      </Link>
+      <Link to="/">
+        <img src={MoreIcon} alt={t("Mais")} className="sidebar-icon" />
+        {t("Mais")}
+      </Link>
+      <Link to="/">
+        <img src={Sair} alt={t("Sair")} className="sidebar-icon" />
+        {t("Sair")}
+      </Link>
+    </div>
+  );
+}
 
 
 
-export default function Menumusicas(){
-    return(
-        <>
-        <Conteudo_direitamenumusicas />
-        <Sidebar />
-        </>
-    )
+export default function Menumusicas() {
+  return (
+    <>
+      <Conteudo_direitamenumusicas />
+      <Sidebar />
+    </>
+  )
 }
 

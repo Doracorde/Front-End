@@ -28,21 +28,13 @@ import Dashdora from './Pages/Dashdora/Dashdora';
 import FaleConosco from './Pages/FaleConosco/Faq';
 import Sons from './Pages/Sons/Sons';
 import Menumusicas from './Pages/Menumusicas/menumusicas.js';
-
 import Perfil from './Pages/Perfil/Perfil';
-
 import Trilha1Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1';
-
-
 import Praticar from './Pages/Praticar/Praticar';
-
-
-
 import Trilha2Exercicio1 from './Pages/Dashdora/Trilha2-exercicio1/Acorde-exercicio.jsx';
 import Trilha2Exercicio2 from './Pages/Dashdora/Trilha2-exercicio2/Acorde-exercicio2.jsx'; 
 import Trilha2Exercicio3 from './Pages/Dashdora/Trilha2-exercicio3/Acorde-exercicio3.jsx'; 
 import Pagamento from './Pages/Paymethots/Paymethods'
-
 import Exercicio1 from './Pages/Dashdora/Exercicio1/Exercicio1'
 import Exercicio2 from './Pages/Dashdora/Exercicio2/Exercicio2'
 import Exercicio3 from './Pages/Dashdora/Exercicio3/Exercicio3'
@@ -70,9 +62,11 @@ import Sotuessanto from './Pages/Sotuessanto/sotuessanto.js';
 import Metronomo from './Pages/Metronomo/Metronomo.jsx';
 import Evidencias from './Pages/Evidencias/evidencias.js';
 import Lugaraosol from './Pages/Lugaraosol/lugaraosol.js';
-
 import Bateria from './Pages/Bateria/Bateria.js'
 import {PercussaoCorporal} from './Pages/PercussaoCorporal/Percussaoc';
+import Trilha3Exercicio1 from './Pages/Dashdora/Trilha3-exercicio1/Ritmo-exercicio.jsx'
+import Trilha3Exercicio2 from './Pages/Dashdora/Trilha3-exercicio2/Ritmo-exercicio2.jsx'
+import Trilha3Exercicio3 from './Pages/Dashdora/Trilha3-exercicio3/Ritmo-exercicio3.jsx'
 
 
 
@@ -121,6 +115,11 @@ function App() {
           <Route path="/exercicios/trilha-2/1" element={<Trilha2Exercicio1/>}/>
           <Route path="/exercicios/trilha-2/2" element={<Trilha2Exercicio2/>}/>
           <Route path="/exercicios/trilha-2/3" element={<Trilha2Exercicio3/>}/>
+
+          <Route path="/exercicios/trilha-3/1" element={<Trilha3Exercicio1/>}/>
+          <Route path="/exercicios/trilha-3/2" element={<Trilha3Exercicio2/>}/>
+          <Route path="/exercicios/trilha-3/3" element={<Trilha3Exercicio3/>}/>
+       
 
           <Route path="/exercicio2" element={<Exercicio2/>}/>
           <Route path="/exercicio3" element={<Exercicio3/>}/>
