@@ -29,7 +29,7 @@ function Sidebar({ t }) {
         <img src={HomeIcon} alt={t('Aprender')} className="sidebar-icon" />
         {t('Aprender')}
       </Link>
-      <Link to="/praticar">
+      <Link to="/menumusicas">
         <img src={PracticeIcon} alt={t('Praticar')} className="sidebar-icon" />
         {t('Praticar')}
       </Link>

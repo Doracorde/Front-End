@@ -100,7 +100,7 @@ function ConteudoEsquerda({ handleCadastro }) {
                     </div>
 
                     <div className='cadastro-botao'>
-                        <button type='submit'>{t('INSCREVER-SE')}</button>
+                        <button onClick={() => window.location.href = '/perfil'} type='submit'>{t('INSCREVER-SE')}</button>
                     </div>
                     <div className='cadastro-botao'>
                         <button onClick={() => window.location.href = '/login'}>{t('VOLTE AO LOGIN')}</button>
