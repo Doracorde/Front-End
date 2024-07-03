@@ -75,7 +75,7 @@ export default function ExercicioAcorde(props) {
                     {isCorrect && (
                         <div className="nivel">
                             <div className="container-tente-novamente">
-                                <label htmlFor="botao-tente-novamente" className="legenda-btn-voltar">Voltar</label>
+                                <label htmlFor="botao-tente-novamente" className="legenda-btn-voltar">Tente novamente</label>
                                 <button id="botao-tente-novamente" className="btn-tente-novamente" onClick={resetExercise}>
                                 </button>
                             </div>
