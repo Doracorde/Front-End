@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 700px;
-    height: 800px;
+    height: 700px;
     justify-content: space-between;
 }
 
@@ -109,7 +109,7 @@
 
 .start-stop{
     width: 100px;
-    height: 100px;
+    height: 170px;
     font-size: 0.7em;
     background: #F9C402;
     border-radius: 50%;
@@ -208,6 +208,7 @@
     height: 100px;
     text-align: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .feedback-acerto{
@@ -235,8 +236,8 @@
 }
 
 .btn-tente-novamente{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-right: 10px;
     background-image: url('../../assets/img/retorna.png');
@@ -246,8 +247,8 @@
 }
 
 .btn-avancar{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-image: url('../../assets//img/seta-para-a-direita.png');
     background-repeat: no-repeat;

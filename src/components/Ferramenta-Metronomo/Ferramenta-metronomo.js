@@ -141,11 +141,7 @@ const FerramentaMetronomo = () => {
         </div>
         <span className="batidas-por-minuto">{t('Batidas por minuto')}</span>
       </div>
-      <div className='botao-modal'>
-        <button aria-label="Botão para abrir o painel de instruções do exercício." className='btn-info' onClick={() => setOpenModal(true)}>
-          ℹ️
-        </button>
-      </div>
+      
     </div>
   );
 };
