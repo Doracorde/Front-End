@@ -191,11 +191,7 @@ const ExercicioRitmo = ({ beatsPerMeasure}) => {
                         <span className='bpm'>BPM</span>
                     </div>
 
-                    <div className='container-botao-info'>
-                        <button aria-label="Botão para abrir o painel de instruções do exercício." className='btn-info' onClick={() => setOpenModal(true)}>
-                            ℹ️
-                        </button>
-                    </div>
+                   
 
 
                 </div>
