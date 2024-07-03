@@ -73,6 +73,51 @@
     background: #F9C402;
 }
 
+.nivel{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tente-novamente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-tente-novamente{
+    margin: 0;
+}
+.btn-avancar{
+    margin: 0;
+}
+
+.legenda-btn-voltar{
+    text-align: center;
+    margin: 0;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.legenda-btn-avancar{
+    margin: 0;
+    text-align: center;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 920px) {
     .exercicio-container {
         width: 350px;
@@ -114,4 +159,6 @@
         font-weight: 700;
         cursor: pointer;
     }
+
+    
 }
