@@ -4,12 +4,14 @@ import './ExercicioAcorde.css';
 import acerto from '../../assets/audio/correctSound.mp3';
 import erro from '../../assets/audio/wrongSound.mp3';
 import Logo from '../../assets/img/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function ExercicioAcorde(props) {
 
     const [disabledButtons, setDisabledButtons] = useState([]);
+    const [isCorrect, setIsCorrect] = useState(false);
+    const navigate = useNavigate();
 
     const playAudio = () => {
         const audio = new Audio(props.audioFile);
@@ -22,9 +24,20 @@ export default function ExercicioAcorde(props) {
             const audioErro = new Audio(erro);
             audioErro.play();
         } else {
+            setIsCorrect(true);
             const audio = new Audio(acerto);
             audio.play();
         }
+    };
+
+    const resetExercise = () => {
+        setDisabledButtons([]);
+        setIsCorrect(false);
+    };
+
+    const handleAdvance = () => {
+        // Implement your logic for advancing to the next exercise here
+        navigate('/proxima-pagina'); // Adjust the route as necessary
     };
 
     return (
@@ -59,6 +72,24 @@ export default function ExercicioAcorde(props) {
                             </button>
                         ))}
                     </div>
+                    {isCorrect && (
+                        <div className="nivel">
+                            <div className="container-tente-novamente">
+                                <label htmlFor="botao-tente-novamente" className="legenda-btn-voltar">Voltar</label>
+                                <button id="botao-tente-novamente" className="btn-tente-novamente" onClick={resetExercise}>
+                                </button>
+                            </div>
+
+
+                            <div className="container-avancar">
+                                <label htmlFor="botao-avancar"  className="legenda-btn-avancar">Avançar</label>
+                                <button id="botao-avancar"  className="btn-avancar" onClick={handleAdvance}>
+
+                                </button>
+                            </div>
+
+                        </div>
+                    )}
                 </div>
             </div>
 

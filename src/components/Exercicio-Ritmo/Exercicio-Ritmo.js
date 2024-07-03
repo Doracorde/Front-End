@@ -191,9 +191,6 @@ const ExercicioRitmo = ({ beatsPerMeasure}) => {
                         <span className='bpm'>BPM</span>
                     </div>
 
-                   
-
-
                 </div>
                 <div className='start-stop' onClick={handleStartStop}>{isPlaying ? 'PARAR' : 'INICIAR'}</div>
                 {showCompletionButtons && (
